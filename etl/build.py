@@ -12,6 +12,7 @@ Series metadata fields:
   id, title, description, group, unit ("usd", "count", "index", "pct"), decimals,
   freq ("weekly" | "monthly"), agg ("mean" | "sum" | "last"), chart ("bar" | "line"),
   higher_is_worse (bool), weight (composite weight), geo, source, source_url,
+  lag_weeks (optional: recent weeks to drop while the source is still filling them in),
   sample {base, vol, trend?, season?, spike?, integer?}
 """
 
@@ -74,8 +75,13 @@ def run_source(mod):
         new = fetched.get(sid)
         if new:
             bucketed = common.bucket(new, meta["freq"], meta["agg"])
-            if meta["agg"] == "sum" and meta["freq"] == "weekly":
-                bucketed = common.fill_zero_weeks(bucketed, common.week_start(dt.date.today()))
+            if meta["freq"] == "weekly":
+                # Drop the current partial week, plus recent weeks a source is still filling in.
+                last = common.week_start(dt.date.today()) - dt.timedelta(weeks=1 + meta.get("lag_weeks", 0))
+                bucketed = [(d, v) for d, v in bucketed if d <= last]
+                if meta["agg"] == "sum":
+                    bucketed = common.fill_zero_weeks(bucketed, last)
+                prev_pts = {d: v for d, v in prev_pts.items() if d <= last.isoformat()}
             merged = {**prev_pts, **{d.isoformat(): round(v, 4) for d, v in bucketed}}
             record = {"status": "live", "fetched_at": now_iso(), "error": None,
                       "points": sorted([d, v] for d, v in merged.items())}

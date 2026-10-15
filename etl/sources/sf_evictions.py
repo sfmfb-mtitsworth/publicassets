@@ -9,8 +9,8 @@ URL = "https://data.sfgov.org/resource/5cei-gny5.json"
 
 SERIES = [
     {"id": "evictions_sf", "order": 3, "title": "Eviction Notices", "group": "Need & housing",
-     "description": "Eviction notices filed with the San Francisco Rent Board each week. Housing instability often comes right before food insecurity.",
-     "unit": "count", "decimals": 0, "freq": "weekly", "agg": "sum", "chart": "bar", "higher_is_worse": True, "weight": 1,
+     "description": "Eviction notices filed with the San Francisco Rent Board each week. Housing instability often comes right before food insecurity. The last two weeks are left off while filings are still being posted.",
+     "unit": "count", "decimals": 0, "freq": "weekly", "agg": "sum", "chart": "bar", "higher_is_worse": True, "weight": 1, "lag_weeks": 2,
      "geo": "San Francisco", "source": "SF Rent Board via DataSF",
      "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
      "sample": {"base": 45, "vol": 0.25, "spike": 0.9, "integer": True}},

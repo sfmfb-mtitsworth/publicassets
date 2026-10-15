@@ -8,6 +8,7 @@ workbook layout is checked on each run and the run fails loudly if it changes.
 import datetime as dt
 import io
 import re
+import urllib.parse
 
 from common import http_get
 
@@ -28,7 +29,8 @@ SERIES = [
 def _workbook_links():
     html = http_get(PAGE).decode("utf-8", "replace")
     links = re.findall(r'href="([^"]+\.xlsx?)"', html, re.I)
-    return ["https://cdss.ca.gov" + l if l.startswith("/") else l for l in links]
+    links = ["https://cdss.ca.gov" + l if l.startswith("/") else l for l in links]
+    return [urllib.parse.quote(l, safe=":/?=&%") for l in dict.fromkeys(links)]
 
 
 def fetch():
