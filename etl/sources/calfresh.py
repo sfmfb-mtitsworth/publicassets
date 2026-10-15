@@ -33,50 +33,52 @@ def _workbook_links():
     return [urllib.parse.quote(l, safe=":/?=&%") for l in dict.fromkeys(links)]
 
 
+def _num(v):
+    try:
+        return float(str(v).replace(",", "").strip())
+    except ValueError:
+        return None  # "*" marks counts under 11, suppressed by CDSS
+
+
+def _month(v):
+    if hasattr(v, "date"):
+        return v.date().replace(day=1)
+    try:
+        return dt.date.fromisoformat(str(v)[:10]).replace(day=1)
+    except ValueError:
+        return None
+
+
 def fetch():
+    """Each workbook has a "Data_External" sheet: one row per county per month, with
+    columns Date, County Name, Report Month and "Cell 1" = applications received."""
     import openpyxl
 
     links = _workbook_links()
     if not links:
         raise ValueError("No CF 296 workbook links found on the CDSS page")
-    print(f"[calfresh] workbook links: {links[:4]}")
     totals = {}
-    for url in links[:2]:  # current and prior fiscal year
+    for url in links[:4]:  # current fiscal year plus three prior years
         wb = openpyxl.load_workbook(io.BytesIO(http_get(url)), read_only=True, data_only=True)
         for ws in wb.worksheets:
-            rows = list(ws.iter_rows(values_only=True))
-            hdr_i = next((i for i, r in enumerate(rows[:15]) if any("county" in str(c or "").lower() for c in r)), None)
-            if hdr_i is None:
+            rows = ws.iter_rows(values_only=True)
+            hdr = None
+            for r in rows:
+                cells = [str(c or "").strip().lower() for c in r]
+                if "county name" in cells and "cell 1" in cells:
+                    hdr = cells
+                    break
+            if hdr is None:
                 continue
-            hdr = [str(c or "").lower() for c in rows[hdr_i]]
-            i_county = next(i for i, h in enumerate(hdr) if "county" in h)
-            i_month = next((i for i, h in enumerate(hdr) if "month" in h or "date" in h), None)
-            i_apps = next((i for i, h in enumerate(hdr) if "received" in h or "applications" in h), None)
-            if i_month is None or i_apps is None:
-                print(f"[calfresh] {ws.title}: header not recognized: {hdr[:12]}")
-                continue
-            for r in rows[hdr_i + 1:]:
+            i_county, i_apps = hdr.index("county name"), hdr.index("cell 1")
+            i_month = hdr.index("report month") if "report month" in hdr else hdr.index("date")
+            for r in rows:
                 if str(r[i_county] or "").strip().lower() not in COUNTIES:
                     continue
-                m, v = r[i_month], r[i_apps]
-                if hasattr(m, "date"):
-                    m = m.date()
-                elif isinstance(m, str):
-                    try:
-                        m = dt.datetime.strptime(m.strip()[:8], "%b %Y").date()
-                    except ValueError:
-                        continue
-                if not isinstance(m, dt.date) or not isinstance(v, (int, float)):
-                    continue  # "*" means suppressed
-                key = m.replace(day=1)
-                totals[key] = totals.get(key, 0) + v
+                m, v = _month(r[i_month]), _num(r[i_apps])
+                if m and v is not None:
+                    totals.setdefault(m, {})[str(r[i_county]).strip().lower()] = v
     if not totals:
-        wb = openpyxl.load_workbook(io.BytesIO(http_get(links[0])), read_only=True, data_only=True)
-        print(f"[calfresh] sheets: {wb.sheetnames}")
-        for ws in wb.worksheets[:3]:
-            for i, r in enumerate(ws.iter_rows(max_row=30, values_only=True)):
-                cells = [str(c)[:40] for c in r[:14] if c is not None]
-                if cells:
-                    print(f"[calfresh] {ws.title} r{i}: {cells}")
-        raise ValueError("CF 296 workbook layout not recognized; see log for layout")
-    return {"calfresh_apps": sorted(totals.items())}
+        raise ValueError(f"No CF 296 rows found for {sorted(COUNTIES)} in {links[:4]}")
+    # Only keep months where every county reported, so a missing county never looks like a drop.
+    return {"calfresh_apps": sorted((m, sum(c.values())) for m, c in totals.items() if len(c) == len(COUNTIES))}
