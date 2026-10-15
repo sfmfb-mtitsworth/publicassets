@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-15T23:03:15+00:00",
+ "generated_at": "2026-10-15T23:04:05+00:00",
  "groups": [
   "Prices",
   "Jobs & economy",
@@ -4891,7 +4891,7 @@
    "fred_id": "CAICLAIMS",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-15T23:03:10+00:00",
+   "fetched_at": "2026-10-15T23:04:02+00:00",
    "key": null,
    "points": [
     [
@@ -6164,7 +6164,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-15T23:03:10+00:00",
+   "fetched_at": "2026-10-15T23:04:02+00:00",
    "key": null,
    "points": [
     [
@@ -6292,7 +6292,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-15T23:03:10+00:00",
+   "fetched_at": "2026-10-15T23:04:02+00:00",
    "key": null,
    "points": [
     [
@@ -8537,7 +8537,7 @@
    "source": "CA Dept. of Social Services, CF 296",
    "source_url": "https://cdss.ca.gov/inforesources/research-and-data/calfresh-data-tables/cf296",
    "status": "error",
-   "error": "ValueError: CF 296 workbook layout not recognized; see log for headers",
+   "error": "ValueError: CF 296 workbook layout not recognized; see log for layout",
    "fetched_at": null,
    "key": null,
    "points": [],
@@ -8562,7 +8562,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-15T23:03:14+00:00",
+   "fetched_at": "2026-10-15T23:04:04+00:00",
    "key": null,
    "points": [
     [
@@ -9517,7 +9517,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-15T23:03:15+00:00",
+   "fetched_at": "2026-10-15T23:04:05+00:00",
    "key": null,
    "points": [
     [
