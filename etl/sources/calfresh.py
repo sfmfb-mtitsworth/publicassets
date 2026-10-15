@@ -71,5 +71,12 @@ def fetch():
                 key = m.replace(day=1)
                 totals[key] = totals.get(key, 0) + v
     if not totals:
-        raise ValueError("CF 296 workbook layout not recognized; see log for headers")
+        wb = openpyxl.load_workbook(io.BytesIO(http_get(links[0])), read_only=True, data_only=True)
+        print(f"[calfresh] sheets: {wb.sheetnames}")
+        for ws in wb.worksheets[:3]:
+            for i, r in enumerate(ws.iter_rows(max_row=30, values_only=True)):
+                cells = [str(c)[:40] for c in r[:14] if c is not None]
+                if cells:
+                    print(f"[calfresh] {ws.title} r{i}: {cells}")
+        raise ValueError("CF 296 workbook layout not recognized; see log for layout")
     return {"calfresh_apps": sorted(totals.items())}
