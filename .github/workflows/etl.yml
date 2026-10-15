@@ -1,0 +1,44 @@
+name: Leading indicators ETL
+
+# Runs daily so weekly releases (EIA Mondays, DOL Thursdays, WARN twice a week) land
+# within a day. Sources without a key secret fall back to labelled sample data.
+on:
+  schedule:
+    - cron: "23 13 * * *" # 6:23am Pacific (PDT), 5:23am (PST)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["etl/**", "templates/**", ".github/workflows/etl.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: etl
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Fetch sources and build dashboard
+        env:
+          EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
+          USDA_AMS_API_KEY: ${{ secrets.USDA_AMS_API_KEY }}
+          GOOGLE_TRENDS_API_KEY: ${{ secrets.GOOGLE_TRENDS_API_KEY }}
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+        run: python etl/build.py
+      - name: Commit changes
+        run: |
+          git config user.name "etl-bot"
+          git config user.email "etl-bot@users.noreply.github.com"
+          git add data artifacts
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "ETL: refresh leading indicators"
+          git pull --rebase origin main
+          git push

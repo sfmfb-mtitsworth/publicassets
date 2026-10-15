@@ -1,0 +1,292 @@
+<title>Leading Indicators | Food Insecurity</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: report column like the Power BI page; summary first, then one panel per indicator, grouped. */
+:root {
+  --bg: #f5f7f4; --surface: #ffffff; --ink: #1d2a1f; --ink-2: #4f5d52; --ink-3: #7d887f;
+  --rule: #dde3dc; --grid: #edf0ec; --brand: #2f7a34; --brand-soft: #e6f1e4;
+  --bar: #c9cfc8; --line: #5b6b5e;
+  --sev1: #f2a9a9; --sev2: #e06464; --sev3: #b32f2f; --calm: #c9cfc8;
+  --warn-bg: #fff6e0; --warn-ink: #7a5600;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121713; --surface: #1a211b; --ink: #e9eee8; --ink-2: #b2bdb3; --ink-3: #849086;
+  --rule: #2c362d; --grid: #222b23; --brand: #74c27a; --brand-soft: #1f3321;
+  --bar: #4a554b; --line: #a9b6aa; --sev1: #8a4a4a; --sev2: #cf5a5a; --sev3: #ff8a80; --calm: #4a554b;
+  --warn-bg: #2f2710; --warn-ink: #f0c869; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121713; --surface: #1a211b; --ink: #e9eee8; --ink-2: #b2bdb3; --ink-3: #849086;
+  --rule: #2c362d; --grid: #222b23; --brand: #74c27a; --brand-soft: #1f3321;
+  --bar: #4a554b; --line: #a9b6aa; --sev1: #8a4a4a; --sev2: #cf5a5a; --sev3: #ff8a80; --calm: #4a554b;
+  --warn-bg: #2f2710; --warn-ink: #f0c869; color-scheme: dark }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body) }
+.wrap { max-width: 1100px; margin: 0 auto; padding-block: 24px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 20px }
+header.top { border-bottom: 3px solid var(--brand); padding-bottom: 12px; display: grid; gap: 2px; text-align: center }
+h1 { font: 700 clamp(24px, 3.4vw, 30px)/1.2 var(--display); color: var(--brand); margin: 0; text-wrap: balance }
+.sub { font-size: 13px; color: var(--ink-3) }
+h2 { font: 700 20px/1.25 var(--display); margin: 0; text-wrap: balance }
+h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
+.num { font-variant-numeric: tabular-nums }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px; min-width: 0 }
+.intro { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 16px; align-items: start }
+@media (max-width: 760px) { .intro { grid-template-columns: 1fr } }
+.intro p { margin: 0; color: var(--ink-2); max-width: 65ch }
+.controls { display: grid; gap: 10px; justify-items: start }
+.label { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3) }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden }
+.seg button { font: 600 13px var(--body); padding: 6px 12px; border: 0; background: var(--surface); color: var(--ink-2); cursor: pointer }
+.seg button + button { border-left: 1px solid var(--rule) }
+.seg button[aria-pressed="true"] { background: var(--brand); color: var(--surface) }
+.seg button:focus-visible { outline: 2px solid var(--brand); outline-offset: -2px }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; color: var(--ink-2) }
+.legend span { display: inline-flex; align-items: center; gap: 6px }
+.sw { width: 12px; height: 12px; border-radius: 2px; display: inline-block }
+.banner { background: var(--warn-bg); color: var(--warn-ink); border-radius: 6px; padding: 10px 14px; font-size: 14px }
+.watch { display: grid; gap: 10px }
+.watch ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px }
+.watch li { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline }
+.watch li a { color: var(--ink); font-weight: 600 }
+.chip { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 10px; white-space: nowrap }
+.chip.l1 { background: var(--sev1); color: #3a1010 } .chip.l2 { background: var(--sev2); color: #fff } .chip.l3 { background: var(--sev3); color: #fff }
+.chip.sample { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid currentColor }
+.chip.stale, .chip.error { background: var(--warn-bg); color: var(--sev3); border: 1px solid currentColor }
+.chip.ok { background: var(--brand-soft); color: var(--brand) }
+.group { display: grid; gap: 12px }
+.group > h2 { padding-top: 8px; border-top: 1px solid var(--rule) }
+.panel { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 16px }
+@media (max-width: 760px) { .panel { grid-template-columns: 1fr } }
+.panel .meta { display: grid; gap: 8px; align-content: start }
+.panel .desc { font-size: 14px; color: var(--ink-2); margin: 0 }
+.titlerow { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 2px solid var(--brand); padding-top: 6px; text-align: center }
+.stats div { display: grid; gap: 2px }
+.stats .k { font-size: 12px; color: var(--ink-3) }
+.stats .v { font: 600 20px/1.2 var(--body); font-variant-numeric: tabular-nums }
+.chartcol { display: grid; gap: 4px; min-width: 0 }
+.chart { position: relative }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible }
+.chart text { fill: var(--ink-3); font: 11px var(--body); font-variant-numeric: tabular-nums }
+.note { font-size: 12px; color: var(--ink-3) }
+.foot { font-size: 12px; color: var(--ink-3); text-align: right }
+.foot b { color: var(--ink-2); font-weight: 600 }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font: 12px/1.45 var(--body); padding: 6px 8px; border-radius: 4px; white-space: nowrap; transform: translate(-50%, calc(-100% - 8px)); z-index: 2 }
+footer { text-align: center; font-size: 13px; color: var(--ink-3); font-style: italic }
+.empty { color: var(--ink-3); font-size: 14px; padding: 24px 0 }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <h1>Leading Indicators | Food Insecurity</h1>
+    <div class="sub">For internal use only. Consult the business owner before sharing outside the food bank.</div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <section class="card intro">
+    <p>A weekly snapshot of signals that tend to move before demand for food assistance does: prices, jobs, searches and housing pressure in San Francisco, Marin and California. Each bar is colored by how far it sits from that indicator's normal range over the prior year.</p>
+    <div class="controls">
+      <div class="label">Time range</div>
+      <div class="seg" role="group" aria-label="Time range">
+        <button type="button" id="w26" data-weeks="26">26 wks</button>
+        <button type="button" id="w52" data-weeks="52">52 wks</button>
+        <button type="button" id="w78" data-weeks="78">78 wks</button>
+        <button type="button" id="w104" data-weeks="104">2 yrs</button>
+      </div>
+      <div class="legend" aria-label="Anomaly severity">
+        <span><i class="sw" style="background:var(--calm)"></i>Normal</span>
+        <span><i class="sw" style="background:var(--sev1)"></i>Level 1 (1+ SD)</span>
+        <span><i class="sw" style="background:var(--sev2)"></i>Level 2 (2+ SD)</span>
+        <span><i class="sw" style="background:var(--sev3)"></i>Level 3 (3+ SD)</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="card watch">
+    <h2>This week</h2>
+    <div id="watch"></div>
+  </section>
+
+  <section class="card panel" id="general">
+    <div class="meta">
+      <h3>General Indicator</h3>
+      <p class="desc">Combines every indicator into one weekly measure: the average number of standard deviations each one sits from normal, signed so that higher always means more pressure on households. Monthly indicators carry their latest reading forward.</p>
+    </div>
+    <div class="chartcol"><div class="chart" id="general-chart"></div><div class="note" id="general-note"></div></div>
+  </section>
+
+  <div id="groups"></div>
+
+  <footer>Dashboard owned by the Chief Operating Officer. Built by Analytics &amp; Evaluation.</footer>
+</div>
+
+<script>
+const DATA = /*__DASHBOARD_DATA__*/null;
+const NS = "http://www.w3.org/2000/svg";
+const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const SEV = ["var(--calm)", "var(--sev1)", "var(--sev2)", "var(--sev3)"];
+const el = (tag, attrs = {}, parent) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); parent && parent.appendChild(n); return n; };
+const h = (html) => { const t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstChild; };
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const d8 = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
+const dateLabel = (s, freq) => { const d = d8(s); return freq === "monthly" ? `${MONTHS[d.getMonth()]} ${d.getFullYear()}` : `Week of ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`; };
+const fmt = (v, s) => {
+  if (v == null) return "–";
+  const dec = s.decimals ?? 0;
+  const n = v.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
+  return s.unit === "usd" ? "$" + n : s.unit === "pct" ? n + "%" : n;
+};
+const ingest = iso => iso ? new Date(iso).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" }) : "never";
+
+function niceTicks(lo, hi, n = 3) {
+  const span = hi - lo || Math.abs(hi) || 1, raw = span / n, mag = 10 ** Math.floor(Math.log10(raw));
+  const step = [1, 2, 2.5, 5, 10].map(s => s * mag).find(s => span / s <= n) || mag * 10;
+  const t = []; for (let v = Math.floor(lo / step) * step; v <= hi + step * 1e-9; v += step) t.push(+v.toFixed(10));
+  if (t[t.length - 1] < hi) t.push(+(t[t.length - 1] + step).toFixed(10));
+  return t;
+}
+const short = (v, s) => {
+  const a = Math.abs(v);
+  const n = a >= 1e6 ? (v / 1e6).toFixed(1) + "M" : a >= 1e3 ? (v / 1e3).toFixed(a >= 1e4 ? 0 : 1) + "K" : (+v.toFixed(2)).toString();
+  return s && s.unit === "usd" ? "$" + n : n;
+};
+
+/* One chart routine for all panels. kind: bar (from zero), line (level), diverge (around zero). */
+function chart(box, pts, s, kind) {
+  box.innerHTML = "";
+  if (!pts.length) { box.appendChild(h('<div class="empty">No data in this range.</div>')); return; }
+  const W = 720, H = 170, m = { l: 44, r: 10, t: 10, b: 22 };
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `${s.title}, ${pts.length} periods` }, box);
+  const vals = pts.map(p => p[1]);
+  let lo = Math.min(...vals), hi = Math.max(...vals);
+  if (kind !== "line") { lo = Math.min(0, lo); hi = Math.max(0, hi); }
+  else { const pad = (hi - lo) * 0.15 || Math.abs(hi) * 0.05 || 1; lo -= pad; hi += pad; }
+  const ticks = niceTicks(lo, hi); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
+  const pw = W - m.l - m.r, step = pw / pts.length;
+  const x = i => m.l + step * (i + 0.5);
+  const y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+  ticks.forEach(t => {
+    if (t < lo - 1e-9 || t > hi + 1e-9) return;
+    el("line", { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), stroke: t === 0 && kind !== "line" ? "var(--ink-3)" : "var(--grid)" }, svg);
+    el("text", { x: m.l - 6, y: y(t) + 4, "text-anchor": "end" }, svg).textContent = short(t, s);
+  });
+  let lastLabel = -Infinity;
+  pts.forEach((p, i) => {
+    const d = d8(p[0]);
+    const isTick = s.freq === "monthly" ? [0, 3, 6, 9].includes(d.getMonth()) : d.getDate() <= 7 && [0, 3, 6, 9].includes(d.getMonth());
+    if (isTick && x(i) - lastLabel > 60) { el("text", { x: x(i), y: H - 6, "text-anchor": "middle" }, svg).textContent = `${MONTHS[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`; lastLabel = x(i); }
+  });
+  const marks = [];
+  if (kind === "line") {
+    let dpath = ""; pts.forEach((p, i) => dpath += (i ? "L" : "M") + x(i).toFixed(1) + "," + y(p[1]).toFixed(1));
+    el("path", { d: dpath, fill: "none", stroke: "var(--line)", "stroke-width": 2, "stroke-linejoin": "round" }, svg);
+    pts.forEach((p, i) => { if (p[3] > 0 || i === pts.length - 1) marks[i] = el("circle", { cx: x(i), cy: y(p[1]), r: p[3] > 0 ? 4.5 : 4, fill: p[3] > 0 ? SEV[p[3]] : "var(--line)", stroke: "var(--surface)", "stroke-width": 1.5 }, svg); });
+  } else {
+    const bw = Math.max(1, step - (step > 6 ? 2 : 1));
+    pts.forEach((p, i) => {
+      const top = Math.min(y(p[1]), y(0)), ht = Math.max(p[1] === 0 ? 0 : 1, Math.abs(y(p[1]) - y(0)));
+      marks[i] = el("rect", { x: x(i) - bw / 2, y: top, width: bw, height: ht, rx: Math.min(2, bw / 3), fill: SEV[p[kind === "diverge" ? 2 : 3]] }, svg);
+    });
+  }
+  const tip = h('<div class="tip" hidden></div>'); box.appendChild(tip);
+  const hit = el("rect", { x: m.l, y: 0, width: pw, height: H, fill: "transparent" }, svg);
+  const cross = el("line", { y1: m.t, y2: H - m.b, stroke: "var(--ink-3)", "stroke-dasharray": "3 3", visibility: "hidden" }, svg);
+  hit.addEventListener("pointermove", e => {
+    const r = svg.getBoundingClientRect(), i = Math.max(0, Math.min(pts.length - 1, Math.floor(((e.clientX - r.left) * W / r.width - m.l) / step)));
+    const p = pts[i], lvl = kind === "diverge" ? p[2] : p[3];
+    const zline = kind === "diverge" ? `${p[1] > 0 ? "+" : ""}${p[1].toFixed(2)} SD` : p[2] == null ? "Not enough history to score" : `${p[2] > 0 ? "+" : ""}${p[2].toFixed(1)} SD from normal`;
+    tip.innerHTML = `${esc(dateLabel(p[0], s.freq))}<br><b>${kind === "diverge" ? "" : esc(fmt(p[1], s))}</b>${kind === "diverge" ? "" : "<br>"}${zline}${lvl ? `<br>Level ${lvl}` : ""}`;
+    tip.hidden = false;
+    tip.style.left = Math.min(Math.max(x(i) * r.width / W, 80), r.width - 80) + "px";
+    tip.style.top = (kind === "line" ? y(p[1]) : Math.min(y(p[1]), y(0))) * r.height / H + "px";
+    cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
+  });
+  hit.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("visibility", "hidden"); });
+}
+
+function windowed(points, freq, weeks) {
+  if (!points.length) return points;
+  const cutoff = d8(points[points.length - 1][0]); cutoff.setDate(cutoff.getDate() - weeks * 7);
+  return points.filter(p => d8(p[0]) > cutoff);
+}
+
+function statusChip(s) {
+  if (s.status === "sample") return `<span class="chip sample" title="Add ${esc(s.key)} to the repo secrets to load real data">Sample data</span>`;
+  if (s.status === "stale") return `<span class="chip stale" title="${esc(s.error)}">Update failed, showing last good data</span>`;
+  if (s.status === "error") return `<span class="chip error" title="${esc(s.error)}">No data: source error</span>`;
+  return "";
+}
+const levelChip = lvl => lvl ? `<span class="chip l${lvl}">Level ${lvl}</span>` : "";
+
+function render() {
+  if (!DATA) { document.getElementById("groups").appendChild(h('<div class="card empty">No data yet. The weekly ETL fills this page after its first run.</div>')); return; }
+  const series = DATA.series;
+  const sample = series.filter(s => s.status === "sample");
+  const broken = series.filter(s => s.status === "stale" || s.status === "error");
+  const banner = document.getElementById("banner");
+  const msgs = [];
+  if (sample.length) msgs.push(`<b>${sample.length} of ${series.length} indicators show sample data</b>, not real figures, until their API keys are added: ${sample.map(s => esc(s.title)).join(", ")}.`);
+  if (broken.length) msgs.push(`<b>${broken.length} indicator${broken.length > 1 ? "s" : ""} failed to update</b> on the last run: ${broken.map(s => esc(s.title)).join(", ")}.`);
+  if (msgs.length) { banner.innerHTML = msgs.join("<br>"); banner.hidden = false; }
+
+  // Watch list: latest reading at Level 1+, most severe first.
+  const flagged = series.filter(s => s.points.length && s.points[s.points.length - 1][3] > 0)
+    .sort((a, b) => b.points[b.points.length - 1][3] - a.points[a.points.length - 1][3] || b.points[b.points.length - 1][2] - a.points[a.points.length - 1][2]);
+  const comp = DATA.composite[DATA.composite.length - 1];
+  const watch = document.getElementById("watch");
+  const compLine = comp ? `<p class="desc" style="margin:0">General Indicator for the week of ${esc(dateLabel(comp[0], "weekly").replace("Week of ", ""))}: <b class="num">${comp[1] > 0 ? "+" : ""}${comp[1].toFixed(2)} SD</b> ${levelChip(comp[2]) || '<span class="chip ok">Normal</span>'}</p>` : "";
+  watch.innerHTML = compLine + (flagged.length
+    ? `<ul>${flagged.map(s => { const p = s.points[s.points.length - 1]; return `<li>${levelChip(p[3])}<a href="#${esc(s.id)}">${esc(s.title)}</a><span class="num">${esc(fmt(p[1], s))}, ${p[2] > 0 ? "+" : ""}${p[2].toFixed(1)} SD</span>${s.status === "sample" ? '<span class="chip sample">Sample</span>' : ""}</li>`; }).join("")}</ul>`
+    : `<p class="desc" style="margin:0">No indicator is outside its normal range in its latest reading.</p>`);
+
+  const groups = document.getElementById("groups");
+  DATA.groups.forEach(g => {
+    const list = series.filter(s => s.group === g);
+    if (!list.length) return;
+    const sec = h(`<section class="group"><h2>${esc(g)}</h2></section>`);
+    list.forEach(s => {
+      const st = s.stats, p = s.points[s.points.length - 1];
+      const recentLabel = s.freq === "weekly" ? "4-wk avg" : "3-mo avg";
+      const panel = h(`<article class="card panel" id="${esc(s.id)}">
+        <div class="meta">
+          <div class="titlerow"><h3>${esc(s.title)}</h3>${p ? levelChip(p[3]) : ""}${statusChip(s)}</div>
+          <p class="desc">${esc(s.description)}</p>
+          <div class="stats">
+            <div><span class="k">Latest</span><span class="v">${st ? esc(fmt(st.latest, s)) : "–"}</span></div>
+            <div><span class="k">${recentLabel}</span><span class="v">${st ? esc(fmt(st.recent_avg, s)) : "–"}</span></div>
+            <div><span class="k">12-mo avg</span><span class="v">${st ? esc(fmt(st.year_avg, s)) : "–"}</span></div>
+          </div>
+          <div class="note">${st ? esc(dateLabel(st.latest_date, s.freq)) : ""}${s.freq === "monthly" ? " · Monthly data" : ""} · ${esc(s.geo)}</div>
+        </div>
+        <div class="chartcol"><div class="chart"></div>
+          <div class="foot"><b>Data source:</b> <a href="${esc(s.source_url)}" target="_blank" rel="noopener" style="color:inherit">${esc(s.source)}</a>. <b>Ingest time:</b> ${s.status === "sample" ? "sample data" : esc(ingest(s.fetched_at))}</div>
+        </div>
+      </article>`);
+      sec.appendChild(panel);
+    });
+    groups.appendChild(sec);
+  });
+
+  const buttons = [...document.querySelectorAll(".seg button")];
+  const draw = weeks => {
+    buttons.forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.weeks === weeks)));
+    const cp = windowed(DATA.composite, "weekly", weeks);
+    chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge");
+    document.getElementById("general-note").textContent = `Data for ${cp.length} weeks shown. Bars above zero mean more pressure than normal.`;
+    series.forEach(s => {
+      const box = document.querySelector(`#${CSS.escape(s.id)} .chart`);
+      if (box) chart(box, windowed(s.points, s.freq, weeks), s, s.chart);
+    });
+    try { localStorage.setItem("li-weeks", weeks); } catch (e) {}
+  };
+  buttons.forEach(b => b.addEventListener("click", () => draw(+b.dataset.weeks)));
+  let saved = 78; try { const v = +localStorage.getItem("li-weeks"); if ([26, 52, 78, 104].includes(v)) saved = v; } catch (e) {}
+  draw(saved);
+}
+render();
+</script>
