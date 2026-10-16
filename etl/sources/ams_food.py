@@ -99,16 +99,14 @@ def _matches(row, filters):
 def fetch():
     end = dt.date.today()
     start = end - dt.timedelta(days=3 * 365)
-    out, errors = {}, []
+    out, errors = {}, {}
     for s in SERIES:
         try:
             out[s["id"]] = _series(s, start, end)
         except Exception as e:  # one report failing must not blank the others
-            errors.append(f"{s['id']}: {e}")
-            print(f"[ams_food] {s['id']} failed: {e}")
-    if not out:
-        raise ValueError("; ".join(errors))
-    return out
+            errors[s["id"]] = f"{type(e).__name__}: {e}"
+            print(f"[ams_food] {s['id']} failed: {type(e).__name__}")
+    return {**out, "_errors": errors}
 
 
 def _series(s, start, end):

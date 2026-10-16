@@ -21,6 +21,7 @@ import datetime as dt
 import importlib
 import json
 import math
+import re
 import pathlib
 import pkgutil
 import sys
@@ -33,11 +34,23 @@ import common  # noqa: E402
 import sources  # noqa: E402
 
 HISTORY = ROOT / "data" / "series"
+SECRET_ENV = ["EIA_API_KEY", "USDA_AMS_API_KEY", "BLS_API_KEY", "SOCRATA_APP_TOKEN", "GOOGLE_TRENDS_API_KEY"]
 BASELINE = {"weekly": (52, 12), "monthly": (24, 8)}  # (trailing periods, minimum periods)
 GROUPS = ["Fuel prices", "Food staple prices", "Jobs & economy", "Housing stress", "Monthly indicators"]
 GROUP_NOTES = {"Monthly indicators": "Official monthly statistics. They confirm trends rather than lead them: each is "
                                      "published two to six weeks after the month it describes."}
 PLACEHOLDER = "/*__DASHBOARD_DATA__*/null"
+
+
+def scrub(msg):
+    """Errors are committed to a public repo, and some APIs echo the key back. Remove any secret values."""
+    if not msg:
+        return msg
+    for name in SECRET_ENV:
+        value = common.env(name)
+        if value:
+            msg = msg.replace(value, "***")
+    return re.sub(r"(?i)(key[:= ]+)[A-Za-z0-9_-]{12,}", r"\1***", msg)
 
 
 def now_iso():
@@ -69,8 +82,9 @@ def run_source(mod):
         fetched = mod.fetch()
         error = None
     except Exception as e:  # keep going; one broken source must not block the dashboard
-        traceback.print_exc()
-        fetched, error = {}, f"{type(e).__name__}: {e}"[:300]
+        print(scrub(traceback.format_exc()))
+        fetched, error = {}, scrub(f"{type(e).__name__}: {e}")[:300]
+    series_errors = fetched.pop("_errors", {})  # a source may report failures per series
     for meta in mod.SERIES:
         sid = meta["id"]
         prev = load_history(sid)
@@ -90,7 +104,7 @@ def run_source(mod):
             save_history(sid, record)
             print(f"[{name}] {sid}: {len(bucketed)} periods fetched, {len(merged)} in history")
         else:
-            msg = error or "Source returned no data"
+            msg = scrub(series_errors.get(sid)) or error or "Source returned no data"
             record = {"status": "stale" if prev_pts else "error", "error": msg,
                       "fetched_at": prev and prev.get("fetched_at"),
                       "points": sorted([d, v] for d, v in prev_pts.items())}
