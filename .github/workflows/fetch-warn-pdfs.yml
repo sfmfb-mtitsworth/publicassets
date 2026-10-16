@@ -20,7 +20,7 @@ jobs:
           mkdir pdfs && cd pdfs
           curl -sSL -A "Mozilla/5.0" https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN -o page.html
           grep -oiE 'href="[^"]+\.pdf"' page.html | sed -E 's/href="//I; s/"$//' | sort -u | tee links.txt
-          for f in warn-report-for-7-1-2024-to-06-30-2025.pdf warn-report-for-7-1-2025-to-06-30-2026.pdf; do
+          for f in warn-report-for-7-1-2024-to-06-30-2025.pdf warn-report-for-7-1-25-to-6-30-26.pdf; do
             curl -sSLf -A "Mozilla/5.0" -o "$f" "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/$f" || echo "missing $f"
           done
           grep -iE '2024|2025|2026' links.txt | while read -r l; do
