@@ -7,7 +7,7 @@
 :root {
   --bg: #f5f7f4; --surface: #ffffff; --ink: #1d2a1f; --ink-2: #4f5d52; --ink-3: #7d887f;
   --rule: #dde3dc; --grid: #edf0ec; --brand: #2f7a34; --brand-soft: #e6f1e4;
-  --bar: #c9cfc8; --line: #5b6b5e;
+  --bar: #c9cfc8; --line: #5b6b5e; --trend: #1d2a1f;
   --sev1: #f2a9a9; --sev2: #e06464; --sev3: #b32f2f; --calm: #c9cfc8;
   --warn-bg: #fff6e0; --warn-ink: #7a5600;
   --display: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -16,12 +16,12 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --bg: #121713; --surface: #1a211b; --ink: #e9eee8; --ink-2: #b2bdb3; --ink-3: #849086;
   --rule: #2c362d; --grid: #222b23; --brand: #74c27a; --brand-soft: #1f3321;
-  --bar: #4a554b; --line: #a9b6aa; --sev1: #8a4a4a; --sev2: #cf5a5a; --sev3: #ff8a80; --calm: #4a554b;
+  --bar: #4a524c; --line: #a9b6aa; --trend: #eef1f3; --sev1: #96534e; --sev2: #dd574e; --sev3: #ff7f66; --calm: #4a524c;
   --warn-bg: #2f2710; --warn-ink: #f0c869; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #121713; --surface: #1a211b; --ink: #e9eee8; --ink-2: #b2bdb3; --ink-3: #849086;
   --rule: #2c362d; --grid: #222b23; --brand: #74c27a; --brand-soft: #1f3321;
-  --bar: #4a554b; --line: #a9b6aa; --sev1: #8a4a4a; --sev2: #cf5a5a; --sev3: #ff8a80; --calm: #4a554b;
+  --bar: #4a524c; --line: #a9b6aa; --trend: #eef1f3; --sev1: #96534e; --sev2: #dd574e; --sev3: #ff7f66; --calm: #4a524c;
   --warn-bg: #2f2710; --warn-ink: #f0c869; color-scheme: dark }
 body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body) }
 .wrap { max-width: 1100px; margin: 0 auto; padding-block: 24px 48px;
@@ -54,7 +54,7 @@ h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
 .watch li { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline }
 .watch li a { color: var(--ink); font-weight: 600 }
 .chip { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 10px; white-space: nowrap }
-.chip.l1 { background: var(--sev1); color: #3a1010 } .chip.l2 { background: var(--sev2); color: #fff } .chip.l3 { background: var(--sev3); color: #fff }
+.chip.l1 { background: var(--sev1); color: var(--ink) } .chip.l2 { background: var(--sev2); color: #fff } .chip.l3 { background: var(--sev3); color: #2a0b06 }
 .chip.sample { background: var(--warn-bg); color: var(--warn-ink); border: 1px solid currentColor }
 .chip.stale, .chip.error { background: var(--warn-bg); color: var(--sev3); border: 1px solid currentColor }
 .chip.ok { background: var(--brand-soft); color: var(--brand) }
@@ -76,6 +76,7 @@ h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
 .tile .desc { font-size: 13px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden }
 .ask-all { display: inline-block; margin-top: 4px; padding: 8px 14px; border-radius: 5px; background: var(--brand); color: var(--surface); font-weight: 600; text-decoration: none }
 .ask-all:hover { filter: brightness(1.1) } .ask-all:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px }
+.trend-sw { height: 2px !important; width: 16px !important; background: var(--trend) }
 .chip.lag { background: var(--surface); color: var(--ink-2); border: 1px solid var(--rule) }
 .group-note { margin: -4px 0 0; font-size: 14px; color: var(--ink-2); max-width: 75ch }
 .tile .chips { display: flex; flex-wrap: wrap; gap: 6px; min-height: 22px; margin-top: -4px }
@@ -110,7 +111,7 @@ footer { text-align: center; font-size: 13px; color: var(--ink-3); font-style: i
   <div id="banner" class="banner" hidden></div>
 
   <section class="card intro">
-    <p>A weekly snapshot of signals that tend to move before demand for food assistance does: prices, jobs, searches and housing pressure in San Francisco, Marin and California. Each bar is colored by how far it sits from that indicator's normal range over the prior year.</p>
+    <p>A weekly snapshot of signals that tend to move before demand for food assistance does: prices, jobs and housing pressure. Each bar is colored by how far it sits from that indicator's normal range over the prior year, and the line shows its recent average. We use county-level data for San Francisco and Marin where it exists; many sources only publish for San Francisco, the Bay Area or California, so each card names its geography.</p>
     <div class="controls">
       <div class="label">Time range</div>
       <div class="range" id="range">January 2025 to present</div>
@@ -120,6 +121,7 @@ footer { text-align: center; font-size: 13px; color: var(--ink-3); font-style: i
         <span><i class="sw" style="background:var(--sev1)"></i>Level 1 (1+ SD)</span>
         <span><i class="sw" style="background:var(--sev2)"></i>Level 2 (2+ SD)</span>
         <span><i class="sw" style="background:var(--sev3)"></i>Level 3 (3+ SD)</span>
+        <span><i class="sw trend-sw"></i>Recent average (4 wks or 3 mos)</span>
       </div>
     </div>
   </section>
@@ -178,7 +180,7 @@ const DAY = 864e5;
 const periodEnd = (p, freq) => { const d = d8(p[0]); if (freq === "monthly") d.setMonth(d.getMonth() + 1); else d.setDate(d.getDate() + 7); return d; };
 
 /* dom = {start, end}: the shared date range every chart is drawn on, so a week sits in the same place on every card. */
-function chart(box, pts, s, kind, dom) {
+function chart(box, pts, s, kind, dom, trend) {
   box.innerHTML = "";
   if (!pts.length) { box.appendChild(h('<div class="empty">No data in this range.</div>')); return; }
   const W = Math.max(120, box.clientWidth), H = Math.max(40, box.clientHeight), m = { l: 40, r: 6, t: 8, b: 20 };
@@ -212,6 +214,12 @@ function chart(box, pts, s, kind, dom) {
       marks[i] = el("rect", { x: x(i) - bw / 2, y: top, width: bw, height: ht, rx: Math.min(2, bw / 3), fill: SEV[p[kind === "diverge" ? 2 : 3]] }, svg);
     });
   }
+  if (trend && trend.length > 1) {
+    const tx = p => (xd(d8(p[0])) + xd(periodEnd(p, s.freq))) / 2;
+    let d = ""; trend.forEach((p, i) => { d += (i ? "L" : "M") + tx(p).toFixed(1) + "," + y(p[1]).toFixed(1); });
+    el("path", { d, fill: "none", stroke: "var(--surface)", "stroke-width": 4, "stroke-linejoin": "round", opacity: 0.8 }, svg);
+    el("path", { d, fill: "none", stroke: "var(--trend)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }, svg);
+  }
   const tip = h('<div class="tip" hidden></div>'); box.appendChild(tip);
   const hit = el("rect", { x: m.l, y: 0, width: pw, height: H, fill: "transparent" }, svg);
   const cross = el("line", { y1: m.t, y2: H - m.b, stroke: "var(--ink-3)", "stroke-dasharray": "3 3", visibility: "hidden" }, svg);
@@ -220,7 +228,9 @@ function chart(box, pts, s, kind, dom) {
     let i = 0; pts.forEach((_, j) => { if (Math.abs(x(j) - px) < Math.abs(x(i) - px)) i = j; });
     const p = pts[i], lvl = kind === "diverge" ? p[2] : p[3];
     const zline = kind === "diverge" ? `${p[1] > 0 ? "+" : ""}${p[1].toFixed(2)} SD` : p[2] == null ? "Not enough history to score" : `${p[2] > 0 ? "+" : ""}${p[2].toFixed(1)} SD from normal`;
-    tip.innerHTML = `${esc(dateLabel(p[0], s.freq))}<br><b>${kind === "diverge" ? "" : esc(fmt(p[1], s))}</b>${kind === "diverge" ? "" : "<br>"}${zline}${lvl ? `<br>Level ${lvl}` : ""}`;
+    const tp = trend && trend.find(t => t[0] === p[0]);
+    const avgLine = tp ? `<br>${s.freq === "monthly" ? "3-mo" : "4-wk"} avg: ${kind === "diverge" ? (tp[1] > 0 ? "+" : "") + tp[1].toFixed(2) + " SD" : esc(fmt(tp[1], s))}` : "";
+    tip.innerHTML = `${esc(dateLabel(p[0], s.freq))}<br><b>${kind === "diverge" ? "" : esc(fmt(p[1], s))}</b>${kind === "diverge" ? "" : "<br>"}${zline}${lvl ? `<br>Level ${lvl}` : ""}${avgLine}`;
     tip.hidden = false;
     tip.style.left = Math.min(Math.max(x(i) * r.width / W, 80), r.width - 80) + "px";
     tip.style.top = Math.min(y(p[1]), y(0)) * r.height / H + "px";
@@ -235,6 +245,15 @@ function domain() {
   let end = DATA.composite.length ? periodEnd(DATA.composite[DATA.composite.length - 1], "weekly") : new Date(0);
   DATA.series.forEach(s => { if (s.freq === "weekly" && s.points.length) { const e = periodEnd(s.points[s.points.length - 1], "weekly"); if (e > end) end = e; } });
   return { start: ANCHOR, end };
+}
+/* Trailing average over the full history (so the first visible weeks have context), as [date, value] pairs. */
+function movingAvg(points, freq) {
+  const n = freq === "monthly" ? 3 : 4, out = [];
+  for (let i = n - 1; i < points.length; i++) {
+    const w = points.slice(i - n + 1, i + 1).map(p => p[1]);
+    out.push([points[i][0], w.reduce((a, b) => a + b, 0) / n]);
+  }
+  return out;
 }
 const windowed = (points, freq, dom) => points.filter(p => periodEnd(p, freq) > dom.start && d8(p[0]) < dom.end);
 
@@ -306,11 +325,11 @@ function render() {
 
   const draw = () => {
     const dom = domain(), cp = windowed(DATA.composite, "weekly", dom);
-    chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge", dom);
+    chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge", dom, windowed(movingAvg(DATA.composite, "weekly"), "weekly", dom));
     document.getElementById("general-note").textContent = `${cp.length} weeks shown. Bars above zero mean more pressure than normal.`;
     series.forEach(s => {
       const box = document.querySelector(`#${CSS.escape(s.id)} .chart`);
-      if (box) chart(box, windowed(s.points, s.freq, dom), s, "bar", dom);
+      if (box) chart(box, windowed(s.points, s.freq, dom), s, "bar", dom, windowed(movingAvg(s.points, s.freq), s.freq, dom));
     });
   };
   let pending = 0, lastW = 0;
@@ -322,4 +341,5 @@ function render() {
   draw();
 }
 render();
+
 </script>
