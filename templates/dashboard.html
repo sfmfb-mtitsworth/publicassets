@@ -39,6 +39,7 @@ h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
 .intro p { margin: 0; color: var(--ink-2); max-width: 65ch }
 .controls { display: grid; gap: 10px; justify-items: start }
 .label { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-3) }
+.range { font-weight: 600 }
 .seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden }
 .seg button { font: 600 13px var(--body); padding: 6px 12px; border: 0; background: var(--surface); color: var(--ink-2); cursor: pointer }
 .seg button + button { border-left: 1px solid var(--rule) }
@@ -102,12 +103,7 @@ footer { text-align: center; font-size: 13px; color: var(--ink-3); font-style: i
     <p>A weekly snapshot of signals that tend to move before demand for food assistance does: prices, jobs, searches and housing pressure in San Francisco, Marin and California. Each bar is colored by how far it sits from that indicator's normal range over the prior year.</p>
     <div class="controls">
       <div class="label">Time range</div>
-      <div class="seg" role="group" aria-label="Time range">
-        <button type="button" id="w26" data-weeks="26">26 wks</button>
-        <button type="button" id="w52" data-weeks="52">52 wks</button>
-        <button type="button" id="w78" data-weeks="78">78 wks</button>
-        <button type="button" id="w104" data-weeks="104">2 yrs</button>
-      </div>
+      <div class="range" id="range">January 2025 to present</div>
       <div class="legend" aria-label="Anomaly severity">
         <span><i class="sw" style="background:var(--calm)"></i>Normal</span>
         <span><i class="sw" style="background:var(--sev1)"></i>Level 1 (1+ SD)</span>
@@ -220,11 +216,12 @@ function chart(box, pts, s, kind, dom) {
   hit.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("visibility", "hidden"); });
 }
 
-function domain(weeks) {
+const ANCHOR = new Date(2024, 11, 30); // Monday of the week containing Jan 1, 2025: every chart starts here.
+function domain() {
   // Ends after the latest complete week any weekly series (or the General Indicator) reports.
   let end = DATA.composite.length ? periodEnd(DATA.composite[DATA.composite.length - 1], "weekly") : new Date(0);
   DATA.series.forEach(s => { if (s.freq === "weekly" && s.points.length) { const e = periodEnd(s.points[s.points.length - 1], "weekly"); if (e > end) end = e; } });
-  return { start: new Date(end - weeks * 7 * DAY), end };
+  return { start: ANCHOR, end };
 }
 const windowed = (points, freq, dom) => points.filter(p => periodEnd(p, freq) > dom.start && d8(p[0]) < dom.end);
 
@@ -284,28 +281,22 @@ function render() {
     groups.appendChild(sec);
   });
 
-  const buttons = [...document.querySelectorAll(".seg button")];
-  let draw = weeks => {
-    buttons.forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.weeks === weeks)));
-    const dom = domain(weeks), cp = windowed(DATA.composite, "weekly", dom);
+  const draw = () => {
+    const dom = domain(), cp = windowed(DATA.composite, "weekly", dom);
     chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge", dom);
-    document.getElementById("general-note").textContent = `Data for ${cp.length} weeks shown. Bars above zero mean more pressure than normal.`;
+    document.getElementById("general-note").textContent = `${cp.length} weeks shown. Bars above zero mean more pressure than normal.`;
     series.forEach(s => {
       const box = document.querySelector(`#${CSS.escape(s.id)} .chart`);
       if (box) chart(box, windowed(s.points, s.freq, dom), s, "bar", dom);
     });
-    try { localStorage.setItem("li-weeks", weeks); } catch (e) {}
   };
-  buttons.forEach(b => b.addEventListener("click", () => draw(+b.dataset.weeks)));
-  let current = 78, pending = 0, lastW = 0;
-  const _draw = draw; draw = weeks => { current = weeks; _draw(weeks); };
+  let pending = 0, lastW = 0;
   new ResizeObserver(() => {
     const w = document.querySelector(".wrap").clientWidth;
     if (w === lastW) return;
-    lastW = w; cancelAnimationFrame(pending); pending = requestAnimationFrame(() => draw(current));
+    lastW = w; cancelAnimationFrame(pending); pending = requestAnimationFrame(draw);
   }).observe(document.querySelector(".wrap"));
-  let saved = 78; try { const v = +localStorage.getItem("li-weeks"); if ([26, 52, 78, 104].includes(v)) saved = v; } catch (e) {}
-  draw(saved);
+  draw();
 }
 render();
 </script>

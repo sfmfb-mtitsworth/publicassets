@@ -1,0 +1,985 @@
+notice_date,received_date,company,county,employees,type,source
+2024-07-01,2024-07-03,Western Specialty Contractors,Alameda,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p1
+2024-07-10,2024-07-10,Intuit Inc.,Santa Clara,384,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p1
+2024-07-15,2024-07-16,"Rodan & Fields, LLC",Contra Costa,78,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p1
+2024-07-11,2024-07-16,UKG Inc.,San Francisco,12,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p1
+2024-07-16,2024-07-17,"Exabeam, Inc.",San Mateo,43,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p1
+2024-07-17,2024-07-18,Pixar,Alameda,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p2
+2024-07-18,2024-07-18,Optum,Alameda,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p2
+2024-07-19,2024-07-19,"MoreFlavor, Inc.",Contra Costa,51,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p2
+2024-07-19,2024-07-23,"Moxion Power, Inc.",Contra Costa,244,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p2
+2024-07-22,2024-07-23,Bellota,San Francisco,33,Closure Not known at this time,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-23,2024-07-24,Athletics Investment Group LLC,Alameda,14,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-23,2024-07-24,Athletics Investment Group LLC,Alameda,358,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-23,2024-07-24,Athletics Investment Group LLC,Alameda,43,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-23,2024-07-24,Bay Area Sports Catering,Alameda,176,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Napa,17,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Napa,10,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Sonoma,101,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Sonoma,19,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Sonoma,11,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Sonoma,37,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Sonoma,5,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-24,"Vintage Wine Estates, Inc",Sonoma,33,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-24,2024-07-25,Cepheid,Alameda,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-29,2024-07-29,"Annabelle Candy Co., Inc.",Alameda,43,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-26,2024-07-29,SunPower Corporation,Alameda,20,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-26,2024-07-29,SunPower Corporation,Contra Costa,182,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p3
+2024-07-26,2024-07-29,SunPower Corporation,Santa Clara,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-29,2024-07-29,Evolution Hospitality,San Francisco,72,Layoff Temporary,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-22,2024-07-30,"National Aerospace Solutions, LLC",Santa Clara,60,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-26,2024-07-31,AT&T,Contra Costa,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-26,2024-07-31,AT&T,Contra Costa,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-29,2024-07-31,"Konica Minolta Business Solutions U.S.A., Inc.",San Mateo,20,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-24,2024-07-31,Cepheid,Santa Clara,622,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-24,2024-07-31,Cepheid,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-24,2024-07-31,Cepheid,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-29,2024-07-31,Target Corporation,Santa Clara,85,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-31,2024-07-31,Golden Gate University,San Francisco,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-07-31,2024-08-01,"Vir Biotechnology, Inc.",San Francisco,141,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p4
+2024-08-02,2024-08-02,"FibroGen, Inc.",San Francisco,127,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-09,2024-08-09,"Velo3D, Inc.",Alameda,42,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-12,2024-08-12,"Fastly, Inc.",San Francisco,52,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-13,2024-08-14,"GRAIL, Inc.",San Mateo,179,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-14,2024-08-14,AppLovin Corporation,Santa Clara,61,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-20,2024-08-20,"Cuberg, Inc.",Alameda,196,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-20,2024-08-20,"Penumbra, Inc.",Alameda,71,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-20,2024-08-20,"Five9, Inc.",Contra Costa,30,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-20,2024-08-20,"Five9, Inc.",San Francisco,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p5
+2024-08-21,2024-08-21,"Cisco Systems, Inc.",Santa Clara,53,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-22,2024-08-22,"Genentech, Inc.",San Mateo,93,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-13,2024-08-26,Silgan Containers,Contra Costa,44,Layoff Temporary,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-26,2024-08-26,AT&T,Contra Costa,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-26,2024-08-26,AT&T,Contra Costa,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-26,2024-08-27,"Shake Shack Enterprises, LLC",Alameda,32,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-22,2024-08-27,Menzies Aviation,San Francisco,124,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-27,2024-08-27,"Astellas Gene Therapies, Inc.",San Mateo,7,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-26,2024-08-27,Jabil Inc.,Santa Clara,472,Closure Temporary,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-30,2024-08-30,Intel Corporation,Santa Clara,12,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-30,2024-08-30,Intel Corporation,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p6
+2024-08-30,2024-08-30,Intel Corporation,Santa Clara,15,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-08-30,2024-08-30,Intel Corporation,Santa Clara,23,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-08-30,2024-08-30,Elaine Bell Catering Company,Napa,164,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-08-28,2024-09-03,BioMarin Pharmaceutical Inc.,Marin,94,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-08-28,2024-09-03,BioMarin Pharmaceutical Inc.,Marin,52,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-08-28,2024-09-03,BioMarin Pharmaceutical Inc.,Sonoma,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-09-04,2024-09-04,Enervenue,Alameda,65,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-08-30,2024-09-04,Planet Labs PBC,San Francisco,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-09-04,2024-09-04,"ChargePoint, Inc.",Santa Clara,64,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p7
+2024-09-06,2024-09-09,Kaiser Foundation Hospitals,Alameda,249,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-09,2024-09-10,Snohetta Architecture Landscape Architecture PC,San Francisco,5,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-09,2024-09-10,Biosense Webster Inc.,Santa Clara,13,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-16,2024-09-16,"Advantest, Inc.",Alameda,88,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-17,2024-09-17,International Business Machines Corporation (IBM),San Francisco,58,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-13,2024-09-17,"Cisco Systems, Inc.",San Francisco,134,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-13,2024-09-17,"Cisco Systems, Inc.",Santa Clara,563,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-13,2024-09-17,"Cisco Systems, Inc.",Santa Clara,145,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p8
+2024-09-17,2024-09-17,International Business Machines Corporation (IBM),Santa Clara,54,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-18,2024-09-18,"Cuberg, Inc.",Alameda,27,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Jabil Inc.,Alameda,156,Closure Temporary,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,Alameda,13,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,San Mateo,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-23,2024-09-23,Kaiser Foundation Hospitals,Sonoma,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-24,2024-09-24,"Newark Group, Inc.",Santa Clara,32,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-09-26,2024-09-26,Corteva Agriscience LLC,Contra Costa,18,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p9
+2024-10-01,2024-10-01,"Amyris, Inc.",Alameda,50,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p10
+2024-10-01,2024-10-01,"Hanwha Vision America, Inc.",Santa Clara,23,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p10
+2024-10-01,2024-10-01,"Wildbrine, LLC",Sonoma,37,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p10
+2024-09-27,2024-10-01,Infineon Technologies Americas Corp.,Santa Clara,104,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p10
+2024-09-27,2024-10-01,Infineon Technologies Americas Corp,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p10
+2024-10-02,2024-10-03,Blue Shield of California,Alameda,16,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-03,2024-10-03,AppLovin Corporation,Santa Clara,65,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-07,2024-10-07,"L3Harris Technologies, Sonoma EO",Sonoma,49,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-02,2024-10-08,"Amys Kitchen, Inc.",Sonoma,283,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-02,2024-10-08,"Amys Kitchen, Inc.",Sonoma,22,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-09,2024-10-09,"Velo3D, Inc.",Alameda,29,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-07,2024-10-09,Kaiser Foundation Hospitals,Alameda,7,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-07,2024-10-09,Kaiser Foundation Hospitals,Alameda,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-07,2024-10-09,Kaiser Foundation Hospitals,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p11
+2024-10-10,2024-10-10,"Red Lobster Restaurants, LLC",Santa Clara,50,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-10,2024-10-10,Gigamon Inc.,Santa Clara,69,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-10,2024-10-10,MCGA Hotels SF LLC,San Francisco,86,Layoff Temporary,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-11,2024-10-11,"Security Industry Specialists, Inc.",San Francisco,80,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-15,2024-10-15,Maxar Space LLC,Santa Clara,31,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-15,2024-10-15,Maxar Space LLC,Santa Clara,21,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-15,2024-10-15,Maxar Space LLC,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-15,2024-10-15,Maxar Space LLC,Santa Clara,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-15,2024-10-15,AppLovin Corporation,Santa Clara,58,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-15,2024-10-15,Intel Corporation,Santa Clara,47,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p12
+2024-10-16,2024-10-17,Shell Catalyst & Technologies,Contra Costa,59,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-15,2024-10-17,Intel Corporation,Santa Clara,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-15,2024-10-17,Intel Corporation,Santa Clara,233,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-15,2024-10-17,Intel Corporation,Santa Clara,28,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-15,2024-10-17,Intel Corporation,Santa Clara,216,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-15,2024-10-17,Intel Corporation,Santa Clara,28,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-10,2024-10-21,Clean Water Action,Alameda,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-21,2024-10-21,"Vintage Wine Estates, Inc",Sonoma,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-16,2024-10-22,Stachs LLC,Alameda,58,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-16,2024-10-22,Stachs LLC,San Francisco,53,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-16,2024-10-22,Stachs LLC,San Mateo,43,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-16,2024-10-22,Stachs LLC,Santa Clara,60,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-16,2024-10-22,Stachs LLC,Sonoma,29,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p13
+2024-10-23,2024-10-23,"ABB Optical Group, LLC",Alameda,138,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-23,2024-10-23,Upwork Inc.,Santa Clara,67,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-23,2024-10-23,Boston Scientific Corporation,Santa Clara,30,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-24,2024-10-24,Twelve Benefit Corporation,Alameda,86,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-24,2024-10-24,Twelve Benefit Corporation,Alameda,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-23,2024-10-25,"Advanced Systems Group, LLC",Santa Clara,92,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-23,2024-10-25,"Advanced Systems Group, LLC",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-23,2024-10-25,"Advanced Systems Group, LLC",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-24,2024-10-25,Cattlemens Restaurant,Sonoma,63,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-23,2024-10-29,"Astellas Gene Therapies, Inc.",San Mateo,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-28,2024-10-29,Amazon,Santa Clara,57,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-29,2024-10-30,"GoPro, Inc.",San Mateo,73,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-30,2024-10-30,"Dropbox, Inc.",San Francisco,174,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p14
+2024-10-31,2024-10-31,"Trademango Solutions Inc., dba Article",Alameda,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p15
+2024-10-29,2024-10-31,Hunt & Sons LLC,Contra Costa,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p15
+2024-10-29,2024-10-31,Hunt & Sons LLC,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p15
+2024-11-01,2024-11-01,Visa,San Francisco,65,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p15
+2024-11-01,2024-11-01,Visa,San Mateo,26,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p15
+2024-11-01,2024-11-04,Terre du Soleil dba Auberge du Soleil,Napa,217,Layoff Temporary,warn-report-for-7-1-2024-to-06-30-2025 p15
+2024-11-04,2024-11-05,ElringKlinger Silicon Valley Inc,Alameda,27,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-06,2024-11-06,"Coursera, Inc.",Santa Clara,61,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-08,2024-11-12,Equinix,San Mateo,87,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-11,2024-11-12,"AMD, Inc.",Santa Clara,57,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-11,2024-11-12,BP Corporation North America Inc.,San Francisco,5,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-11,2024-11-12,"Xilinx, Inc.",Santa Clara,72,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-13,2024-11-13,"Gilead Sciences, Inc.",San Mateo,104,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-13,2024-11-13,AppLovin Corporation,Santa Clara,120,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p16
+2024-11-14,2024-11-14,"Advance Stores Company, Incorporated",Santa Clara,1,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p17
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Alameda,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p17
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Alameda,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p17
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Alameda,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p17
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Alameda,15,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p17
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Contra Costa,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p17
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",San Mateo,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Santa Clara,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Santa Clara,6,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Santa Clara,12,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Santa Clara,7,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Santa Clara,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Solano,10,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Sonoma,6,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-14,2024-11-15,"Advance Stores Company, Incorporated and its subsidiary, Golden State Supply LLC",Sonoma,6,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p21
+2024-11-15,2024-11-15,Boeing,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-15,2024-11-15,Boeing,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-15,2024-11-19,JPMorgan Chase,San Francisco,80,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-15,2024-11-19,JPMorgan Chase,San Francisco,255,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-19,2024-11-19,Urban Alchemy,San Francisco,311,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-19,2024-11-20,"23andMe, Inc.",San Mateo,31,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-19,2024-11-20,"23andMe, Inc.",Santa Clara,122,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p22
+2024-11-20,2024-11-20,"Veritas Technologies, LLC",Santa Clara,50,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-18,2024-11-20,"GoForward, Inc.",San Francisco,89,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-21,2024-11-21,Visa,San Francisco,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-21,2024-11-21,Visa,San Mateo,192,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-22,2024-11-26,AT&T,Contra Costa,34,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-22,2024-11-26,AT&T,Contra Costa,22,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-21,2024-11-26,"Modern HR, Inc dba The Kooples Bloom, Inc.",Santa Clara,2,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-21,2024-11-26,"Modern HR, Inc dba The Kooples Bloom, Inc.",Santa Clara,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-27,2024-11-27,"Harbor Electronics, Inc.",Santa Clara,92,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p23
+2024-11-27,2024-12-02,"Ovations Fanfare, L.P. dba OVG Hospitality",Alameda,106,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p24
+2024-12-02,2024-12-03,AT&T,Contra Costa,15,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p24
+2024-12-03,2024-12-04,Urban Alchemy,San Francisco,33,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p24
+2024-12-03,2024-12-04,Ubisoft,San Francisco,152,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p24
+2024-11-25,2024-12-05,"Mountain Valley Express, LLC",Alameda,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p24
+2024-12-06,2024-12-10,"TVI, Inc. dba Savers",Contra Costa,52,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-10,2024-12-10,Safeway,San Francisco,112,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-10,2024-12-11,Corteva Agriscience LLC,Contra Costa,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-15,2024-12-17,"SDH Services West, LLC",Santa Clara,49,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-15,2024-12-17,"SDH Services West, LLC",Santa Clara,1,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-15,2024-12-17,"SDH Services West, LLC",Santa Clara,1,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-15,2024-12-17,"SDH Services West, LLC",Santa Clara,17,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-15,2024-12-17,"SDH Services West, LLC",Santa Clara,18,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-16,2024-12-17,Golden Gate University,San Francisco,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-18,2024-12-18,"McDonalds Restaurants of California, Inc.",Alameda,64,Closure Temporary,warn-report-for-7-1-2024-to-06-30-2025 p25
+2024-12-20,2024-12-20,Alstom Transportation Inc,Solano,20,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2024-12-20,2024-12-20,Alstom Transportation Inc,Solano,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2024-12-20,2024-12-20,Alstom Transportation Inc,Solano,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2024-12-27,2024-12-27,Deliverimates LLC,Santa Clara,71,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2024-12-30,2024-12-31,PRIDE Industries,Solano,54,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2025-01-06,2025-01-06,"CytomX Therapeutics, Inc.",San Mateo,46,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2025-01-08,2025-01-08,"Kohl&rsquo;s, Inc.",Alameda,60,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2025-01-07,2025-01-08,Safeway Inc.,Santa Clara,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2025-01-07,2025-01-09,"Republic National Distributing Company, LLC",Alameda,60,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p26
+2025-01-08,2025-01-09,"Guitar Center, Inc.",Santa Clara,19,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-09,2025-01-10,Macy's Inc,Alameda,94,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-10,2025-01-10,Rite Aid,Santa Clara,16,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-09,2025-01-10,Macy's Inc,Marin,53,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-10,2025-01-14,Draegers Supermarkets,San Mateo,71,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-10,2025-01-14,"IGM Biosciences, Inc.",Santa Clara,100,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-14,2025-01-15,Safeway Inc.,Alameda,18,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-14,2025-01-15,Safeway Inc.,Alameda,138,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-14,2025-01-15,"Columbus Manufacturing, Inc., a wholly-owned subsidiary of the Hormel Foods Corporation",Alameda,125,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-15,2025-01-15,AppLovin Corporation,Santa Clara,89,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-10,2025-01-15,Aurora Solar Inc.,San Francisco,58,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-16,2025-01-16,Renesas Electronics Corporation,Santa Clara,47,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p27
+2025-01-16,2025-01-16,Renesas Electronics Corporation,Santa Clara,21,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-21,2025-01-22,Kaiser Foundation Hospitals,Alameda,15,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-21,2025-01-22,Kaiser Foundation Hospitals,Alameda,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-21,2025-01-22,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-21,2025-01-22,Kaiser Foundation Hospitals,Alameda,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-21,2025-01-22,Kaiser Foundation Hospitals,San Mateo,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-21,2025-01-22,Kaiser Foundation Hospitals,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-23,2025-01-23,AT&T,Contra Costa,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-27,2025-01-28,Biosense Webster Inc.,Santa Clara,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p28
+2025-01-29,2025-01-29,Corteva Agriscience LLC,Contra Costa,20,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p29
+2025-01-28,2025-01-29,Quantumscape Battery Inc.,Santa Clara,53,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p29
+2025-01-27,2025-01-29,InvenSense Inc.,Santa Clara,55,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p29
+2025-01-30,2025-01-30,"CARGO Therapeutics, Inc.",San Mateo,81,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p29
+2025-01-31,2025-01-31,Walgreens,Alameda,26,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p29
+2025-01-31,2025-02-03,Bloomingdale's San Francisco Centre,San Francisco,164,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,Safeway,Contra Costa,69,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,"Asana, Inc.",San Francisco,77,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-03,2025-02-04,St. Anne's Home,San Francisco,64,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,"Okta, Inc.",San Francisco,56,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,Cruise LLC,San Francisco,489,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,Cruise LLC,San Francisco,157,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,Cruise LLC,San Francisco,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,Cruise LLC,San Francisco,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-04,Cruise LLC,Santa Clara,87,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-03,2025-02-04,Renesas Electronics Corporation,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-05,2025-02-05,"Workday, Inc.",Alameda,617,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-05,2025-02-05,Walmart,San Mateo,79,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-04,2025-02-05,"Salesforce, Inc.",San Francisco,153,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-01-31,2025-02-05,Infineon Technologies Americas Corp.,Santa Clara,33,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p30
+2025-02-06,2025-02-06,"Barrel Ten Quarter Circle, Inc.",Napa,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-04,2025-02-10,LogRhythm Inc dba Exabeam,San Mateo,39,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-07,2025-02-10,AMERI-KLEEN dba Sanitation Specialists,Santa Clara,20,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-10,2025-02-11,"Bio-Rad Laboratories, Inc.",Alameda,16,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-10,2025-02-11,"Bio-Rad Laboratories, Inc.",Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-10,2025-02-11,"Bio-Rad Laboratories, Inc.",Contra Costa,113,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-10,2025-02-11,"Bio-Rad Laboratories, Inc.",Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-10,2025-02-11,Kaiser Foundation Hospitals,Alameda,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-11,2025-02-12,Safeway,Solano,95,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-14,2025-02-14,Flagship Facility Services LLC,Alameda,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p31
+2025-02-14,2025-02-14,Flagship Facility Services LLC,Alameda,20,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Francisco,26,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,23,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,35,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,9,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,18,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,San Mateo,19,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-14,2025-02-14,Flagship Facility Services LLC,Santa Clara,24,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-18,2025-02-18,"Ajinomoto Foods North America, Inc.",Alameda,116,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p32
+2025-02-19,2025-02-19,"Zendesk, Inc.",San Francisco,51,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p33
+2025-02-20,2025-02-20,Corning Optical Communications LLC,Santa Clara,80,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p33
+2025-02-20,2025-02-20,Burke Williams,San Francisco,68,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p33
+2025-02-25,2025-02-25,Corteva Agriscience LLC,Contra Costa,26,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Alameda,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Contra Costa,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,San Mateo,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-24,2025-02-25,Kaiser Foundation Hospitals,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p34
+2025-02-14,2025-02-26,Benchmark Precision Technologies,Alameda,42,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p35
+2025-02-26,2025-02-27,Bristol Myers Squibb,San Mateo,57,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p35
+2025-02-27,2025-02-28,"Autodesk, Inc.",San Francisco,289,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p35
+2025-02-21,2025-03-03,Cruise LLC,San Francisco,12,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-02-21,2025-03-03,Cruise LLC,San Francisco,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-02-28,2025-03-03,Cruise LLC,San Francisco,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-02-21,2025-03-03,Cruise LLC,Santa Clara,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-02-28,2025-03-03,Cruise LLC,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-03-04,2025-03-04,Wells Fargo,San Francisco,56,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-03-05,2025-03-05,"Primo Brands, Inc.",Alameda,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-03-03,2025-03-05,Central Garden & Pet,Contra Costa,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-03-05,2025-03-05,"Primo Brands, Inc.",Santa Clara,13,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p36
+2025-03-12,2025-03-12,"Gate Gourmet, Inc.",San Francisco,835,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-12,Penney OpCo LLC dba JCPenney,San Mateo,82,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-12,onsemi,Santa Clara,51,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Alameda,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Alameda,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-13,2025-03-13,"Sutro Biopharma, Inc.",San Mateo,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-13,2025-03-13,"Sutro Biopharma, Inc.",San Mateo,62,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,61,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,24,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-12,2025-03-13,Cepheid,Santa Clara,7,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p37
+2025-03-14,2025-03-14,Corteva Agriscience LLC,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-19,2025-03-19,Cruise LLC,San Francisco,13,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-18,2025-03-19,"CARGO Therapeutics, Inc.",San Mateo,84,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-19,2025-03-19,Cruise LLC,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-20,2025-03-20,Southeast Service Corporation dba SSC Services for Education,Contra Costa,13,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-20,2025-03-20,"Niantic, Inc.",San Francisco,68,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-21,2025-03-21,AppLovin Corporation,Santa Clara,97,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-01-17,2025-03-25,Hyatt Corporation dba Waterfront Hotel,Alameda,57,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-24,2025-03-25,San Jose Distribution Services Inc,Santa Clara,17,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-04,2025-03-25,Sodexo,Solano,50,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p38
+2025-03-24,2025-03-26,SK hynix America Inc. (SKHYA),Santa Clara,33,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-26,2025-03-27,"Nkarta, Inc.",San Mateo,52,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-26,2025-03-27,"Nkarta, Inc.",San Mateo,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-27,2025-03-27,"Gilead Sciences, Inc.",San Mateo,149,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-27,2025-03-27,"Roche Molecular Systems, Inc.",Santa Clara,108,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-25,2025-04-01,"Block, Inc.",Alameda,240,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-04-01,2025-04-01,Cruise LLC,San Francisco,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-28,2025-04-02,Chevron,Contra Costa,600,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p39
+2025-03-06,2025-04-03,Sodexo,San Francisco,39,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-04,2025-04-07,Federal Express Corporation,Alameda,79,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-04,2025-04-07,Federal Express Corporation,Alameda,95,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-07,2025-04-07,Goodwill of the San Francisco Bay,Alameda,72,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-07,2025-04-07,Goodwill of the San Francisco Bay,San Francisco,18,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-09,2025-04-10,"Pacific Biosciences of California, Inc.",San Mateo,70,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,7,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p40
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,9,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,20,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,9,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,9,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,15,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,7,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,12,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,15,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,12,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,19,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right At School, LLC",Santa Clara,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (B Gale Wilson Middle)",Solano,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (Anna Kyle Elementary)",Solano,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC",Solano,1,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (Cordelia Hills Elementary)",Solano,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (Crystal Middle)",Solano,2,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (Dover Elementary",Solano,16,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (Fairview Elementary)",Solano,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,Right at School. LLC (Grange Middle),Solano,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (Green Valley Middle)",Solano,5,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p41
+2025-04-09,2025-04-10,"Right at School, LLC (KI Jones Elementary)",Solano,11,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-09,2025-04-10,"Right at School, LLC (Matt Garcia and College Academy)",Solano,2,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-09,2025-04-10,"Right at School, LLC (Nelda Mundy Elementary)",Solano,5,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-09,2025-04-10,"Right at School, LLC (Oakbrook Academy)",Solano,4,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-09,2025-04-10,"Right at School, LLC (Public Safety Academy)",Solano,2,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-09,2025-04-10,"Right at School, LLC (Sheldon Academy)",Solano,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-14,2025-04-14,"Confluent Medical Technologies, Inc.",Alameda,102,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-14,2025-04-14,Davis Street Community Center,Alameda,8,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-07,2025-04-14,"Stem, Inc.",San Francisco,48,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-14,2025-04-15,Kaiser Foundation Hospitals - Oakland,Alameda,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-14,2025-04-15,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-16,2025-04-17,"Cruise, LLC - 333",San Francisco,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-16,2025-04-17,"Cruise, LLC - 1201",San Francisco,9,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-16,2025-04-17,"Cruise, LLC - 840",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p42
+2025-04-07,2025-04-17,"Stem, Inc.",San Francisco,4,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-11,2025-04-17,The Coca-Cola Company,Napa,135,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-15,2025-04-21,Boston Scientific Corporation,Santa Clara,63,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-21,2025-04-22,Blue Shield of California,Alameda,24,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-22,2025-04-22,SambaNova Systems,Santa Clara,77,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-17,2025-04-22,"Barrel Ten Quarter Circle, Inc.",Napa,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-21,2025-04-23,Kaiser Foundation Hospitals - 94612,Alameda,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p43
+2025-04-21,2025-04-23,Kaiser Foundation Hospitals - 94588,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p44
+2025-04-21,2025-04-23,Kaiser Foundation Hospitals - 94612,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p44
+2025-04-21,2025-04-23,Kaiser Foundation Hospitals - 94589,Solano,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p44
+2025-04-25,2025-04-28,"Building Robotics, Inc.",Alameda,48,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-28,T. Marzetti,Santa Clara,78,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-28,"Primo Brands, Inc.",Santa Clara,38,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-29,MV Transportation - 3990,Santa Clara,37,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-29,MV Transportation - 2240,Santa Clara,197,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-29,MV Transportation - 13550,Santa Clara,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-29,"NetApp, Inc.",Santa Clara,56,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-28,2025-04-29,Kaiser Foundation Hospitals 401,Sonoma,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-30,2025-05-01,4670 Unitek Learning Education Group Corp.,Alameda,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p45
+2025-04-30,2025-05-01,21615 Unitek Learning Education Group Corp.,Alameda,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-30,2025-05-01,1401 Unitek Learning Education Group Corp.,Contra Costa,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-30,2025-05-01,257 Unitek Learning Education Group Corp.,San Mateo,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-30,2025-05-01,6800 Unitek Learning Education Group Corp.,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-29,2025-05-01,"NGM Biopharmaceuticals, Inc.",San Mateo,85,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-28,2025-05-01,23andMe,San Francisco,250,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-05-01,2025-05-01,Urban Alchemy,San Francisco,57,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-29,2025-05-01,Pride Industries,Solano,58,Layoff Not known at this time,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-30,2025-05-01,St. Vincent's School for Boys,Marin,52,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-30,2025-05-01,Community Action Marin,Marin,43,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-05-02,2025-05-02,Primo Brands,Alameda,11,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-05-02,2025-05-02,Primo Brands,San Francisco,6,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-28,2025-05-02,"Center Point, Inc. (San Quentin)",Marin,14,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p46
+2025-04-28,2025-05-02,"Center Point, Inc. (2100)",Solano,22,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-04-28,2025-05-02,"Center Point, Inc. (1600)",Sonoma,15,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-02,2025-05-02,Primo Brands,Solano,6,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-01,2025-05-05,Pliant Therapeutics,San Mateo,69,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-01,2025-05-05,"Ford, Walker, Haggerty & Behar, LLP (FWHB)",Santa Clara,11,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-04-29,2025-05-06,Elijah House Foundation,Contra Costa,31,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-06,2025-05-08,"10x Genomics, Inc. (5500)",Alameda,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-06,2025-05-08,"10x Genomics, Inc. (6210)",Alameda,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-06,2025-05-08,"10x Genomics, Inc. (6230)",Alameda,88,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-02,2025-05-08,Chevron (100),Contra Costa,18,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-05-02,2025-05-08,Chevron (850),Contra Costa,13,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p47
+2025-04-30,2025-05-08,Downtown College Preparatory - Alum Rock Middle School,Santa Clara,20,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-04-30,2025-05-08,Downtown College Preparatory - Administrative Offices,Santa Clara,9,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-04-30,2025-05-08,Downtown College Preparatory - El Primero High School,Santa Clara,48,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-04-30,2025-05-08,Downtown College Preparatory - El Camino Middle School,Santa Clara,22,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-08,2025-05-09,"Insitro, Inc.",San Mateo,63,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-12,2025-05-12,Kaiser Foundation Hospitals,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-12,2025-05-12,Kaiser Foundation Hospitals (1450),Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-12,2025-05-12,Kaiser Foundation Hospitals (1460),Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-13,2025-05-14,Wells Fargo - 1655,Contra Costa,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-13,2025-05-14,Wells Fargo -1755,Contra Costa,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-13,2025-05-14,Microsoft - 770,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-13,2025-05-14,Microsoft - 3201,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-13,2025-05-14,Microsoft - 1045,Santa Clara,82,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-14,2025-05-14,"Delicato Vineyards, LLC dba Delicato Family Wines",Sonoma,15,Closure Not known at this time,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-15,2025-05-15,Amazon (SJC11 Facility),Santa Clara,33,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p48
+2025-05-15,2025-05-15,Amazon (SJC14 Facility),Santa Clara,6,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-15,2025-05-15,Amazon (SJC31 Facility),Santa Clara,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-15,2025-05-15,Amazon (SJC32 Facility),Santa Clara,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-16,2025-05-16,"Niantic, Inc.",San Francisco,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-16,2025-05-20,"PMAB-5, LLC",San Mateo,63,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-13,2025-05-20,Chegg,Santa Clara,88,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-19,2025-05-21,Kaiser Foundation Hospitals,Alameda,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-19,2025-05-21,Kaiser Foundation Hospitals,Alameda,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-21,2025-05-21,Eikon Therapeutics Inc.,San Mateo,55,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-20,2025-05-21,Cruise LLC,San Francisco,22,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-22,2025-05-22,Six Flags Entertainment Corporation,Solano,19,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-22,2025-05-22,Hewlett Packard Enterprise Company (HPE),Santa Clara,61,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-23,2025-05-23,Advanced Pressure Technology,Napa,88,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-27,2025-05-27,Wells Fargo,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-22,2025-05-28,"Pivot Bio, Inc.",Alameda,62,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-27,2025-05-28,LinkedIn Corporation,San Francisco,60,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p49
+2025-05-27,2025-05-28,LinkedIn Corporation,Santa Clara,51,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-27,2025-05-28,LinkedIn Corporation,Santa Clara,159,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-29,2025-05-29,"Genentech, Inc.",San Mateo,143,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-28,2025-05-29,Google - Borregas,Santa Clara,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-28,2025-05-29,Google - Bordeaux,Santa Clara,33,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-28,2025-05-29,Google - Borregas,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-28,2025-05-29,Google - Moffett,Santa Clara,8,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-23,2025-05-30,Walmart,San Mateo,106,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-02,Microsoft - 1045,Santa Clara,7,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-02,Microsoft - 445 & 455,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-30,2025-06-02,Cruise LLC,San Francisco,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-05-30,2025-06-02,JAI's Inc.,Santa Clara,7,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-03,Kaiser Foundation Hospitals - Berkeley,Alameda,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-03,Kaiser Foundation - Fremont,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-03,Kaiser Foundation Hospitals - Oakland,Alameda,13,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-03,Kaiser Foundation Hospitals - Pleasanton,Alameda,20,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p50
+2025-06-02,2025-06-03,Kaiser Foundation Hospitals - San Francisco,San Francisco,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p51
+2025-06-02,2025-06-03,Kaiser Foundation Hospitals - Vallejo,Solano,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p51
+2025-06-05,2025-06-05,"Sapango Inc., dba Tre Posti",Napa,130,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p51
+2025-06-09,2025-06-10,Kaiser Foundation Hospitals,Alameda,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-09,2025-06-10,Kaiser Foundation Hospitals,Alameda,5,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-02,2025-06-10,Prothena Biosciences Inc,San Mateo,91,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-10,2025-06-10,Boston Scientific Corporation,Santa Clara,23,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-10,2025-06-10,Career Systems Development Corporation - San Jose Job Corps Center,Santa Clara,133,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-10,2025-06-11,Corteva Agriscience,Contra Costa,11,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-10,2025-06-11,Renesas Electronics Corporation - San Jose Campus,Santa Clara,17,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-10,2025-06-11,Renesas Electronics Corporation - Milpitas Campus,Santa Clara,39,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-06,2025-06-16,"Loreto R. Sicam Jr, DMD, Inc.",Alameda,6,Closure Temporary,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-06-16,2025-06-17,"Planned Parenthood Mar Monte, Inc.",Santa Clara,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p52
+2025-05-23,2025-06-18,Walmart (640),Santa Clara,129,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-05-23,2025-06-18,Walmart (840),Santa Clara,135,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-05-23,2025-06-18,Walmart (860),Santa Clara,98,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-05-23,2025-06-18,Walmart (680),Santa Clara,19,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-16,2025-06-18,Kaiser Foundation Hospitals,Alameda,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-18,2025-06-20,Intel Corporation - Robert Noyce Building,Santa Clara,76,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-18,2025-06-20,Intel Corporation - SC-9,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-18,2025-06-20,Intel Corporation - SC-11,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-18,2025-06-20,Intel Corporation - SC-12,Santa Clara,26,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-16,2025-06-20,Safeway Inc.,Sonoma,3,Closure Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-25,2025-06-26,Cushman & Wakefield (222),San Francisco,10,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p53
+2025-06-25,2025-06-26,Cushman & Wakefield (543),San Francisco,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-26,Cushman & Wakefield (401),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-26,Cushman & Wakefield (455),Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-26,Cushman & Wakefield (1000),Santa Clara,12,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-26,Cushman & Wakefield (845),Santa Clara,49,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-30,Intel Corporation - Robert Noyce,Santa Clara,57,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-30,Intel Corporation - SC-1 3065 Bowers,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-30,Intel Corporation - SC-2,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-30,Intel Corporation - SC-9,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-30,Intel Corporation - SC-11,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-25,2025-06-30,Intel Corporation,Santa Clara,45,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-06-30,2025-06-30,"Supernal, LLC - 401",Alameda,27,Layoff Permanent,warn-report-for-7-1-2024-to-06-30-2025 p54
+2025-07-01,2025-07-01,Republic National Distributing Company,Alameda,104,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-01,2025-07-02,Republic National Distributing Company,Alameda,226,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-01,2025-07-02,Republic National Distributing Company,Santa Clara,156,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-03,2025-07-03,"Cruise, LLC - 640 Cesar Chavez",San Francisco,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-03,2025-07-03,"Cruise, LLC - 1201 Bryant",San Mateo,85,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-03,2025-07-03,"Cruise, LLC - 840 W",Santa Clara,14,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-08,Intel Corporation (Robert Noyce Building),Santa Clara,184,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-08,Intel Corporation (SC-1),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-08,Intel Corporation (SC-2),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-08,Intel Corporation (SC-9),Santa Clara,37,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-08,Intel Corporation (SC-11),Santa Clara,8,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-08,Intel Corporation (SC-12),Santa Clara,179,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-08,2025-07-08,T. Marzetti,Santa Clara,77,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-09,Kaiser Foundation Hospitals,Alameda,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-07,2025-07-09,Kaiser Foundation Hospitals,Solano,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-10,"GSC Logistics, Inc.",Alameda,25,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-10,"GSC National Transportation, Inc",Alameda,38,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-09,2025-07-10,"Planned Parenthood Mar Monte, Inc.",Santa Clara,17,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-14,Intel Corporation (Robert Noyce),Santa Clara,203,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-14,Intel Corporation (SC-1),Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-14,Intel Corporation (SC-2),Santa Clara,43,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-14,Intel Corporation (SC-9),Santa Clara,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-14,Intel Corporation (SC-11),Santa Clara,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-10,2025-07-14,Intel Corporation (SC-12),Santa Clara,55,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p1
+2025-07-15,2025-07-15,"Gatan, Inc.",Alameda,96,Closure Temporary,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-15,2025-07-15,Corteva Agriscience,Contra Costa,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-14,2025-07-15,Blue Shield of California - Oakland,Alameda,70,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-14,2025-07-16,Kaiser Foundation Hospitals - Pleasanton,Alameda,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-16,2025-07-16,Mental Health Association of San Francisco,San Francisco,200,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-16,2025-07-17,"Genentech, Inc.",San Mateo,87,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-14,2025-07-17,Levi Strauss & Co.,San Francisco,44,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-16,2025-07-17,Leah's Pantry,San Francisco,40,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-18,2025-07-18,Gee Heavy Machinery,Alameda,7,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-18,2025-07-18,"Primo Brands, Inc.",Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-18,2025-07-18,"Primo Brands, Inc.",Solano,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-18,2025-07-18,"Primo Brands, Inc.",Sonoma,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-21,2025-07-22,Kaiser Foundation Hospitals,Alameda,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-21,2025-07-22,Kaiser Foundation Hospitals,Marin,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-17,2025-07-22,"Primal Pet Foods, Inc. - Chadbourne",Solano,7,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-17,2025-07-22,"Primal Pet Foods, Inc.",Solano,10,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-17,2025-07-22,"Primal Pet Foods, Inc. - Watt",Solano,130,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-01-29,2025-07-23,"Astellas Gene Therapies, Inc.",San Mateo,21,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-28,2025-07-29,Kaiser Foundation Hospitals,Alameda,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-28,2025-07-29,Kaiser Foundation Hospitals,Alameda,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p2
+2025-07-24,2025-07-30,"Planned Parenthood Mar Monte, Inc.",San Mateo,10,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-07-24,2025-07-30,"Planned Parenthood Mar Monte, Inc.",Santa Clara,13,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-07-30,2025-07-30,Recology Vallejo,Solano,25,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-07-31,2025-07-31,Stanford University,Santa Clara,363,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-07-31,2025-07-31,"Wildbrine, LLC",Sonoma,4,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-06,2025-08-06,"Southwest Key Programs, Inc.",Contra Costa,3,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-06,2025-08-07,"Jabil, Inc.",Santa Clara,21,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-07,2025-08-11,Altera Corporation,Santa Clara,82,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-13,2025-08-13,"Oracle America, Inc.",Alameda,45,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-13,2025-08-13,"Oracle America, Inc.",San Mateo,143,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-12,2025-08-13,Block,Alameda,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-13,2025-08-13,"Bausch Health US, LLC",Sonoma,49,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-13,2025-08-14,"Oracle America, Inc.",Santa Clara,101,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-13,2025-08-15,"Cisco Systems, Inc.",Santa Clara,157,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-13,2025-08-15,"Cisco Systems, Inc.",San Francisco,64,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-19,2025-08-19,Corteva Agriscience LLC,Contra Costa,10,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-18,2025-08-19,Kaiser Foundation Hospitals,Alameda,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-18,2025-08-19,Kaiser Foundation Hospitals,Alameda,8,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-08-18,2025-08-19,Kaiser Foundation Hospitals,Marin,42,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p3
+2025-07-10,2025-08-19,"GSC Solutions, Inc.",Alameda,32,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-19,2025-08-19,Regional Center of the East Bay,Alameda,108,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-20,2025-08-20,Northrop Grumman,Santa Clara,78,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-21,2025-08-22,"Intuitive Surgical, Inc.",Santa Clara,331,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-22,2025-08-25,"CooperVision, Inc.",Alameda,6,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-25,2025-08-25,Kaiser Foundation Hospitals,Alameda,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-26,2025-08-26,"Exelixis, Inc.",Alameda,71,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-24,2025-08-26,"Planned Parenthood Mar Monte, Inc.",San Mateo,9,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-24,2025-08-26,"Planned Parenthood Mar Monte, Inc. - 29",San Mateo,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-25,2025-08-26,Intel Corporation (Robert Noyce),Santa Clara,46,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-25,2025-08-26,Intel Corporation (SC-9),Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-25,2025-08-26,Intel Corporation (SC-12),Santa Clara,50,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-31,2025-08-26,"Southwest Key Programs, Inc. - Casa Pleasant Hill",Contra Costa,47,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-24,2025-08-26,"Planned Parenthood Mar Monte, Inc. 5440",Santa Clara,12,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-24,2025-08-26,"Planned Parenthood Mar Monte, Inc. - 3131",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-24,2025-08-26,"Planned Parenthood Mar Monte, Inc. - 1694",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-07-24,2025-08-26,"Planned Parenthood Mar Monte, Inc. - 1691",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-26,2025-08-27,Web To Door Corporation,Contra Costa,67,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-26,2025-08-27,Web To Door Corporation,Santa Clara,63,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-26,2025-08-27,Web To Door Corporation,Alameda,62,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-27,2025-08-27,JPMorgan Chase,San Francisco,99,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Alameda,5,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Alameda,4,Closure Not known at this time,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Santa Clara,3,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Santa Clara,3,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Santa Clara,25,Closure Not known at this time,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Santa Clara,9,Closure Not known at this time,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Solano,2,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-08-29,"Downtown Streets, Inc.",Marin,16,Closure Not known at this time,warn-report-for-7-1-25-to-6-30-26 p4
+2025-08-29,2025-09-02,"Exelixis, Inc.",Alameda,74,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-02,2025-09-02,"Oracle America, Inc.",Alameda,36,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-02,2025-09-02,"Oracle America, Inc.",San Mateo,187,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-02,2025-09-02,"Oracle America, Inc.",Santa Clara,31,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-02,2025-09-02,"Juni Learning, Inc.",San Francisco,121,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-02,2025-09-02,"Salesforce, Inc.",San Francisco,262,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-03,2025-09-04,Six Flags Entertainment Corporation,Santa Clara,184,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p4
+2025-09-04,2025-09-08,Walmart,Alameda,87,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-08,2025-09-10,Kaiser Foundation Hospitals-Pleasanton,Alameda,14,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-08,2025-09-10,Kaiser Foundation Hospitals-Antioch,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-08,2025-09-10,Kaiser Foundation Hospitals - Walnut Creek,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-03,2025-09-12,21st Amendment Brewery Cafe,Alameda,58,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-03,2025-09-12,21st Amendment Brewery Cafe,San Francisco,18,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-15,2025-09-17,Kaiser Foundation Hospitals,Alameda,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-16,2025-09-17,"Arsenal Biosciences, Inc.",San Mateo,100,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-15,2025-09-17,"Carbon, Inc.",San Mateo,78,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-16,2025-09-17,Azure Acres Treatment Center - 2264,Sonoma,61,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-16,2025-09-17,Azure Acres Treatment Center - 7064,Sonoma,8,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-16,2025-09-17,Azure Acres Treatment Center - 5665,Sonoma,1,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-16,2025-09-17,Azure Acres Treatment Center - 11740,Sonoma,5,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-24,2025-09-24,"Valyria, LLC",Solano,25,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-24,2025-09-25,Jabil Inc.,Santa Clara,393,Closure Temporary,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Dublin Physical & Hand Therapy),Alameda,7,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Fremont Physical Therapy & Hand Therapy),Alameda,24,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health San Carlos Physical Therapy & Hand Therapy),San Mateo,19,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Sunnyvale Physical Therapy 1085),Santa Clara,23,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Sunnyvale Center 401 Physical Therapy),Santa Clara,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Sunnyvale Center (301) Physical Therapy),Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Mountain View Center),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-12,2025-09-26,Agile Physical Therapy (Sutter Health Palo Alto Physical Therapy & Hand Therapy),Santa Clara,30,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-29,GSK plc.,San Francisco,8,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,"Sutro Biopharma, Inc.",San Mateo,45,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,"Sutro Biopharma, Inc.",San Mateo,8,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,"Sutro Biopharma, Inc.",San Mateo,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 1265,Santa Clara,9,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google -1225,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 242,Santa Clara,20,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 244,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 1175,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 1190,Santa Clara,8,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google -1160,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 1195,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p5
+2025-09-29,2025-09-30,Google - 237,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-09-23,2025-09-30,"Boardwalk Property Services, LLC",Napa,66,Layoff Temporary,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-01,2025-10-01,Celestica Precision Machining Ltd,Alameda,72,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-09-30,2025-10-01,Cruise LLC,San Francisco,12,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-01,2025-10-02,"Oracle America, Inc.",Alameda,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-09-30,2025-10-02,"Monroe Operations, LLC dba Newport Academy",Alameda,28,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-01,2025-10-02,"Oracle America, Inc.",San Mateo,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-02,2025-10-02,Advanced Pressure Technology,Napa,237,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-01,2025-10-03,Indian Health Center of Santa Clara Valley,Santa Clara,21,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-06,"SAP America, Inc.",Santa Clara,82,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-07,Kaiser Foundation Hospitals (One),Alameda,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-07,Kaiser Foundation Hospitals (3600),Alameda,74,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-07,Kaiser Foundation Hospitals (4460),Alameda,43,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-07,Kaiser Foundation Hospitals (2500),Alameda,40,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-07,Kaiser Foundation Hospitals (501),Contra Costa,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-06,2025-10-07,Kaiser Foundation Hospitals (1100),San Mateo,20,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-07,2025-10-07,"Polymer Technology Systems, Inc.",Santa Clara,56,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-09-24,2025-10-09,Canyon Ranch Woodside,San Mateo,56,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-09,2025-10-10,GAF Energy LLC,Santa Clara,138,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-13,2025-10-13,Blue shield of California 601,Alameda,31,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-10-10,2025-10-13,Lucile Salter Packard Children's Hospital,Santa Clara,87,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p6
+2025-08-22,2025-10-14,Chevron,Contra Costa,68,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-15,2025-10-15,Stryder Corp. dba Handshake,San Francisco,96,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-15,2025-10-15,"BILL Operations, LLC",Santa Clara,84,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-13,2025-10-16,Kaiser Foundation Hospitals,Alameda,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-13,2025-10-16,Kaiser Foundation Hospitals,Marin,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-13,2025-10-16,Kaiser Foundation Hospitals,San Francisco,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-13,2025-10-16,Kaiser Foundation Hospitals,Solano,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-13,2025-10-16,Kaiser Foundation Hospitals,Sonoma,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-17,2025-10-17,"Marshalls of CA, LLC",Santa Clara,64,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-17,2025-10-20,Broadcom Inc.,Santa Clara,247,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-20,2025-10-21,Kinetics Equipment Solutions Group,Alameda,23,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-21,2025-10-21,Corteva Agriscience LLC,Contra Costa,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-21,2025-10-22,Alector LLC,San Mateo,75,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-22,2025-10-23,"Meta Platforms, Inc. (1 Hacker Way)",San Mateo,22,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-22,2025-10-23,"Meta Platforms, Inc. (1 Meta Way)",San Mateo,261,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-22,2025-10-23,"Meta Platforms, Inc. (180 Jefferson Drive)",San Mateo,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-22,2025-10-23,"Meta Platforms, Inc. (190 Jefferson Drive)",San Mateo,21,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-22,2025-10-23,"Meta Platforms, Inc. (305 Constitution Drive)",San Mateo,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3050 Bowers Ave)",Santa Clara,38,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3100 Bowers Ave)",Santa Clara,21,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3101 Scott Blvd)",Santa Clara,20,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3225 Oakmead Village Dr)",Santa Clara,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3320 Scott Blvd)",Santa Clara,36,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3325 Scott Blvd)",Santa Clara,52,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3330 Scott Blvd)",Santa Clara,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (3333 Scott Blvd)",Santa Clara,73,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (1140 E Arques Ave)",Santa Clara,26,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (545 Oakmead Pkwy)",Santa Clara,7,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (557 E. California Ave)",Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (930 E. Arques Ave)",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (974 E. Arques Ave)",Santa Clara,41,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (978 E. Arques Ave)",Santa Clara,7,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-23,2025-10-24,"Applied Materials, Inc. (Remote)",Santa Clara,15,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-24,2025-10-27,"Genentech, Inc.",San Mateo,118,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p7
+2025-10-29,2025-10-29,Twelve Benefit Corporation (614 Bancroft Way Suite H),Alameda,52,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-29,Twelve Benefit Corporation (1135 Atlantic Ave),Alameda,24,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SJC10),Santa Clara,138,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SJC11),Santa Clara,28,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SJC13),Santa Clara,33,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SJC14),Santa Clara,80,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SJC31),Santa Clara,27,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SJC32),Santa Clara,85,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SFO12,Santa Clara,18,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SFO22,Santa Clara,69,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SFO24,Santa Clara,75,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SFO36,Santa Clara,12,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SFO39,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SJC25,Santa Clara,8,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SJC38,Santa Clara,50,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon SJC44,Santa Clara,18,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (ONM212),San Francisco,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (ONM213),San Francisco,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SFO13),San Francisco,41,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SFO19),San Francisco,18,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SFO28),San Francisco,71,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-28,2025-10-29,Amazon (SFO38),San Francisco,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-09-30,2025-10-29,Perikinetics Inc.,Santa Clara,2,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B1,Santa Clara,15,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B3,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B5,Santa Clara,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B6,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B7,Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B7+,Santa Clara,9,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-29,2025-10-30,Cepheid B8,Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-30,2025-10-30,Hewlett Packard Enterprise Company (HPE),Santa Clara,52,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-31,2025-10-31,"Hitachi Vantara, LLC",Santa Clara,129,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p8
+2025-10-30,2025-11-03,"Transdev Services, Inc.",San Mateo,77,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-10-23,2025-11-04,"Dairyland Produce, LLC",San Mateo,22,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-11-04,2025-11-04,International Business Machines Corporation,Santa Clara,75,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-10-31,2025-11-04,Infineon,Santa Clara,46,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-11-05,2025-11-05,Safeway,Alameda,76,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-10-23,2025-11-05,"Dairyland Produce, LLC",Santa Clara,21,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-11-06,2025-11-06,Clari Inc.,Santa Clara,96,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p9
+2025-10-29,2025-11-07,Coca-Cola Company,Napa,45,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-12,2025-11-12,"Synopsys, Inc.",Santa Clara,172,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-12,2025-11-12,"Synopsys, Inc.",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-12,2025-11-12,"Synopsys, Inc.",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-12,2025-11-12,"Synopsys, Inc.",Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-10,2025-11-13,AbbVie,Alameda,48,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-10,2025-11-13,AbbVie,Alameda,9,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-10,2025-11-13,AbbVie,Alameda,2,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-13,2025-11-13,"Couchbase, Inc.",Santa Clara,48,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-16,2025-11-17,"Mettler-Toledo Rainin, LLC",Alameda,89,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-18,2025-11-18,Corteva Agriscience LLC,Contra Costa,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-19,2025-11-19,Lumileds LLC,Santa Clara,60,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-19,2025-11-21,"Zimeno, Inc. dba Monarch Tractor (Lawrence)",Alameda,89,Layoff Not known at this time,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-19,2025-11-21,"Zimeno, Inc. dba Monarch Tractor",Alameda,8,Layoff Not known at this time,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-20,2025-11-21,Henkel Corporation,Contra Costa,13,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-20,2025-11-21,Verizon,Contra Costa,54,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-20,2025-11-21,Henkel Corporation,Solano,7,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-25,2025-11-25,"Shake Shack Enterprises, LLC",San Francisco,26,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-11-24,2025-11-26,Panasonic Well LLC,Santa Clara,46,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-12-01,2025-12-01,"Ovations FanFare, L.P. dba OVG Hospitality",Santa Clara,90,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p10
+2025-12-03,2025-12-05,Intel Corporation (Robert Noyce Building),Santa Clara,45,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-03,2025-12-05,Intel Corporation (SC-1),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-03,2025-12-05,Intel Corporation (SC-2),Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-03,2025-12-05,Intel Corporation (SC-9),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-03,2025-12-05,Intel Corporation (SC-12),Santa Clara,10,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-08,2025-12-08,"Jabil, Inc.",Solano,21,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-09,2025-12-11,"bioMerieux, Inc.",Santa Clara,121,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-05,2025-12-11,"G&C Staffing, LLC (Gold Flora) (1695 S 7th Street)",Santa Clara,36,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-05,2025-12-11,"G&C Staffing, LLC (Gold Flora) (1190 Coleman Avenue)",Santa Clara,6,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-11,2025-12-11,Zebra Technologies Corporation,Santa Clara,75,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-11,2025-12-12,"Anheuser-Busch Commercial Strategy, LLC",Solano,238,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2025-12-30,2025-12-30,"Mare Island Dry Dock, LLC",Solano,84,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - Wilma Chan Highland Hospital,Alameda,128,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - San Leandro Hospital,Alameda,22,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - John George Hospital,Alameda,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - Alameda Hospital,Alameda,9,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - System Support Center,Alameda,18,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - Fairmont Rehabilitation and Wellness,Alameda,44,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-06,2026-01-08,Alameda Health System - Park Bridge,Alameda,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-12,2026-01-14,Informatica LLC,San Mateo,35,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-14,2026-01-15,RR Donnelley,Alameda,70,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-13,2026-01-15,Valero Refining Company,Solano,237,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-14,2026-01-15,Amy's Drive-Thru,Sonoma,55,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-15,2026-01-16,DHL Supply Chain,Alameda,74,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-16,2026-01-16,Best Buy,Santa Clara,60,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-20,2026-01-20,"Resonetics, LLC",San Mateo,61,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p11
+2026-01-16,2026-01-21,"Meta Platforms, Inc.",San Mateo,219,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-05,2026-01-21,McGee Air Services,Alameda,32,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-20,2026-01-21,Western Digital Technologies,Santa Clara,87,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-22,2026-01-23,Corteva Agriscience,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-23,2026-01-23,Autodesk,San Francisco,104,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (BRGAS1265),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (HMBLT3),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (MP1),Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (MP2),Santa Clara,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (MP3),Santa Clara,27,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (MP4),Santa Clara,24,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-26,2026-01-27,Google (MPD237),Santa Clara,19,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-27,2026-01-28,Pinterest Inc. (San Francisco),San Francisco,98,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-27,2026-01-28,Pinterest Inc. (CA Remote),San Francisco,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-27,2026-01-28,Pinterest Inc. (Palo Alto),Santa Clara,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-30,2026-01-30,"Mercury Systems, Inc.",Alameda,18,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,"Chan Zuckerberg Biohub, Inc.",San Francisco,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,"Chan Zuckerberg Initiative, LLC",San Mateo,38,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,"Chan Zuckerberg Initiative, LLC - Remote",San Mateo,32,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon (SJC25),Santa Clara,43,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon (SJC38),Santa Clara,141,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon (SJC44),Santa Clara,49,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,72,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,32,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,11,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,58,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,87,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,81,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon,Santa Clara,89,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p12
+2026-01-29,2026-01-30,Amazon - SFO 13,San Francisco,19,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-01-29,2026-01-30,Amazon - SFO 28,San Francisco,84,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-01-30,2026-01-30,"MINACT, Inc.",San Francisco,118,Layoff Temporary,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-02,2026-02-03,"Meta Platforms, Inc. - 305 Constitution",San Mateo,39,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-02,2026-02-03,"Meta Platforms, Inc. - 1 Hacker",San Mateo,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-02,2026-02-03,"Meta Platforms, Inc. - 180 Jefferson",San Mateo,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-02,2026-02-03,"Meta Platforms, Inc. - 190 Jefferson",San Mateo,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-02,2026-02-03,"Meta Platforms, Inc. - 220 Jefferson",San Mateo,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-02,2026-02-03,"Meta Platforms, Inc.",Santa Clara,52,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-01-27,2026-02-03,"Western Digital Technologies, Inc.",Santa Clara,47,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2025-06-26,2026-02-04,"genentech, Inc.",San Mateo,141,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2025-09-15,2026-02-04,San Bruno CityNet Services,San Mateo,13,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-03,2026-02-04,"Small Precision Tools California, Inc.",Sonoma,30,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-04,2026-02-05,Workday Inc.,Alameda,154,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2025-08-28,2026-02-05,"Natron Energy, Inc.",Santa Clara,58,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-10,2026-02-10,Clari Inc.,Santa Clara,76,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-11,2026-02-11,Yanfeng International Automotive Technology US I LLC,Alameda,43,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-12,E.J. Gallo Winery - The Ranch Winery,Napa,56,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-13,"Harbinger Production, Inc.",Solano,290,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-13,E.J. Gallo Winery - Louis M. Martini Winery,Napa,15,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-13,E. J. Gallo Wineries - Orin Swift Tasting Room,Napa,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-13,E. J. Gallo Wineries - J Vineyards & Winery,Sonoma,11,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-13,E. J. Gallo Wineries - Frei Ranch,Sonoma,9,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-18,2026-02-18,Corteva Agriscience LLC,Contra Costa,3,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p13
+2026-02-12,2026-02-19,Jackson Family Wines (Carneros Hills Winery),Sonoma,13,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-20,2026-02-20,"Lucid Group, Inc.",Alameda,319,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-20,2026-02-20,Wells Fargo,San Francisco,21,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-20,2026-02-23,Raley's,Contra Costa,43,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-23,2026-02-23,"C3.ai, Inc.",San Mateo,71,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-21,2026-02-23,Ferrara Candy Company (One Jelly Belly),Solano,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-21,2026-02-23,Ferrara Candy Company (2400),Solano,17,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-21,2026-02-23,Ferrara Candy Company (2500),Solano,33,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-21,2026-02-23,Ferrara Candy Company (2385),Solano,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-21,2026-02-23,Ferrara Candy Company (Courage Drive),Solano,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-23,2026-02-23,"Safari West, Inc.",Sonoma,134,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-24,2026-02-24,VCA Bay Area Veterinary Specialists & Emergency Hospital,Alameda,91,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-24,2026-02-24,Lumileds LLC,Santa Clara,24,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-25,2026-02-25,eBay - San Francisco,San Francisco,28,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-25,2026-02-25,eBay Inc.,Santa Clara,243,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-24,2026-02-27,"Monroe Operations, LLC dba Newport Healthcare",Alameda,30,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-24,2026-02-27,"Monroe Operations, LLC dba Newport Healthcare",Alameda,16,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-02-27,2026-03-02,"Supernal, LLC",Alameda,48,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-03-02,2026-03-03,"Salesforce, Inc.",San Francisco,51,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-03-03,2026-03-04,Wells Fargo,San Francisco,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-03-05,2026-03-09,Endologix LLC,Santa Clara,23,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p14
+2026-03-05,2026-03-09,Endologix LLC,Santa Clara,6,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-05,2026-03-09,Endologix LLC,Santa Clara,2,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-12,2026-03-12,Sanitation Specialists,Alameda,21,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-11,2026-03-12,"Atlassian US, Inc.",San Francisco,252,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-12,2026-03-13,Sanitation Specialists,San Mateo,15,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-13,2026-03-16,Blue Shield of California,Alameda,7,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-17,2026-03-17,Corteva Agriscience,Contra Costa,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Livermore),Alameda,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Oakland),Alameda,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Danville),Contra Costa,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Walnut Creek),Contra Costa,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (San Rafael),Marin,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (San Francisco),San Francisco,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Mateo),San Mateo,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (San Jose),Santa Clara,85,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Los Altos),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Morgan Hill),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-02-27,2026-03-17,Heritage Bank of Commerce (Remote-San Jose),Santa Clara,12,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-23,2026-03-23,"Synopsys, Inc.",Santa Clara,55,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-23,2026-03-24,Pernod Ricard Kenwood Holding LLC,Sonoma,14,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-23,2026-03-25,Nob Hill Foods,Santa Clara,50,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p15
+2026-03-25,2026-03-26,"Gilead Sciences, Inc.",San Mateo,51,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-03-30,"Sentinel Transportation, LLC",Contra Costa,7,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-03-30,"Sentinel Transportation, LLC",Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-03-30,"Sentinel Transportation, LLC",Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-03-30,"Sentinel Transportation, LLC",Solano,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-03-30,"Sentinel Transportation, LLC",Solano,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-04-01,"Meta Platforms, Inc.",San Mateo,124,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-03-30,2026-04-01,"Meta Platforms, Inc.",Santa Clara,74,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-04-01,2026-04-02,"Oracle America, Inc.",Alameda,158,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-04-01,2026-04-02,Morgan Technical Ceramics,Alameda,94,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-04-01,2026-04-02,"Oracle America, Inc.",San Mateo,310,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-04-01,2026-04-02,"Oracle America, Inc.",Santa Clara,184,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-04-03,2026-04-03,Super 7,Napa,6,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p16
+2026-04-06,2026-04-06,Amethod Public Schools,Alameda,17,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-03-23,2026-04-07,JPMorgan Chase,San Francisco,53,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-08,2026-04-08,"Montessori West, Inc.",Alameda,35,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-10,2026-04-10,Mills College Children's School at Northwestern University,Alameda,21,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-10,2026-04-10,eBay Inc.,San Francisco,198,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-13,2026-04-14,The Gambrinus Company (Trumer Brewery and Taproom),Alameda,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-13,2026-04-14,"Trumer Brewery, Comeback Brewing II dba Trumer Brewery",Alameda,27,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-14,2026-04-15,Block by Block,San Francisco,47,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-15,2026-04-16,The Primary School,Alameda,147,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-15,2026-04-16,Snap Inc.,Santa Clara,73,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-07,2026-04-16,"Noa Technologies, Inc.",Santa Clara,69,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-20,2026-04-20,Yanfeng International Automotive Technology,Alameda,17,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-21,2026-04-21,Corteva Agriscience LLC,Contra Costa,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p17
+2026-04-23,2026-04-23,Epic Games Inc.,Marin,16,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-24,2026-04-24,"Constellation Brands, Inc.",Sonoma,7,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-26,2026-04-27,"Lodging Dynamics Hospitality Group, LLC",Santa Clara,42,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-27,2026-04-28,"First Transit, Inc.",Contra Costa,194,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-28,2026-04-29,The Primary School (750 Fargo Ave),Alameda,25,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-28,2026-04-29,The Primary School (2086 Clarke Ave),San Mateo,100,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-28,2026-04-29,The Primary School (1765 East Bayshore Rd. Ste. 111),San Mateo,22,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-28,2026-04-30,California Academy of Sciences,San Francisco,53,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-30,2026-05-01,"Gilead Sciences, Inc.",San Mateo,108,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-29,2026-05-01,"Skyline Avatar House, LP",Santa Clara,49,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-05-04,2026-05-04,Zenlen Inc. (Native),San Francisco,53,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-05-07,2026-05-08,"Cloudflare, Inc.",San Francisco,224,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-05-06,2026-05-12,"Kidango, Inc. - Skyway Office",Alameda,59,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-05-06,2026-05-12,"Kidango, Inc. - Peixoto Center",Alameda,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-05-06,2026-05-12,"Kidango, Inc. - Castlemont Center",Alameda,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-05-06,2026-05-12,"Kidango, Inc. - CCELC Center",Santa Clara,6,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p18
+2026-04-09,2026-05-14,Carnegie Science Institution of Washington,Santa Clara,27,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-15,2026-05-15,LinkedIn Corporation,San Francisco,108,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-15,2026-05-15,LinkedIn Corporation,Santa Clara,59,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-15,2026-05-15,LinkedIn Corporation,Santa Clara,352,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-15,2026-05-15,LinkedIn Corporation (Home Office),Santa Clara,66,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-19,2026-05-19,Canteen Vending Services,Alameda,110,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-20,2026-05-20,Intuit Inc.,Santa Clara,493,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-20,2026-05-20,"Credit Karma, LLC",Alameda,117,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-20,2026-05-20,"Flagship Facilities Services, LLC",San Francisco,178,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-20,2026-05-21,Intuit Inc.,San Francisco,50,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-20,2026-05-21,"NetApp, Inc.",Santa Clara,77,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-22,2026-05-22,"Meta Platforms, Inc.",Alameda,81,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-22,2026-05-22,"Meta Platforms, Inc.",San Mateo,338,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-22,2026-05-22,"Meta Platforms, Inc.",San Francisco,252,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-22,2026-05-26,"Meta Platforms, Inc.",San Mateo,2212,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-22,2026-05-26,"Meta Platforms, Inc.",Santa Clara,313,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p19
+2026-05-29,2026-05-29,Blue Shield of California,Alameda,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-05-28,2026-06-01,Acumen LLC & The SPHERE,San Mateo,58,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-02,2026-06-03,"Off Duty Officers, Inc. (4873 Lone Tree Way)",Contra Costa,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-05-27,2026-06-03,"Trifecta JLS, Inc./Plank",Alameda,70,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-03,2026-06-04,"Quizlet, Inc.",San Francisco,79,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-05,2026-06-05,Morgan Advance Ceramics Inc.,Alameda,96,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-08,2026-06-08,Verily Health Inc.,San Mateo,58,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-08,2026-06-08,"Salesforce, Inc.",San Francisco,86,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-10,2026-06-10,"ServiceNow, Inc.",Santa Clara,54,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-10,2026-06-10,Ubisoft,San Francisco,93,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p20
+2026-06-12,2026-06-15,"Uber Technologies, Inc.",San Francisco,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-17,2026-06-17,Lumileds LLC,Santa Clara,11,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-03,2026-06-18,"Uber Technologies, Inc. (1655 3rd Street)",San Francisco,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-03,2026-06-18,"Uber Technologies, Inc. (1725 3rd St.)",San Francisco,22,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-03,2026-06-18,"Uber Technologies, Inc. (Remote)",San Francisco,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (1345 Crossman Ave.),Santa Clara,67,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (1375 Crossman Ave.),Santa Clara,63,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (1395 Crossman Ave.),Santa Clara,68,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (640 W. California Ave.),Santa Clara,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (809 11th Ave),Santa Clara,49,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (815 Eleventh Ave),Santa Clara,54,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (840 W California Ave),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-19,Walmart (860 W California Ave),Santa Clara,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-22,2026-06-22,"Lucid Group, Inc.",Alameda,136,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (LB Steak Bishop Ranch, LP)",Contra Costa,51,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (Left Bank Tiburon, LP)",Marin,20,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (Blue Rock Restaurant Partners, LP)",Marin,54,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (Left Bank Menlo Park Partners, LP)",San Mateo,42,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (Meso Santana Row, LP)",Santa Clara,54,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (La Rive Gauche San Jose, LLC)",Santa Clara,73,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (Santana Grill Partners, LP)",Santa Clara,59,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-21,2026-06-22,"Vine Hospitality (Vine Dining Enterprises, Inc)",Santa Clara,12,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-22,2026-06-22,Keywords International Limited Group,San Francisco,128,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-23,2026-06-23,Corteva Agriscience,Contra Costa,1,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-22,2026-06-23,"Sangamo Therapeutics, Inc.",Contra Costa,47,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-19,2026-06-23,Walmart,San Mateo,88,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-22,2026-06-23,"Sangamo Therapeutics, Inc.",San Mateo,4,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-16,2026-06-23,"Cisco Systems, Inc.",Santa Clara,154,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-16,2026-06-23,"Cisco Systems, Inc.",San Francisco,81,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-16,2026-06-24,"Cisco Systems, Inc.",Santa Clara,236,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-24,2026-06-24,"BILL Operations, LLC",Santa Clara,129,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-26,2026-06-26,"Flagship Facilities Services, LLC",Santa Clara,2,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-25,2026-06-26,Adventist Health St. Helena,Napa,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-25,2026-06-26,Adventist Health Vallejo,Solano,3,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-26,2026-06-26,"Flagship Facilities Services, LLC",San Francisco,13,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-26,2026-06-29,"Flagship Facilities Services, LLC",San Mateo,5,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-16,2026-06-29,"Robinhood Markets, Inc.",San Mateo,63,Layoff Permanent,warn-report-for-7-1-25-to-6-30-26 p21
+2026-06-29,2026-06-30,Ballast Point Brewing Company,San Francisco,19,Closure Permanent,warn-report-for-7-1-25-to-6-30-26 p21

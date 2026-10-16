@@ -1,15 +1,20 @@
 """EDD WARN layoff notices for Bay Area counties. Public xlsx, no key. Needs openpyxl.
 
-The xlsx covers the current fiscal year only (July 1 to date), so history builds up
-in data/series/warn_bay.json from run to run.
+EDD's xlsx covers the current fiscal year only (July 1 to date). Earlier years come from
+data/backfill/warn_bay_records.csv, transcribed from EDD's prior-year WARN PDFs
+(FY 2024-25 and FY 2025-26; parsed totals matched EDD's own summary rows exactly).
+Records from both are merged and de-duplicated before weekly totals are taken.
 """
 
+import csv
 import io
+import pathlib
 
 from common import http_get, parse_date
 
 KEY = None
 URL = "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/warn_report1.xlsx"
+BACKFILL = pathlib.Path(__file__).resolve().parents[2] / "data" / "backfill" / "warn_bay_records.csv"
 COUNTIES = {"San Francisco", "Marin", "Alameda", "Contra Costa", "San Mateo", "Santa Clara",
             "Solano", "Napa", "Sonoma"}
 
@@ -41,17 +46,26 @@ def fetch():
     if header is None:
         raise ValueError(f"No 'Notice Date' header found in sheet {ws.title}")
     i_date = header.index("notice date")
+    i_recv = header.index("received date") if "received date" in header else i_date
+    i_company = next((i for i, h in enumerate(header) if h.startswith("company")), None)
     i_county = next(i for i, h in enumerate(header) if h.startswith("county"))
     i_emp = next(i for i, h in enumerate(header) if "employees" in h)
-    pts = []
+    records = set()
     for row in rows:
         county = str(row[i_county] or "").replace(" County", "").strip()
         if county not in COUNTIES or row[i_date] is None:
             continue
-        d = row[i_date]
-        d = d.date() if hasattr(d, "date") else parse_date(d)
         try:
-            pts.append((d, float(row[i_emp] or 0)))
+            records.add((_day(row[i_date]), _day(row[i_recv]), _norm(row[i_company] if i_company is not None else ""),
+                         county, int(float(row[i_emp] or 0))))
         except (TypeError, ValueError):
             continue
-    return {"warn_bay": pts}
+    with open(BACKFILL, newline="") as fh:
+        for r in csv.DictReader(fh):
+            records.add((parse_date(r["notice_date"]), parse_date(r["received_date"]), _norm(r["company"]),
+                         r["county"], int(r["employees"])))
+    return {"warn_bay": [(notice, float(emp)) for notice, _, _, _, emp in records]}
+
+
+def _day(v):
+    return v.date() if hasattr(v, "date") else parse_date(v)
