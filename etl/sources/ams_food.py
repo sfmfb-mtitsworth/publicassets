@@ -22,7 +22,9 @@ SERIES = [
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 1,
      "geo": "California", "source": "USDA AMS, California Shell Egg report (2844)",
      "source_url": "https://mymarketnews.ams.usda.gov/viewReport/2844",
-     "slug": 2844, "filters": {"egg_size": "large"}, "price_fields": ["wtd_avg", "weighted_average", "avg_price", "price_avg"],
+     "slug": 2844, "price_fields": ["avg_price"],
+     # California requires cage-free; averages Northern and Southern California store-door prices.
+     "filters": {"_section": "Report Detail Simple", "class": "Large", "color": "White", "egg_type": "Cartoned"},
      "scale": 0.01,  # cents per dozen -> dollars per dozen
      "sample": {"base": 3.4, "vol": 0.05, "season": 0.06, "spike": 0.35}},
     {"id": "chicken_us", "order": 2, "title": "Chicken Prices", "group": "Food staple prices",
@@ -79,29 +81,39 @@ def _log_layout(slug, rows):
 
 
 def _matches(row, filters):
-    return all(want in str(row.get(k, "")).lower() for k, want in filters.items())
+    return all(str(row.get(k, "")).strip().lower() == want.lower() for k, want in filters.items())
 
 
 def fetch():
     end = dt.date.today()
     start = end - dt.timedelta(days=3 * 365)
-    out = {}
+    out, errors = {}, []
     for s in SERIES:
-        rows = _rows(s["slug"], start, end)
-        _log_layout(s["slug"], rows)
-        pts = []
-        for r in rows:
-            if not _matches(r, s["filters"]):
-                continue
-            field = next((f for f in s["price_fields"] if r.get(f) not in (None, "")), None)
-            date = r.get("report_begin_date") or r.get("report_date")
-            if field and date:
-                try:
-                    d = dt.datetime.strptime(date[:10], "%m/%d/%Y").date() if "/" in date else parse_date(date)
-                    pts.append((d, float(str(r[field]).replace(",", "")) * s["scale"]))
-                except ValueError:
-                    continue
-        if not pts:
-            raise ValueError(f"Report {s['slug']}: no rows matched filters {s['filters']} with fields {s['price_fields']}")
-        out[s["id"]] = pts
+        try:
+            out[s["id"]] = _series(s, start, end)
+        except Exception as e:  # one report failing must not blank the others
+            errors.append(f"{s['id']}: {e}")
+            print(f"[ams_food] {s['id']} failed: {e}")
+    if not out:
+        raise ValueError("; ".join(errors))
     return out
+
+
+def _series(s, start, end):
+    rows = _rows(s["slug"], start, end)
+    _log_layout(s["slug"], rows)
+    pts = []
+    for r in rows:
+        if not _matches(r, s["filters"]):
+            continue
+        field = next((f for f in s["price_fields"] if r.get(f) not in (None, "")), None)
+        date = r.get("report_begin_date") or r.get("report_date")
+        if field and date:
+            try:
+                d = dt.datetime.strptime(date[:10], "%m/%d/%Y").date() if "/" in date else parse_date(date)
+                pts.append((d, float(str(r[field]).replace(",", "")) * s["scale"]))
+            except ValueError:
+                continue
+    if not pts:
+        raise ValueError(f"Report {s['slug']}: no rows matched filters {s['filters']} with fields {s['price_fields']}")
+    return pts
