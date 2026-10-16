@@ -50,10 +50,32 @@ def _rows(slug, start, end):
     while start <= end:  # MARS caps date ranges, so pull in 180-day chunks
         stop = min(end, start + dt.timedelta(days=179))
         q = f"report_begin_date={start:%m/%d/%Y}:{stop:%m/%d/%Y}"
-        rows += get_json(f"{BASE}/{slug}", params={"q": q, "allSections": "true"},
-                         headers={"Authorization": f"Basic {token}"}).get("results", [])
+        rows += _extract(get_json(f"{BASE}/{slug}", params={"q": q, "allSections": "true"},
+                                  headers={"Authorization": f"Basic {token}"}))
         start = stop + dt.timedelta(days=1)
     return rows
+
+
+def _extract(resp):
+    """allSections=true returns a list of sections, each with its own results."""
+    if isinstance(resp, dict):
+        return [dict(r, _section=resp.get("reportSection")) for r in resp.get("results", [])]
+    rows = []
+    for sec in resp:
+        if isinstance(sec, dict) and "results" in sec:
+            rows += [dict(r, _section=sec.get("reportSection")) for r in sec["results"]]
+        elif isinstance(sec, dict):
+            rows.append(sec)
+    return rows
+
+
+def _log_layout(slug, rows):
+    seen = {}
+    for r in rows:
+        seen.setdefault(r.get("_section"), r)
+    for sec, r in seen.items():
+        sample = {k: str(v)[:40] for k, v in r.items() if v not in (None, "")}
+        print(f"[ams_food] {slug} section {sec!r}: {sample}")
 
 
 def _matches(row, filters):
@@ -66,8 +88,7 @@ def fetch():
     out = {}
     for s in SERIES:
         rows = _rows(s["slug"], start, end)
-        if rows:
-            print(f"[ams_food] {s['slug']} sample row keys: {sorted(rows[0])}")
+        _log_layout(s["slug"], rows)
         pts = []
         for r in rows:
             if not _matches(r, s["filters"]):

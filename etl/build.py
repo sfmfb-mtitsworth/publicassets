@@ -75,12 +75,11 @@ def run_source(mod):
         new = fetched.get(sid)
         if new:
             bucketed = common.bucket(new, meta["freq"], meta["agg"])
-            if meta["freq"] == "weekly":
-                # Drop the current partial week, plus recent weeks a source is still filling in.
+            if meta["freq"] == "weekly" and meta["agg"] == "sum":
+                # Counts: drop the current partial week, plus recent weeks a source is still filling in.
                 last = common.week_start(dt.date.today()) - dt.timedelta(weeks=1 + meta.get("lag_weeks", 0))
                 bucketed = [(d, v) for d, v in bucketed if d <= last]
-                if meta["agg"] == "sum":
-                    bucketed = common.fill_zero_weeks(bucketed, last)
+                bucketed = common.fill_zero_weeks(bucketed, last)
                 prev_pts = {d: v for d, v in prev_pts.items() if d <= last.isoformat()}
             merged = {**prev_pts, **{d.isoformat(): round(v, 4) for d, v in bucketed}}
             record = {"status": "live", "fetched_at": now_iso(), "error": None,
