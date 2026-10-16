@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T17:48:22+00:00",
+ "generated_at": "2026-10-16T17:50:28+00:00",
  "groups": [
   "Fuel prices",
   "Food staple prices",
@@ -29,7 +29,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:48:20+00:00",
+   "fetched_at": "2026-10-16T17:50:25+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -1314,7 +1314,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:48:20+00:00",
+   "fetched_at": "2026-10-16T17:50:25+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2608,7 +2608,7 @@
    },
    "scale": 0.01,
    "status": "stale",
-   "error": "ValueError: eggs_ca: <urlopen error [Errno -3] Temporary failure in name resolution>; chicken_us: <urlopen error [Errno -3] Temporary failure in name resolution>; beef_us: <urlopen error [Errno -3] Temporary failure in name resolution>",
+   "error": "Source returned no data",
    "fetched_at": "2026-10-16T17:39:40+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
@@ -3189,7 +3189,7 @@
    ],
    "scale": 0.01,
    "status": "stale",
-   "error": "ValueError: eggs_ca: <urlopen error [Errno -3] Temporary failure in name resolution>; chicken_us: <urlopen error [Errno -3] Temporary failure in name resolution>; beef_us: <urlopen error [Errno -3] Temporary failure in name resolution>",
+   "error": "Source returned no data",
    "fetched_at": "2026-10-16T17:39:40+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
@@ -4157,9 +4157,9 @@
     "choice_cutout"
    ],
    "scale": 1,
-   "status": "stale",
-   "error": "ValueError: eggs_ca: <urlopen error [Errno -3] Temporary failure in name resolution>; chicken_us: <urlopen error [Errno -3] Temporary failure in name resolution>; beef_us: <urlopen error [Errno -3] Temporary failure in name resolution>",
-   "fetched_at": "2026-10-16T17:39:40+00:00",
+   "status": "live",
+   "error": null,
+   "fetched_at": "2026-10-16T17:50:24+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -5132,7 +5132,7 @@
    "fred_id": "CAICLAIMS",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:48:21+00:00",
+   "fetched_at": "2026-10-16T17:50:26+00:00",
    "key": null,
    "points": [
     [
@@ -6410,7 +6410,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:47:59+00:00",
+   "fetched_at": "2026-10-16T17:50:25+00:00",
    "key": null,
    "points": [
     [
@@ -7155,7 +7155,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:48:21+00:00",
+   "fetched_at": "2026-10-16T17:50:26+00:00",
    "key": null,
    "points": [
     [
@@ -8434,7 +8434,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:48:21+00:00",
+   "fetched_at": "2026-10-16T17:50:27+00:00",
    "key": null,
    "points": [
     [
@@ -9388,7 +9388,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:48:22+00:00",
+   "fetched_at": "2026-10-16T17:50:28+00:00",
    "key": null,
    "points": [
     [
@@ -10263,8 +10263,8 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "RuntimeError: BLS: ['The key:*** provided by the User is invalid. Please provide a proper key for the operation to be successful']",
    "fetched_at": "2026-10-16T17:47:59+00:00",
    "key": null,
    "points": [
@@ -10420,8 +10420,8 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U, food at home",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "RuntimeError: BLS: ['The key:*** provided by the User is invalid. Please provide a proper key for the operation to be successful']",
    "fetched_at": "2026-10-16T17:47:59+00:00",
    "key": null,
    "points": [
@@ -10715,8 +10715,8 @@
    "geo": "San Francisco + Marin",
    "source": "BLS LAUS",
    "source_url": "https://www.bls.gov/lau/",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "RuntimeError: BLS: ['The key:*** provided by the User is invalid. Please provide a proper key for the operation to be successful']",
    "fetched_at": "2026-10-16T17:47:59+00:00",
    "key": null,
    "points": [
