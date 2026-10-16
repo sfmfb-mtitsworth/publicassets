@@ -15,8 +15,8 @@ COUNTIES = {"San Francisco", "Marin", "Alameda", "Contra Costa", "San Mateo", "S
 
 SERIES = [
     {"id": "warn_bay", "order": 2, "title": "WARN Layoff Notices", "group": "Jobs & economy",
-     "description": "Workers covered by WARN layoff and closure notices filed by Bay Area employers, by week the notice was dated. Employers must file 60 days ahead, so this leads job losses.",
-     "unit": "count", "decimals": 0, "freq": "weekly", "agg": "sum", "chart": "bar", "higher_is_worse": True, "weight": 1,
+     "description": "Workers covered by WARN layoff notices from Bay Area employers. Filed 60 days ahead, so it leads job losses.",
+     "unit": "count", "decimals": 0, "freq": "weekly", "agg": "sum", "higher_is_worse": True, "weight": 1,
      "geo": "Bay Area (9 counties)", "source": "California EDD WARN report",
      "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
      "sample": {"base": 400, "vol": 0.7, "spike": 2.5, "integer": True}},

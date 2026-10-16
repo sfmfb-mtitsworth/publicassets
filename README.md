@@ -16,10 +16,9 @@ Routine publishes that file to the leadership dashboard artifact.
 | Jobs & economy | Unemployment claims | California | DOL/EDD via FRED `CAICLAIMS` | none |
 | Jobs & economy | WARN layoff notices | Bay Area | EDD WARN xlsx | none |
 | Jobs & economy | Weekly Economic Index | U.S. | NY Fed via FRED `WEI` | none |
-| Need & housing | Google searches | SF Bay Area | Google Trends API (alpha) | `GOOGLE_TRENDS_API_KEY` |
-| Need & housing | CalFresh applications | SF + Marin | CDSS CF 296 (monthly) | none |
-| Need & housing | Eviction notices | San Francisco | DataSF `5cei-gny5` | optional `SOCRATA_APP_TOKEN` |
-| Need & housing | Rents | SF metro | Zillow ZORI (monthly) | none |
+| Housing stress | Eviction notices | San Francisco | DataSF `5cei-gny5` | optional `SOCRATA_APP_TOKEN` |
+| Housing stress | Rents | SF metro | Zillow ZORI (monthly) | none |
+| Google Searches | Searches for "food bank" | SF Bay Area | Google Trends API (alpha) | `GOOGLE_TRENDS_API_KEY` |
 
 A source whose secret is missing shows **sample data**, labelled on the dashboard. Add the
 secret under Settings > Secrets and variables > Actions and the next run switches it to live.

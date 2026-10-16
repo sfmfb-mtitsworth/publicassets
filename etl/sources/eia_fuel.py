@@ -9,14 +9,14 @@ URL = "https://api.eia.gov/v2/petroleum/pri/gnd/data/"
 
 SERIES = [
     {"id": "gas_sf", "order": 1, "title": "Gas Prices", "group": "Prices",
-     "description": "Average retail price of regular gasoline in San Francisco. Higher fuel costs squeeze household budgets within weeks.",
-     "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "chart": "line", "higher_is_worse": True, "weight": 1,
+     "description": "Regular gasoline, average retail price. Fuel costs squeeze household budgets within weeks.",
+     "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 1,
      "geo": "San Francisco", "source": "U.S. Energy Information Administration",
      "source_url": "https://www.eia.gov/petroleum/gasdiesel/", "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
      "sample": {"base": 5.0, "vol": 0.015, "trend": 0.02, "season": 0.03, "spike": 0.06}},
     {"id": "diesel_ca", "order": 2, "title": "Diesel Prices", "group": "Prices",
-     "description": "Average retail price of on-highway diesel in California. Diesel drives food transport costs, ours included.",
-     "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "chart": "line", "higher_is_worse": True, "weight": 1,
+     "description": "On-highway diesel, average retail price. Diesel drives food transport costs, ours included.",
+     "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 1,
      "geo": "California", "source": "U.S. Energy Information Administration",
      "source_url": "https://www.eia.gov/petroleum/gasdiesel/", "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
      "sample": {"base": 6.1, "vol": 0.015, "trend": 0.01, "season": 0.02, "spike": 0.05}},

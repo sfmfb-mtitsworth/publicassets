@@ -10,7 +10,7 @@ Outputs data/dashboard.json and artifacts/dashboard.html.
 
 Series metadata fields:
   id, title, description, group, unit ("usd", "count", "index", "pct"), decimals,
-  freq ("weekly" | "monthly"), agg ("mean" | "sum" | "last"), chart ("bar" | "line"),
+  freq ("weekly" | "monthly"), agg ("mean" | "sum" | "last"),
   higher_is_worse (bool), weight (composite weight), geo, source, source_url,
   lag_weeks (optional: recent weeks to drop while the source is still filling them in),
   sample {base, vol, trend?, season?, spike?, integer?}
@@ -33,7 +33,7 @@ import sources  # noqa: E402
 
 HISTORY = ROOT / "data" / "series"
 BASELINE = {"weekly": (52, 12), "monthly": (24, 8)}  # (trailing periods, minimum periods)
-GROUPS = ["Prices", "Jobs & economy", "Need & housing"]
+GROUPS = ["Google Searches", "Prices", "Jobs & economy", "Housing stress"]
 PLACEHOLDER = "/*__DASHBOARD_DATA__*/null"
 
 

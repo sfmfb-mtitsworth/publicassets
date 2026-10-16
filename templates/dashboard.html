@@ -3,7 +3,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:wght@400;600&display=swap">
 <style>
-/* Layout: report column like the Power BI page; summary first, then one panel per indicator, grouped. */
+/* Layout: report column like the Power BI page; summary first, then square indicator cards, three per row, grouped. */
 :root {
   --bg: #f5f7f4; --surface: #ffffff; --ink: #1d2a1f; --ink-2: #4f5d52; --ink-3: #7d887f;
   --rule: #dde3dc; --grid: #edf0ec; --brand: #2f7a34; --brand-soft: #e6f1e4;
@@ -62,7 +62,17 @@ h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
 .panel { display: grid; grid-template-columns: minmax(0, 300px) minmax(0, 1fr); gap: 16px }
 @media (max-width: 760px) { .panel { grid-template-columns: 1fr } }
 .panel .meta { display: grid; gap: 8px; align-content: start }
-.panel .desc { font-size: 14px; color: var(--ink-2); margin: 0 }
+.desc { font-size: 14px; color: var(--ink-2); margin: 0 }
+#general-chart { height: 180px; contain: size }
+.tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px }
+@media (max-width: 920px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)) } }
+@media (max-width: 600px) { .tiles { grid-template-columns: minmax(0, 1fr) } }
+.tile { aspect-ratio: 1 / 1; max-width: 100%; display: flex; flex-direction: column; gap: 8px }
+.tile .desc { font-size: 13px; line-height: 1.4 }
+.tile .chips { display: flex; flex-wrap: wrap; gap: 6px; min-height: 22px; margin-top: -4px }
+.tile .stats .v { font-size: 18px }
+.tile .chart { flex: 1 1 auto; min-height: 110px; contain: size }
+.tile .foot { text-align: left; line-height: 1.45 }
 .titlerow { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline }
 .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 2px solid var(--brand); padding-top: 6px; text-align: center }
 .stats div { display: grid; gap: 2px }
@@ -156,23 +166,22 @@ const short = (v, s) => {
   return s && s.unit === "usd" ? "$" + n : n;
 };
 
-/* One chart routine for all panels. kind: bar (from zero), line (level), diverge (around zero). */
+/* One chart routine for all cards: bars from zero, colored by anomaly level. kind "diverge" is the General Indicator. */
 function chart(box, pts, s, kind) {
   box.innerHTML = "";
   if (!pts.length) { box.appendChild(h('<div class="empty">No data in this range.</div>')); return; }
-  const W = 720, H = 170, m = { l: 44, r: 10, t: 10, b: 22 };
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `${s.title}, ${pts.length} periods` }, box);
+  const W = Math.max(200, box.clientWidth), H = Math.max(100, box.clientHeight), m = { l: 40, r: 6, t: 8, b: 20 };
+  const svg = el("svg", { width: W, height: H, viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": `${s.title}, ${pts.length} periods` }, box);
   const vals = pts.map(p => p[1]);
   let lo = Math.min(...vals), hi = Math.max(...vals);
-  if (kind !== "line") { lo = Math.min(0, lo); hi = Math.max(0, hi); }
-  else { const pad = (hi - lo) * 0.15 || Math.abs(hi) * 0.05 || 1; lo -= pad; hi += pad; }
+  lo = Math.min(0, lo); hi = Math.max(0, hi);
   const ticks = niceTicks(lo, hi); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
   const pw = W - m.l - m.r, step = pw / pts.length;
   const x = i => m.l + step * (i + 0.5);
   const y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
   ticks.forEach(t => {
     if (t < lo - 1e-9 || t > hi + 1e-9) return;
-    el("line", { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), stroke: t === 0 && kind !== "line" ? "var(--ink-3)" : "var(--grid)" }, svg);
+    el("line", { x1: m.l, x2: W - m.r, y1: y(t), y2: y(t), stroke: t === 0 ? "var(--ink-3)" : "var(--grid)" }, svg);
     el("text", { x: m.l - 6, y: y(t) + 4, "text-anchor": "end" }, svg).textContent = short(t, s);
   });
   let lastLabel = -Infinity;
@@ -182,11 +191,7 @@ function chart(box, pts, s, kind) {
     if (isTick && x(i) - lastLabel > 60) { el("text", { x: x(i), y: H - 6, "text-anchor": "middle" }, svg).textContent = `${MONTHS[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`; lastLabel = x(i); }
   });
   const marks = [];
-  if (kind === "line") {
-    let dpath = ""; pts.forEach((p, i) => dpath += (i ? "L" : "M") + x(i).toFixed(1) + "," + y(p[1]).toFixed(1));
-    el("path", { d: dpath, fill: "none", stroke: "var(--line)", "stroke-width": 2, "stroke-linejoin": "round" }, svg);
-    pts.forEach((p, i) => { if (p[3] > 0 || i === pts.length - 1) marks[i] = el("circle", { cx: x(i), cy: y(p[1]), r: p[3] > 0 ? 4.5 : 4, fill: p[3] > 0 ? SEV[p[3]] : "var(--line)", stroke: "var(--surface)", "stroke-width": 1.5 }, svg); });
-  } else {
+  {
     const bw = Math.max(1, step - (step > 6 ? 2 : 1));
     pts.forEach((p, i) => {
       const top = Math.min(y(p[1]), y(0)), ht = Math.max(p[1] === 0 ? 0 : 1, Math.abs(y(p[1]) - y(0)));
@@ -203,7 +208,7 @@ function chart(box, pts, s, kind) {
     tip.innerHTML = `${esc(dateLabel(p[0], s.freq))}<br><b>${kind === "diverge" ? "" : esc(fmt(p[1], s))}</b>${kind === "diverge" ? "" : "<br>"}${zline}${lvl ? `<br>Level ${lvl}` : ""}`;
     tip.hidden = false;
     tip.style.left = Math.min(Math.max(x(i) * r.width / W, 80), r.width - 80) + "px";
-    tip.style.top = (kind === "line" ? y(p[1]) : Math.min(y(p[1]), y(0))) * r.height / H + "px";
+    tip.style.top = Math.min(y(p[1]), y(0)) * r.height / H + "px";
     cross.setAttribute("x1", x(i)); cross.setAttribute("x2", x(i)); cross.setAttribute("visibility", "visible");
   });
   hit.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("visibility", "hidden"); });
@@ -248,43 +253,49 @@ function render() {
   DATA.groups.forEach(g => {
     const list = series.filter(s => s.group === g);
     if (!list.length) return;
-    const sec = h(`<section class="group"><h2>${esc(g)}</h2></section>`);
+    const sec = h(`<section class="group"><h2>${esc(g)}</h2><div class="tiles"></div></section>`);
+    const grid = sec.querySelector(".tiles");
     list.forEach(s => {
       const st = s.stats, p = s.points[s.points.length - 1];
       const recentLabel = s.freq === "weekly" ? "4-wk avg" : "3-mo avg";
-      const panel = h(`<article class="card panel" id="${esc(s.id)}">
-        <div class="meta">
-          <div class="titlerow"><h3>${esc(s.title)}</h3>${p ? levelChip(p[3]) : ""}${statusChip(s)}</div>
-          <p class="desc">${esc(s.description)}</p>
-          <div class="stats">
-            <div><span class="k">Latest</span><span class="v">${st ? esc(fmt(st.latest, s)) : "–"}</span></div>
-            <div><span class="k">${recentLabel}</span><span class="v">${st ? esc(fmt(st.recent_avg, s)) : "–"}</span></div>
-            <div><span class="k">12-mo avg</span><span class="v">${st ? esc(fmt(st.year_avg, s)) : "–"}</span></div>
-          </div>
-          <div class="note">${st ? esc(dateLabel(st.latest_date, s.freq)) : ""}${s.freq === "monthly" ? " · Monthly data" : ""} · ${esc(s.geo)}</div>
+      const tile = h(`<article class="card tile" id="${esc(s.id)}">
+        <h3>${esc(s.title)}</h3>
+        <div class="chips">${p ? levelChip(p[3]) : ""}${statusChip(s)}</div>
+        <p class="desc">${esc(s.description)}</p>
+        <div class="stats">
+          <div><span class="k">Latest</span><span class="v">${st ? esc(fmt(st.latest, s)) : "–"}</span></div>
+          <div><span class="k">${recentLabel}</span><span class="v">${st ? esc(fmt(st.recent_avg, s)) : "–"}</span></div>
+          <div><span class="k">12-mo avg</span><span class="v">${st ? esc(fmt(st.year_avg, s)) : "–"}</span></div>
         </div>
-        <div class="chartcol"><div class="chart"></div>
-          <div class="foot"><b>Data source:</b> <a href="${esc(s.source_url)}" target="_blank" rel="noopener" style="color:inherit">${esc(s.source)}</a>. <b>Ingest time:</b> ${s.status === "sample" ? "sample data" : esc(ingest(s.fetched_at))}</div>
-        </div>
+        <div class="chart"></div>
+        <div class="foot">${st ? esc(dateLabel(st.latest_date, s.freq)) + " · " : ""}${esc(s.geo)}${s.freq === "monthly" ? " · Monthly" : ""}<br>
+          <b>Source:</b> <a href="${esc(s.source_url)}" target="_blank" rel="noopener" style="color:inherit">${esc(s.source)}</a> · <b>Ingested:</b> ${s.status === "sample" ? "sample data" : esc(ingest(s.fetched_at))}</div>
       </article>`);
-      sec.appendChild(panel);
+      grid.appendChild(tile);
     });
     groups.appendChild(sec);
   });
 
   const buttons = [...document.querySelectorAll(".seg button")];
-  const draw = weeks => {
+  let draw = weeks => {
     buttons.forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.weeks === weeks)));
     const cp = windowed(DATA.composite, "weekly", weeks);
     chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge");
     document.getElementById("general-note").textContent = `Data for ${cp.length} weeks shown. Bars above zero mean more pressure than normal.`;
     series.forEach(s => {
       const box = document.querySelector(`#${CSS.escape(s.id)} .chart`);
-      if (box) chart(box, windowed(s.points, s.freq, weeks), s, s.chart);
+      if (box) chart(box, windowed(s.points, s.freq, weeks), s, "bar");
     });
     try { localStorage.setItem("li-weeks", weeks); } catch (e) {}
   };
   buttons.forEach(b => b.addEventListener("click", () => draw(+b.dataset.weeks)));
+  let current = 78, pending = 0, lastW = 0;
+  const _draw = draw; draw = weeks => { current = weeks; _draw(weeks); };
+  new ResizeObserver(() => {
+    const w = document.querySelector(".wrap").clientWidth;
+    if (w === lastW) return;
+    lastW = w; cancelAnimationFrame(pending); pending = requestAnimationFrame(() => draw(current));
+  }).observe(document.querySelector(".wrap"));
   let saved = 78; try { const v = +localStorage.getItem("li-weeks"); if ([26, 52, 78, 104].includes(v)) saved = v; } catch (e) {}
   draw(saved);
 }

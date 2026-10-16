@@ -17,9 +17,9 @@ TERM = "food bank"
 GEO = "US-CA-807"  # San Francisco-Oakland-San Jose DMA; fall back to US-CA if the API rejects DMAs
 
 SERIES = [
-    {"id": "searches_bay", "order": 1, "title": "Google Searches", "group": "Need & housing",
-     "description": "Relative search interest in \"food bank\" in the San Francisco Bay Area (0 to 100 scale). Searches rise when more people look for help.",
-     "unit": "index", "decimals": 0, "freq": "weekly", "agg": "mean", "chart": "bar", "higher_is_worse": True, "weight": 1.5,
+    {"id": "searches_bay", "order": 1, "title": "Searches for \"food bank\"", "group": "Google Searches",
+     "description": "Relative search interest in \"food bank\" (0 to 100). Searches rise when more people look for help.",
+     "unit": "index", "decimals": 0, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 1.5,
      "geo": "SF-Oakland-San Jose metro", "source": "Google Trends",
      "source_url": "https://trends.google.com/trends/explore?geo=US-CA-807&q=food%20bank",
      "sample": {"base": 40, "vol": 0.12, "season": 0.15, "spike": 1.2, "integer": True}},
