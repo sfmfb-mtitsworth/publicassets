@@ -74,6 +74,8 @@ h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
 .tile > * { flex-shrink: 0 }
 .tile h3 { white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
 .tile .desc { font-size: 13px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden }
+.ask-all { display: inline-block; margin-top: 4px; padding: 8px 14px; border-radius: 5px; background: var(--brand); color: var(--surface); font-weight: 600; text-decoration: none }
+.ask-all:hover { filter: brightness(1.1) } .ask-all:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px }
 .chip.lag { background: var(--surface); color: var(--ink-2); border: 1px solid var(--rule) }
 .group-note { margin: -4px 0 0; font-size: 14px; color: var(--ink-2); max-width: 75ch }
 .tile .chips { display: flex; flex-wrap: wrap; gap: 6px; min-height: 22px; margin-top: -4px }
@@ -112,6 +114,7 @@ footer { text-align: center; font-size: 13px; color: var(--ink-3); font-style: i
     <div class="controls">
       <div class="label">Time range</div>
       <div class="range" id="range">January 2025 to present</div>
+      <a class="ask-all" id="ask-all" target="_blank" rel="noopener" title="Opens a new Claude chat that reads this dashboard's public data">Ask Claude about this data ↗</a>
       <div class="legend" aria-label="Anomaly severity">
         <span><i class="sw" style="background:var(--calm)"></i>Normal</span>
         <span><i class="sw" style="background:var(--sev1)"></i>Level 1 (1+ SD)</span>
@@ -235,6 +238,12 @@ function domain() {
 }
 const windowed = (points, freq, dom) => points.filter(p => periodEnd(p, freq) > dom.start && d8(p[0]) < dom.end);
 
+/* "Ask Claude" opens a new claude.ai chat with a prefilled prompt pointing at the public raw data. */
+const REPO = "https://github.com/sfmfb-mtitsworth/publicassets";
+const RAW = "https://raw.githubusercontent.com/sfmfb-mtitsworth/publicassets/main/";
+const chatUrl = prompt => "https://claude.ai/new?q=" + encodeURIComponent(prompt);
+const askAllUrl = () => chatUrl(`I'm looking at the SF-Marin Food Bank Leading Indicators dashboard. Its public repo is ${REPO} (the README explains each data source and how anomaly levels are scored). The full dataset, with every indicator's values, z-scores and anomaly levels, is at ${RAW}data/dashboard.json, and each indicator's raw history is at ${RAW}data/series/<id>.json. Please read the data, then answer my questions. My first question: `);
+
 const fullTitle = s => `${s.title} - ${s.cadence || (s.freq === "monthly" ? "Monthly" : "Weekly")}`;
 
 function statusChip(s) {
@@ -248,6 +257,7 @@ const levelChip = lvl => lvl ? `<span class="chip l${lvl}">Level ${lvl}</span>` 
 function render() {
   if (!DATA) { document.getElementById("groups").appendChild(h('<div class="card empty">No data yet. The weekly ETL fills this page after its first run.</div>')); return; }
   const series = DATA.series;
+  document.getElementById("ask-all").href = askAllUrl();
   const sample = series.filter(s => s.status === "sample");
   const broken = series.filter(s => s.status === "stale" || s.status === "error");
   const banner = document.getElementById("banner");
