@@ -33,7 +33,7 @@ import sources  # noqa: E402
 
 HISTORY = ROOT / "data" / "series"
 BASELINE = {"weekly": (52, 12), "monthly": (24, 8)}  # (trailing periods, minimum periods)
-GROUPS = ["Google Searches", "Prices", "Jobs & economy", "Housing stress"]
+GROUPS = ["Google Searches", "Fuel prices", "Food staple prices", "Jobs & economy", "Housing stress"]
 PLACEHOLDER = "/*__DASHBOARD_DATA__*/null"
 
 

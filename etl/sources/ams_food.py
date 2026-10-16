@@ -17,7 +17,7 @@ KEY = "USDA_AMS_API_KEY"
 BASE = "https://marsapi.ams.usda.gov/services/v1.2/reports"
 
 SERIES = [
-    {"id": "eggs_ca", "order": 3, "title": "Egg Prices", "group": "Prices",
+    {"id": "eggs_ca", "order": 1, "title": "Egg Prices", "group": "Food staple prices",
      "description": "Wholesale price of a dozen large shell eggs. A staple protein whose price swings fast.",
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 1,
      "geo": "California", "source": "USDA AMS, California Shell Egg report (2844)",
@@ -25,7 +25,7 @@ SERIES = [
      "slug": 2844, "filters": {"egg_size": "large"}, "price_fields": ["wtd_avg", "weighted_average", "avg_price", "price_avg"],
      "scale": 0.01,  # cents per dozen -> dollars per dozen
      "sample": {"base": 3.4, "vol": 0.05, "season": 0.06, "spike": 0.35}},
-    {"id": "chicken_us", "order": 4, "title": "Chicken Prices", "group": "Prices",
+    {"id": "chicken_us", "order": 2, "title": "Chicken Prices", "group": "Food staple prices",
      "description": "National composite wholesale whole broiler price, per pound. No California-only report exists.",
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 0.75,
      "geo": "United States", "source": "USDA AMS, Weekly National Chicken report (3646)",
@@ -33,7 +33,7 @@ SERIES = [
      "slug": 3646, "filters": {"item": "composite"}, "price_fields": ["wtd_avg", "weighted_average", "avg_price"],
      "scale": 0.01,  # cents per pound -> dollars per pound
      "sample": {"base": 1.08, "vol": 0.02, "season": 0.04, "trend": 0.02}},
-    {"id": "beef_us", "order": 5, "title": "Beef Prices", "group": "Prices",
+    {"id": "beef_us", "order": 3, "title": "Beef Prices", "group": "Food staple prices",
      "description": "Choice boxed beef cutout, per 100 lbs. Wholesale beef costs reach stores within weeks.",
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 0.75,
      "geo": "United States", "source": "USDA AMS, Daily Boxed Beef Cutout (2453)",

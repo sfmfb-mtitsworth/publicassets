@@ -8,11 +8,11 @@ Routine publishes that file to the leadership dashboard artifact.
 
 | Group | Indicator | Geography | Source | Secret |
 |---|---|---|---|---|
-| Prices | Gas prices | San Francisco | EIA weekly retail | `EIA_API_KEY` |
-| Prices | Diesel prices | California | EIA weekly retail | `EIA_API_KEY` |
-| Prices | Egg prices | California | USDA AMS report 2844 | `USDA_AMS_API_KEY` |
-| Prices | Chicken prices | U.S. | USDA AMS report 3646 | `USDA_AMS_API_KEY` |
-| Prices | Beef prices | U.S. | USDA AMS report 2453 | `USDA_AMS_API_KEY` |
+| Fuel prices | Gas prices | San Francisco | EIA weekly retail | `EIA_API_KEY` |
+| Fuel prices | Diesel prices | California | EIA weekly retail | `EIA_API_KEY` |
+| Food staple prices | Egg prices | California | USDA AMS report 2844 | `USDA_AMS_API_KEY` |
+| Food staple prices | Chicken prices | U.S. | USDA AMS report 3646 | `USDA_AMS_API_KEY` |
+| Food staple prices | Beef prices | U.S. | USDA AMS report 2453 | `USDA_AMS_API_KEY` |
 | Jobs & economy | Unemployment claims | California | DOL/EDD via FRED `CAICLAIMS` | none |
 | Jobs & economy | WARN layoff notices | Bay Area | EDD WARN xlsx | none |
 | Jobs & economy | Weekly Economic Index | U.S. | NY Fed via FRED `WEI` | none |
