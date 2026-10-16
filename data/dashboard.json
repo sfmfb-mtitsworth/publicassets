@@ -1,8 +1,9 @@
 {
- "generated_at": "2026-10-16T16:27:40+00:00",
+ "generated_at": "2026-10-16T16:30:54+00:00",
  "groups": [
   "Google Searches",
-  "Prices",
+  "Fuel prices",
+  "Food staple prices",
   "Jobs & economy",
   "Housing stress"
  ],
@@ -977,7 +978,7 @@
    "id": "gas_sf",
    "order": 1,
    "title": "Gas Prices",
-   "group": "Prices",
+   "group": "Fuel prices",
    "description": "Regular gasoline, average retail price. Fuel costs squeeze household budgets within weeks.",
    "unit": "usd",
    "decimals": 2,
@@ -1944,7 +1945,7 @@
    "id": "diesel_ca",
    "order": 2,
    "title": "Diesel Prices",
-   "group": "Prices",
+   "group": "Fuel prices",
    "description": "On-highway diesel, average retail price. Diesel drives food transport costs, ours included.",
    "unit": "usd",
    "decimals": 2,
@@ -2909,9 +2910,9 @@
   },
   {
    "id": "eggs_ca",
-   "order": 3,
+   "order": 1,
    "title": "Egg Prices",
-   "group": "Prices",
+   "group": "Food staple prices",
    "description": "Wholesale price of a dozen large shell eggs. A staple protein whose price swings fast.",
    "unit": "usd",
    "decimals": 2,
@@ -3886,9 +3887,9 @@
   },
   {
    "id": "chicken_us",
-   "order": 4,
+   "order": 2,
    "title": "Chicken Prices",
-   "group": "Prices",
+   "group": "Food staple prices",
    "description": "National composite wholesale whole broiler price, per pound. No California-only report exists.",
    "unit": "usd",
    "decimals": 2,
@@ -4862,9 +4863,9 @@
   },
   {
    "id": "beef_us",
-   "order": 5,
+   "order": 3,
    "title": "Beef Prices",
-   "group": "Prices",
+   "group": "Food staple prices",
    "description": "Choice boxed beef cutout, per 100 lbs. Wholesale beef costs reach stores within weeks.",
    "unit": "usd",
    "decimals": 2,
@@ -5852,7 +5853,7 @@
    "fred_id": "CAICLAIMS",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T16:27:38+00:00",
+   "fetched_at": "2026-10-16T16:30:52+00:00",
    "key": null,
    "points": [
     [
@@ -7130,7 +7131,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T16:27:37+00:00",
+   "fetched_at": "2026-10-16T16:30:52+00:00",
    "key": null,
    "points": [
     [
@@ -7257,7 +7258,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T16:27:38+00:00",
+   "fetched_at": "2026-10-16T16:30:52+00:00",
    "key": null,
    "points": [
     [
@@ -8536,7 +8537,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T16:27:40+00:00",
+   "fetched_at": "2026-10-16T16:30:53+00:00",
    "key": null,
    "points": [
     [
@@ -9490,7 +9491,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T16:27:40+00:00",
+   "fetched_at": "2026-10-16T16:30:54+00:00",
    "key": null,
    "points": [
     [
