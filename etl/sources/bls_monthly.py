@@ -3,8 +3,8 @@
 BLS_API_KEY (optional, free at data.bls.gov/registrationEngine) raises the daily request
 limit; without it the v2 API allows 25 requests a day, and this uses one.
 
-Both lag: BLS publishes CPI about two weeks after the reference month (the SF area only in
-even months), and county unemployment about five weeks after.
+Both lag: BLS publishes CPI about two weeks after the reference month (SF all-items only in
+even months; SF food at home monthly), and county unemployment about five weeks after.
 """
 
 import datetime as dt
@@ -29,7 +29,7 @@ SERIES = [
      "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
      "sample": {"base": 3.0, "vol": 0.08}},
     {"id": "cpi_food_sf", "order": 2, "title": "Food Inflation (CPI)", "group": "Monthly indicators", "caveat": CAVEAT,
-     "description": "12-month change in grocery (food at home) prices, SF-Oakland-Hayward area. Published every other month, about two weeks after the month ends.",
+     "description": "12-month change in grocery (food at home) prices, SF-Oakland-Hayward area. Monthly from a small local sample, so it is noisy. Published about two weeks after the month ends.",
      "unit": "pct", "decimals": 1, "freq": "monthly", "agg": "last", "higher_is_worse": True, "weight": 1,
      "geo": "SF-Oakland-Hayward", "source": "BLS CPI-U, food at home",
      "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
