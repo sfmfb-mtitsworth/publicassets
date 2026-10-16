@@ -32,6 +32,7 @@ jobs:
           USDA_AMS_API_KEY: ${{ secrets.USDA_AMS_API_KEY }}
           GOOGLE_TRENDS_API_KEY: ${{ secrets.GOOGLE_TRENDS_API_KEY }}
           SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+          BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
         run: python etl/build.py
       - name: Commit changes
         run: |
