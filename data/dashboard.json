@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T17:19:01+00:00",
+ "generated_at": "2026-10-16T17:19:56+00:00",
  "groups": [
   "Google Searches",
   "Fuel prices",
@@ -992,7 +992,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:18:58+00:00",
+   "fetched_at": "2026-10-16T17:19:47+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2242,13 +2242,19 @@
      6.306,
      1.61,
      1
+    ],
+    [
+     "2026-10-12",
+     6.154,
+     1.33,
+     1
     ]
    ],
    "stats": {
-    "latest": 6.306,
-    "latest_date": "2026-10-05",
-    "recent_avg": 6.1434999999999995,
-    "year_avg": 5.145711538461539,
+    "latest": 6.154,
+    "latest_date": "2026-10-12",
+    "recent_avg": 6.1995000000000005,
+    "year_avg": 5.17775,
     "recent_n": 4,
     "year_n": 52
    }
@@ -2271,7 +2277,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:18:58+00:00",
+   "fetched_at": "2026-10-16T17:19:47+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -3521,13 +3527,19 @@
      8.082,
      1.68,
      1
+    ],
+    [
+     "2026-10-12",
+     8.091,
+     1.61,
+     1
     ]
    ],
    "stats": {
-    "latest": 8.082,
-    "latest_date": "2026-10-05",
-    "recent_avg": 8.137,
-    "year_avg": 6.162615384615385,
+    "latest": 8.091,
+    "latest_date": "2026-10-12",
+    "recent_avg": 8.15,
+    "year_avg": 6.223211538461539,
     "recent_n": 4,
     "year_n": 52
    }
@@ -3559,7 +3571,7 @@
    ],
    "scale": 0.01,
    "status": "error",
-   "error": "AttributeError: 'list' object has no attribute 'get'",
+   "error": "ValueError: Report 2844: no rows matched filters {'egg_size': 'large'} with fields ['wtd_avg', 'weighted_average', 'avg_price', 'price_avg']",
    "fetched_at": null,
    "key": "USDA_AMS_API_KEY",
    "points": [],
@@ -3591,7 +3603,7 @@
    ],
    "scale": 0.01,
    "status": "error",
-   "error": "AttributeError: 'list' object has no attribute 'get'",
+   "error": "ValueError: Report 2844: no rows matched filters {'egg_size': 'large'} with fields ['wtd_avg', 'weighted_average', 'avg_price', 'price_avg']",
    "fetched_at": null,
    "key": "USDA_AMS_API_KEY",
    "points": [],
@@ -3621,7 +3633,7 @@
    ],
    "scale": 1,
    "status": "error",
-   "error": "AttributeError: 'list' object has no attribute 'get'",
+   "error": "ValueError: Report 2844: no rows matched filters {'egg_size': 'large'} with fields ['wtd_avg', 'weighted_average', 'avg_price', 'price_avg']",
    "fetched_at": null,
    "key": "USDA_AMS_API_KEY",
    "points": [],
@@ -3645,7 +3657,7 @@
    "fred_id": "CAICLAIMS",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:18:59+00:00",
+   "fetched_at": "2026-10-16T17:19:55+00:00",
    "key": null,
    "points": [
     [
@@ -4923,7 +4935,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:18:54+00:00",
+   "fetched_at": "2026-10-16T17:19:46+00:00",
    "key": null,
    "points": [
     [
@@ -5050,7 +5062,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:18:59+00:00",
+   "fetched_at": "2026-10-16T17:19:55+00:00",
    "key": null,
    "points": [
     [
@@ -6329,7 +6341,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:19:00+00:00",
+   "fetched_at": "2026-10-16T17:19:56+00:00",
    "key": null,
    "points": [
     [
@@ -7283,7 +7295,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:19:01+00:00",
+   "fetched_at": "2026-10-16T17:19:56+00:00",
    "key": null,
    "points": [
     [
