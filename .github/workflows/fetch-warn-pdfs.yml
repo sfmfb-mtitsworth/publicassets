@@ -1,0 +1,36 @@
+name: Fetch WARN PDFs (one-off backfill)
+
+# Downloads EDD's prior-year WARN report PDFs to the warn-pdfs branch so they can be
+# transcribed into data/backfill/warn_bay.csv. Not part of the daily run.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/fetch-warn-pdfs.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download PDFs
+        run: |
+          mkdir pdfs && cd pdfs
+          curl -sSL -A "Mozilla/5.0" https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN -o page.html
+          grep -oiE 'href="[^"]+\.pdf"' page.html | sed -E 's/href="//I; s/"$//' | sort -u | tee links.txt
+          for f in warn-report-for-7-1-2024-to-06-30-2025.pdf warn-report-for-7-1-2025-to-06-30-2026.pdf; do
+            curl -sSLf -A "Mozilla/5.0" -o "$f" "https://edd.ca.gov/siteassets/files/jobs_and_training/warn/$f" || echo "missing $f"
+          done
+          grep -iE '2024|2025|2026' links.txt | while read -r l; do
+            case "$l" in http*) u="$l";; *) u="https://edd.ca.gov$l";; esac
+            n=$(basename "$l"); [ -f "$n" ] || curl -sSLf -A "Mozilla/5.0" -o "$n" "$u" || echo "failed $u"
+          done
+          rm page.html; ls -la
+      - name: Commit to warn-pdfs branch
+        run: |
+          cd pdfs
+          git init -q -b warn-pdfs && git add -A
+          git -c user.name=etl-bot -c user.email=etl-bot@users.noreply.github.com commit -qm "WARN report PDFs for backfill"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" warn-pdfs
