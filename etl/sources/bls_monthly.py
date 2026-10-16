@@ -15,26 +15,25 @@ from common import USER_AGENT, env
 
 KEY = None
 URL = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
-CAVEAT = "Monthly, lagged"
 
 CPI = {"cpi_sf": "CUURS49BSA0", "cpi_food_sf": "CUURS49BSAF11"}
 # LAUS county series: 04 = unemployed persons, 06 = labor force.
 LAUS = {"San Francisco": "06075", "Marin": "06041"}
 
 SERIES = [
-    {"id": "cpi_sf", "order": 1, "title": "Inflation (CPI)", "group": "Monthly indicators", "caveat": CAVEAT,
-     "description": "12-month change in consumer prices, SF-Oakland-Hayward area. Published every other month, about two weeks after the month ends.",
+    {"id": "cpi_sf", "order": 5, "title": "Inflation", "group": "Jobs & economy", "cadence": "Every 2 Months",
+     "description": "12-month change in consumer prices (CPI), SF-Oakland-Hayward area. Published every other month, about two weeks after the month ends.",
      "unit": "pct", "decimals": 1, "freq": "monthly", "agg": "last", "higher_is_worse": True, "weight": 1,
      "geo": "SF-Oakland-Hayward", "source": "BLS CPI-U",
      "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
      "sample": {"base": 3.0, "vol": 0.08}},
-    {"id": "cpi_food_sf", "order": 2, "title": "Food Inflation (CPI)", "group": "Monthly indicators", "caveat": CAVEAT,
-     "description": "12-month change in grocery (food at home) prices, SF-Oakland-Hayward area. Monthly from a small local sample, so it is noisy. Published about two weeks after the month ends.",
+    {"id": "cpi_food_sf", "order": 4, "title": "Food Inflation", "group": "Food staple prices",
+     "description": "12-month change in grocery prices (CPI food at home), SF-Oakland-Hayward area. Monthly from a small local sample, so it is noisy. Published about two weeks after the month ends.",
      "unit": "pct", "decimals": 1, "freq": "monthly", "agg": "last", "higher_is_worse": True, "weight": 1,
      "geo": "SF-Oakland-Hayward", "source": "BLS CPI-U, food at home",
      "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
      "sample": {"base": 2.5, "vol": 0.12}},
-    {"id": "unemp_sfmarin", "order": 3, "title": "Unemployment Rate", "group": "Monthly indicators", "caveat": CAVEAT,
+    {"id": "unemp_sfmarin", "order": 4, "title": "Unemployment Rate", "group": "Jobs & economy",
      "description": "Share of the labor force out of work in San Francisco and Marin combined, not seasonally adjusted. Published about five weeks after the month ends.",
      "unit": "pct", "decimals": 1, "freq": "monthly", "agg": "last", "higher_is_worse": True, "weight": 1.5,
      "geo": "San Francisco + Marin", "source": "BLS LAUS",

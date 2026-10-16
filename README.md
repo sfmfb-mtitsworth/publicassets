@@ -18,9 +18,9 @@ Routine publishes that file to the leadership dashboard artifact.
 | Jobs & economy | Weekly Economic Index | U.S. | NY Fed via FRED `WEI` | none |
 | Housing stress | Eviction notices | San Francisco | DataSF `5cei-gny5` | optional `SOCRATA_APP_TOKEN` |
 | Housing stress | Rents | SF metro | Zillow ZORI (monthly) | none |
-| Monthly indicators | Inflation (CPI), all items | SF-Oakland-Hayward | BLS `CUURS49BSA0` (every other month) | optional `BLS_API_KEY` |
-| Monthly indicators | Food inflation (CPI), food at home | SF-Oakland-Hayward | BLS `CUURS49BSAF11` (every other month) | optional `BLS_API_KEY` |
-| Monthly indicators | Unemployment rate | SF + Marin | BLS LAUS county data (unemployed ÷ labor force) | optional `BLS_API_KEY` |
+| Jobs & economy | Inflation (CPI), all items | SF-Oakland-Hayward | BLS `CUURS49BSA0` (every other month) | optional `BLS_API_KEY` |
+| Food staple prices | Food inflation (CPI), food at home | SF-Oakland-Hayward | BLS `CUURS49BSAF11` (every other month) | optional `BLS_API_KEY` |
+| Jobs & economy | Unemployment rate | SF + Marin | BLS LAUS county data (unemployed ÷ labor force) | optional `BLS_API_KEY` |
 
 A source whose secret is missing shows **sample data**, labelled on the dashboard. Add the
 secret under Settings > Secrets and variables > Actions and the next run switches it to live.

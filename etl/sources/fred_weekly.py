@@ -14,7 +14,7 @@ SERIES = [
      "geo": "California", "source": "CA EDD via U.S. DOL (FRED: CAICLAIMS)",
      "source_url": "https://fred.stlouisfed.org/series/CAICLAIMS", "fred_id": "CAICLAIMS",
      "sample": {"base": 42000, "vol": 0.08, "season": 0.1, "spike": 0.5, "integer": True}},
-    {"id": "wei", "order": 3, "title": "Weekly Economic Index", "group": "Jobs & economy",
+    {"id": "wei", "order": 3, "title": "Economic Index", "group": "Jobs & economy",
      "description": "NY Fed weekly read on national growth, scaled to annual GDP growth. A falling index means a slowing economy.",
      "unit": "pct", "decimals": 2, "freq": "weekly", "agg": "last", "higher_is_worse": False, "weight": 1,
      "geo": "United States", "source": "Federal Reserve Bank of New York (FRED: WEI)",

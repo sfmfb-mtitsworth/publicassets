@@ -13,7 +13,7 @@ Series metadata fields:
   freq ("weekly" | "monthly"), agg ("mean" | "sum" | "last"),
   higher_is_worse (bool), weight (composite weight), geo, source, source_url,
   lag_weeks (optional: recent weeks to drop while the source is still filling them in),
-  caveat (optional: short label shown as a chip on the card, e.g. "Monthly, lagged"),
+  cadence (optional: shown after the title; defaults to "Weekly" or "Monthly" from freq),
   sample {base, vol, trend?, season?, spike?, integer?}
 """
 
@@ -36,9 +36,7 @@ import sources  # noqa: E402
 HISTORY = ROOT / "data" / "series"
 SECRET_ENV = ["EIA_API_KEY", "USDA_AMS_API_KEY", "BLS_API_KEY", "SOCRATA_APP_TOKEN", "GOOGLE_TRENDS_API_KEY"]
 BASELINE = {"weekly": (52, 12), "monthly": (24, 8)}  # (trailing periods, minimum periods)
-GROUPS = ["Fuel prices", "Food staple prices", "Jobs & economy", "Housing stress", "Monthly indicators"]
-GROUP_NOTES = {"Monthly indicators": "Official monthly statistics. They confirm trends rather than lead them: each is "
-                                     "published two to six weeks after the month it describes."}
+GROUPS = ["Fuel prices", "Food staple prices", "Jobs & economy", "Housing stress"]
 PLACEHOLDER = "/*__DASHBOARD_DATA__*/null"
 
 
@@ -190,7 +188,7 @@ def main(only=None):
                            "status": rec["status"], "error": rec["error"], "fetched_at": rec["fetched_at"],
                            "key": mod.KEY, "points": pts, "stats": stats(pts, meta["freq"])})
     series.sort(key=lambda s: (GROUPS.index(s["group"]), s.get("order", 99)))
-    data = {"generated_at": now_iso(), "groups": GROUPS, "group_notes": GROUP_NOTES, "series": series, "composite": composite(series)}
+    data = {"generated_at": now_iso(), "groups": GROUPS, "series": series, "composite": composite(series)}
     (ROOT / "data" / "dashboard.json").write_text(json.dumps(data, indent=1) + "\n")
     template = (ROOT / "templates" / "dashboard.html").read_text()
     payload = json.dumps(data, separators=(",", ":")).replace("</", "<\\/")
