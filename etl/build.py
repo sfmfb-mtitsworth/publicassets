@@ -34,7 +34,7 @@ import sources  # noqa: E402
 
 HISTORY = ROOT / "data" / "series"
 BASELINE = {"weekly": (52, 12), "monthly": (24, 8)}  # (trailing periods, minimum periods)
-GROUPS = ["Google Searches", "Fuel prices", "Food staple prices", "Jobs & economy", "Housing stress", "Monthly indicators"]
+GROUPS = ["Fuel prices", "Food staple prices", "Jobs & economy", "Housing stress", "Monthly indicators"]
 GROUP_NOTES = {"Monthly indicators": "Official monthly statistics. They confirm trends rather than lead them: each is "
                                      "published two to six weeks after the month it describes."}
 PLACEHOLDER = "/*__DASHBOARD_DATA__*/null"

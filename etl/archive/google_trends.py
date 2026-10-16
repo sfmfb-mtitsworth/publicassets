@@ -1,4 +1,6 @@
-"""Google Trends searches for "food bank" in the San Francisco Bay Area. Needs GOOGLE_TRENDS_API_KEY.
+"""ARCHIVED for v1.1: not loaded by build.py (only etl/sources/ is). Move back to etl/sources/ to enable.
+
+Google Trends searches for "food bank" in the San Francisco Bay Area. Needs GOOGLE_TRENDS_API_KEY.
 
 Uses the Google Trends API (alpha). The request shape below follows early public notes
 on v1alpha and must be checked against the alpha documentation that came with the key.

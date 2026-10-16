@@ -21,10 +21,12 @@ Routine publishes that file to the leadership dashboard artifact.
 | Monthly indicators | Inflation (CPI), all items | SF-Oakland-Hayward | BLS `CUURS49BSA0` (every other month) | optional `BLS_API_KEY` |
 | Monthly indicators | Food inflation (CPI), food at home | SF-Oakland-Hayward | BLS `CUURS49BSAF11` (every other month) | optional `BLS_API_KEY` |
 | Monthly indicators | Unemployment rate | SF + Marin | BLS LAUS county data (unemployed ÷ labor force) | optional `BLS_API_KEY` |
-| Google Searches | Searches for "food bank" | SF Bay Area | Google Trends API (alpha) | `GOOGLE_TRENDS_API_KEY` |
 
 A source whose secret is missing shows **sample data**, labelled on the dashboard. Add the
 secret under Settings > Secrets and variables > Actions and the next run switches it to live.
+
+**Planned for v1.1:** Google searches for "food bank" (Google Trends API alpha). The module is parked in
+`etl/archive/google_trends.py`; move it back to `etl/sources/` and add `GOOGLE_TRENDS_API_KEY` to enable it.
 
 ## How it works
 
