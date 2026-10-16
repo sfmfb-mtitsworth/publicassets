@@ -15,6 +15,8 @@ from common import env, get_json, parse_date
 
 KEY = "USDA_AMS_API_KEY"
 BASE = "https://marsapi.ams.usda.gov/services/v1.2/reports"
+LMR_BASE = "https://mpr.datamart.ams.usda.gov/services/v1.1/reports"  # Livestock Mandatory Reporting, no key
+LAYOUT_KEYS = ["primal", "item", "class", "color", "egg_type", "environment", "purchase_type", "delivery", "grade", "region"]
 
 SERIES = [
     {"id": "eggs_ca", "order": 1, "title": "Egg Prices", "group": "Food staple prices",
@@ -32,7 +34,7 @@ SERIES = [
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 0.75,
      "geo": "United States", "source": "USDA AMS, Weekly National Chicken report (3646)",
      "source_url": "https://mymarketnews.ams.usda.gov/viewReport/3646",
-     "slug": 3646, "filters": {"item": "composite"}, "price_fields": ["wtd_avg", "weighted_average", "avg_price"],
+     "slug": 3646, "filters": {"_section": "Report Detail", "primal": "Whole Bird"}, "price_fields": ["wtd_avg_price"],
      "scale": 0.01,  # cents per pound -> dollars per pound
      "sample": {"base": 1.08, "vol": 0.02, "season": 0.04, "trend": 0.02}},
     {"id": "beef_us", "order": 3, "title": "Beef Prices", "group": "Food staple prices",
@@ -40,20 +42,20 @@ SERIES = [
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 0.75,
      "geo": "United States", "source": "USDA AMS, Daily Boxed Beef Cutout (2453)",
      "source_url": "https://mymarketnews.ams.usda.gov/viewReport/2453",
-     "slug": 2453, "filters": {}, "price_fields": ["choice_600_900_current", "choice_600_900", "choice_cutout"],
+     "slug": 2453, "lmr": True, "filters": {}, "price_fields": ["choice_600_900_current", "choice_600_900", "choice_cutout"],
      "scale": 1,
      "sample": {"base": 365, "vol": 0.012, "trend": 0.05}},
 ]
 
 
-def _rows(slug, start, end):
+def _rows(slug, start, end, lmr=False):
     token = base64.b64encode(f"{env(KEY)}:".encode()).decode()
+    base, headers = (LMR_BASE, {}) if lmr else (BASE, {"Authorization": f"Basic {token}"})
     rows = []
     while start <= end:  # MARS caps date ranges, so pull in 180-day chunks
         stop = min(end, start + dt.timedelta(days=179))
         q = f"report_begin_date={start:%m/%d/%Y}:{stop:%m/%d/%Y}"
-        rows += _extract(get_json(f"{BASE}/{slug}", params={"q": q, "allSections": "true"},
-                                  headers={"Authorization": f"Basic {token}"}))
+        rows += _extract(get_json(f"{base}/{slug}", params={"q": q, "allSections": "true"}, headers=headers))
         start = stop + dt.timedelta(days=1)
     return rows
 
@@ -78,6 +80,11 @@ def _log_layout(slug, rows):
     for sec, r in seen.items():
         sample = {k: str(v)[:40] for k, v in r.items() if v not in (None, "")}
         print(f"[ams_food] {slug} section {sec!r}: {sample}")
+        in_sec = [x for x in rows if x.get("_section") == sec]
+        for k in LAYOUT_KEYS:
+            vals = sorted({str(x[k]) for x in in_sec if x.get(k) not in (None, "")})
+            if 1 < len(vals) <= 60:
+                print(f"[ams_food] {slug} {sec!r} {k}: {vals}")
 
 
 def _matches(row, filters):
@@ -100,7 +107,7 @@ def fetch():
 
 
 def _series(s, start, end):
-    rows = _rows(s["slug"], start, end)
+    rows = _rows(s["slug"], start, end, s.get("lmr", False))
     _log_layout(s["slug"], rows)
     pts = []
     for r in rows:
