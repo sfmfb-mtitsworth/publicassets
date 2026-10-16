@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-16T17:21:06+00:00",
+ "generated_at": "2026-10-16T17:22:03+00:00",
  "groups": [
   "Google Searches",
   "Fuel prices",
@@ -992,7 +992,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:03+00:00",
+   "fetched_at": "2026-10-16T17:22:01+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2277,7 +2277,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:03+00:00",
+   "fetched_at": "2026-10-16T17:22:01+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -3572,7 +3572,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:02+00:00",
+   "fetched_at": "2026-10-16T17:22:00+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -4142,12 +4142,11 @@
    "source_url": "https://mymarketnews.ams.usda.gov/viewReport/3646",
    "slug": 3646,
    "filters": {
-    "item": "composite"
+    "_section": "Report Detail",
+    "primal": "Whole Bird"
    },
    "price_fields": [
-    "wtd_avg",
-    "weighted_average",
-    "avg_price"
+    "wtd_avg_price"
    ],
    "scale": 0.01,
    "status": "error",
@@ -4173,6 +4172,7 @@
    "source": "USDA AMS, Daily Boxed Beef Cutout (2453)",
    "source_url": "https://mymarketnews.ams.usda.gov/viewReport/2453",
    "slug": 2453,
+   "lmr": true,
    "filters": {},
    "price_fields": [
     "choice_600_900_current",
@@ -4205,7 +4205,7 @@
    "fred_id": "CAICLAIMS",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:04+00:00",
+   "fetched_at": "2026-10-16T17:22:01+00:00",
    "key": null,
    "points": [
     [
@@ -5483,7 +5483,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:02+00:00",
+   "fetched_at": "2026-10-16T17:22:00+00:00",
    "key": null,
    "points": [
     [
@@ -5610,7 +5610,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:04+00:00",
+   "fetched_at": "2026-10-16T17:22:01+00:00",
    "key": null,
    "points": [
     [
@@ -6889,7 +6889,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:05+00:00",
+   "fetched_at": "2026-10-16T17:22:02+00:00",
    "key": null,
    "points": [
     [
@@ -7843,7 +7843,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-16T17:21:06+00:00",
+   "fetched_at": "2026-10-16T17:22:03+00:00",
    "key": null,
    "points": [
     [
