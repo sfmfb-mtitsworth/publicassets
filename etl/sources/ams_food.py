@@ -25,8 +25,8 @@ SERIES = [
      "geo": "California", "source": "USDA AMS, California Shell Egg report (2844)",
      "source_url": "https://mymarketnews.ams.usda.gov/viewReport/2844",
      "slug": 2844, "price_fields": ["avg_price"],
-     # California requires cage-free; averages Northern and Southern California store-door prices.
-     "filters": {"_section": "Report Detail Simple", "class": "Large", "color": "White", "egg_type": "Cartoned"},
+     # California Benchmark price for large white eggs (all California eggs are cage-free).
+     "filters": {"_section": "Report Detail Simple", "purchase_type": "Benchmark", "class": "Large", "color": "White"},
      "scale": 0.01,  # cents per dozen -> dollars per dozen
      "sample": {"base": 3.4, "vol": 0.05, "season": 0.06, "spike": 0.35}},
     {"id": "chicken_us", "order": 2, "title": "Chicken Prices", "group": "Food staple prices",
@@ -34,7 +34,7 @@ SERIES = [
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 0.75,
      "geo": "United States", "source": "USDA AMS, Weekly National Chicken report (3646)",
      "source_url": "https://mymarketnews.ams.usda.gov/viewReport/3646",
-     "slug": 3646, "filters": {"_section": "Report Detail", "primal": "Whole Bird"}, "price_fields": ["wtd_avg_price"],
+     "slug": 3646, "filters": {"_section": "Report Detail", "primal": "Whole", "item": "WOG", "region": "National"}, "price_fields": ["wtd_avg_price"],
      "scale": 0.01,  # cents per pound -> dollars per pound
      "sample": {"base": 1.08, "vol": 0.02, "season": 0.04, "trend": 0.02}},
     {"id": "beef_us", "order": 3, "title": "Beef Prices", "group": "Food staple prices",
@@ -54,8 +54,13 @@ def _rows(slug, start, end, lmr=False):
     rows = []
     while start <= end:  # MARS caps date ranges, so pull in 180-day chunks
         stop = min(end, start + dt.timedelta(days=179))
-        q = f"report_begin_date={start:%m/%d/%Y}:{stop:%m/%d/%Y}"
-        rows += _extract(get_json(f"{base}/{slug}", params={"q": q, "allSections": "true"}, headers=headers))
+        field = "report_date" if lmr else "report_begin_date"
+        resp = get_json(f"{base}/{slug}", params={"q": f"{field}={start:%m/%d/%Y}:{stop:%m/%d/%Y}", "allSections": "true"},
+                        headers=headers)
+        got = _extract(resp)
+        if not got and not rows:
+            print(f"[ams_food] {slug} empty response shape: {str(resp)[:400]}")
+        rows += got
         start = stop + dt.timedelta(days=1)
     return rows
 
