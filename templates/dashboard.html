@@ -167,7 +167,11 @@ const short = (v, s) => {
 };
 
 /* One chart routine for all cards: bars from zero, colored by anomaly level. kind "diverge" is the General Indicator. */
-function chart(box, pts, s, kind) {
+const DAY = 864e5;
+const periodEnd = (p, freq) => { const d = d8(p[0]); if (freq === "monthly") d.setMonth(d.getMonth() + 1); else d.setDate(d.getDate() + 7); return d; };
+
+/* dom = {start, end}: the shared date range every chart is drawn on, so a week sits in the same place on every card. */
+function chart(box, pts, s, kind, dom) {
   box.innerHTML = "";
   if (!pts.length) { box.appendChild(h('<div class="empty">No data in this range.</div>')); return; }
   const W = Math.max(200, box.clientWidth), H = Math.max(100, box.clientHeight), m = { l: 40, r: 6, t: 8, b: 20 };
@@ -176,8 +180,10 @@ function chart(box, pts, s, kind) {
   let lo = Math.min(...vals), hi = Math.max(...vals);
   lo = Math.min(0, lo); hi = Math.max(0, hi);
   const ticks = niceTicks(lo, hi); lo = Math.min(lo, ticks[0]); hi = Math.max(hi, ticks[ticks.length - 1]);
-  const pw = W - m.l - m.r, step = pw / pts.length;
-  const x = i => m.l + step * (i + 0.5);
+  const pw = W - m.l - m.r, span = dom.end - dom.start;
+  const xd = d => m.l + Math.max(0, Math.min(1, (d - dom.start) / span)) * pw;
+  const x0 = i => xd(d8(pts[i][0])), x1 = i => xd(periodEnd(pts[i], s.freq));
+  const x = i => (x0(i) + x1(i)) / 2;
   const y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
   ticks.forEach(t => {
     if (t < lo - 1e-9 || t > hi + 1e-9) return;
@@ -185,15 +191,14 @@ function chart(box, pts, s, kind) {
     el("text", { x: m.l - 6, y: y(t) + 4, "text-anchor": "end" }, svg).textContent = short(t, s);
   });
   let lastLabel = -Infinity;
-  pts.forEach((p, i) => {
-    const d = d8(p[0]);
-    const isTick = s.freq === "monthly" ? [0, 3, 6, 9].includes(d.getMonth()) : d.getDate() <= 7 && [0, 3, 6, 9].includes(d.getMonth());
-    if (isTick && x(i) - lastLabel > 60) { el("text", { x: x(i), y: H - 6, "text-anchor": "middle" }, svg).textContent = `${MONTHS[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`; lastLabel = x(i); }
-  });
+  for (let d = new Date(dom.start.getFullYear(), Math.floor(dom.start.getMonth() / 3) * 3 + 3, 1); d < dom.end; d.setMonth(d.getMonth() + 3)) {
+    const tx = xd(d);
+    if (tx - lastLabel > 60 && tx < W - m.r - 16) { el("text", { x: tx, y: H - 6, "text-anchor": "middle" }, svg).textContent = `${MONTHS[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`; lastLabel = tx; }
+  }
   const marks = [];
   {
-    const bw = Math.max(1, step - (step > 6 ? 2 : 1));
     pts.forEach((p, i) => {
+      const full = x1(i) - x0(i), bw = Math.max(1, full - (full > 6 ? 2 : full > 2 ? 1 : 0));
       const top = Math.min(y(p[1]), y(0)), ht = Math.max(p[1] === 0 ? 0 : 1, Math.abs(y(p[1]) - y(0)));
       marks[i] = el("rect", { x: x(i) - bw / 2, y: top, width: bw, height: ht, rx: Math.min(2, bw / 3), fill: SEV[p[kind === "diverge" ? 2 : 3]] }, svg);
     });
@@ -202,7 +207,8 @@ function chart(box, pts, s, kind) {
   const hit = el("rect", { x: m.l, y: 0, width: pw, height: H, fill: "transparent" }, svg);
   const cross = el("line", { y1: m.t, y2: H - m.b, stroke: "var(--ink-3)", "stroke-dasharray": "3 3", visibility: "hidden" }, svg);
   hit.addEventListener("pointermove", e => {
-    const r = svg.getBoundingClientRect(), i = Math.max(0, Math.min(pts.length - 1, Math.floor(((e.clientX - r.left) * W / r.width - m.l) / step)));
+    const r = svg.getBoundingClientRect(), px = (e.clientX - r.left) * W / r.width;
+    let i = 0; pts.forEach((_, j) => { if (Math.abs(x(j) - px) < Math.abs(x(i) - px)) i = j; });
     const p = pts[i], lvl = kind === "diverge" ? p[2] : p[3];
     const zline = kind === "diverge" ? `${p[1] > 0 ? "+" : ""}${p[1].toFixed(2)} SD` : p[2] == null ? "Not enough history to score" : `${p[2] > 0 ? "+" : ""}${p[2].toFixed(1)} SD from normal`;
     tip.innerHTML = `${esc(dateLabel(p[0], s.freq))}<br><b>${kind === "diverge" ? "" : esc(fmt(p[1], s))}</b>${kind === "diverge" ? "" : "<br>"}${zline}${lvl ? `<br>Level ${lvl}` : ""}`;
@@ -214,11 +220,13 @@ function chart(box, pts, s, kind) {
   hit.addEventListener("pointerleave", () => { tip.hidden = true; cross.setAttribute("visibility", "hidden"); });
 }
 
-function windowed(points, freq, weeks) {
-  if (!points.length) return points;
-  const cutoff = d8(points[points.length - 1][0]); cutoff.setDate(cutoff.getDate() - weeks * 7);
-  return points.filter(p => d8(p[0]) > cutoff);
+function domain(weeks) {
+  // Ends after the latest complete week any weekly series (or the General Indicator) reports.
+  let end = DATA.composite.length ? periodEnd(DATA.composite[DATA.composite.length - 1], "weekly") : new Date(0);
+  DATA.series.forEach(s => { if (s.freq === "weekly" && s.points.length) { const e = periodEnd(s.points[s.points.length - 1], "weekly"); if (e > end) end = e; } });
+  return { start: new Date(end - weeks * 7 * DAY), end };
 }
+const windowed = (points, freq, dom) => points.filter(p => periodEnd(p, freq) > dom.start && d8(p[0]) < dom.end);
 
 function statusChip(s) {
   if (s.status === "sample") return `<span class="chip sample" title="Add ${esc(s.key)} to the repo secrets to load real data">Sample data</span>`;
@@ -279,12 +287,12 @@ function render() {
   const buttons = [...document.querySelectorAll(".seg button")];
   let draw = weeks => {
     buttons.forEach(b => b.setAttribute("aria-pressed", String(+b.dataset.weeks === weeks)));
-    const cp = windowed(DATA.composite, "weekly", weeks);
-    chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge");
+    const dom = domain(weeks), cp = windowed(DATA.composite, "weekly", dom);
+    chart(document.getElementById("general-chart"), cp, { title: "General Indicator", freq: "weekly" }, "diverge", dom);
     document.getElementById("general-note").textContent = `Data for ${cp.length} weeks shown. Bars above zero mean more pressure than normal.`;
     series.forEach(s => {
       const box = document.querySelector(`#${CSS.escape(s.id)} .chart`);
-      if (box) chart(box, windowed(s.points, s.freq, weeks), s, "bar");
+      if (box) chart(box, windowed(s.points, s.freq, dom), s, "bar", dom);
     });
     try { localStorage.setItem("li-weeks", weeks); } catch (e) {}
   };
