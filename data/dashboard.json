@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T14:25:59+00:00",
+ "generated_at": "2026-10-19T14:32:01+00:00",
  "groups": [
   "Fuel prices",
   "Food staple prices",
@@ -25,7 +25,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:25:48+00:00",
+   "fetched_at": "2026-10-19T14:31:54+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -1310,7 +1310,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:25:48+00:00",
+   "fetched_at": "2026-10-19T14:31:54+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2605,7 +2605,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:22+00:00",
+   "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -3186,7 +3186,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:22+00:00",
+   "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -4161,7 +4161,7 @@
    "scale": 1,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:23+00:00",
+   "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -5133,7 +5133,7 @@
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:23+00:00",
+   "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": null,
    "points": [
     [
@@ -5428,7 +5428,7 @@
    "source_url": "https://edd.ca.gov/en/newsroom/facts-and-stats/dashboard/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:25+00:00",
+   "fetched_at": "2026-10-19T14:31:53+00:00",
    "key": null,
    "points": [
     [
@@ -7576,7 +7576,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:25+00:00",
+   "fetched_at": "2026-10-19T14:31:53+00:00",
    "key": null,
    "points": [
     [
@@ -8327,7 +8327,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:25:51+00:00",
+   "fetched_at": "2026-10-19T14:31:59+00:00",
    "key": null,
    "points": [
     [
@@ -9605,7 +9605,7 @@
    "source_url": "https://www.bls.gov/lau/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:23+00:00",
+   "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": null,
    "points": [
     [
@@ -9966,7 +9966,7 @@
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:24:23+00:00",
+   "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": null,
    "points": [
     [
@@ -10123,7 +10123,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:25:59+00:00",
+   "fetched_at": "2026-10-19T14:32:00+00:00",
    "key": null,
    "points": [
     [
@@ -11083,7 +11083,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:25:59+00:00",
+   "fetched_at": "2026-10-19T14:32:01+00:00",
    "key": null,
    "points": [
     [
