@@ -4,7 +4,7 @@ name: Leading indicators ETL
 # within a day. Sources without a key secret fall back to labelled sample data.
 on:
   schedule:
-    - cron: "23 13 * * *" # 6:23am Pacific (PDT), 5:23am (PST)
+    - cron: "17 10 * * *" # 3:17am PDT / 2:17am PST; GitHub often starts scheduled runs hours late, so this leaves room before the 7:30am publish
   workflow_dispatch:
   push:
     branches: [main]
