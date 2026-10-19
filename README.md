@@ -28,6 +28,13 @@ secret under Settings > Secrets and variables > Actions and the next run switche
 **Planned for v1.1:** Google searches for "food bank" (Google Trends API alpha). The module is parked in
 `etl/archive/google_trends.py`; move it back to `etl/sources/` and add `GOOGLE_TRENDS_API_KEY` to enable it.
 
+## Schedule
+
+- **GitHub Actions** (`.github/workflows/etl.yml`) fetches every source and rebuilds `artifacts/dashboard.html` daily at about 3am Pacific.
+- **Claude Routine** "Leading Indicators Dashboard Publish" publishes that file to the dashboard artifact at 7:30am Pacific.
+  It must have this repository attached so it reads `.claude/settings.json`, whose allow rule lets the unattended
+  session run the Artifact publish.
+
 ## How it works
 
 - `etl/sources/<name>.py`: one module per source. Each declares `KEY`, `SERIES` metadata and `fetch()`.
