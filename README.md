@@ -13,7 +13,7 @@ Routine publishes that file to the leadership dashboard artifact.
 | Food staple prices | Egg prices | California | USDA AMS report 2844 | `USDA_AMS_API_KEY` |
 | Food staple prices | Chicken prices | Western U.S. | USDA AMS report 3646 | `USDA_AMS_API_KEY` |
 | Food staple prices | Beef prices | U.S. | USDA AMS report 2453 | `USDA_AMS_API_KEY` |
-| Jobs & economy | Unemployment claims | California | DOL/EDD via FRED `CAICLAIMS` | none |
+| Jobs & economy | Unemployment claims | SF + Marin | EDD weekly claims by county (dashboard xlsx) | none |
 | Jobs & economy | WARN layoff notices | Bay Area | EDD WARN xlsx + backfill from FY24-25 and FY25-26 PDFs (`data/backfill/`) | none |
 | Jobs & economy | Weekly Economic Index | U.S. | NY Fed via FRED `WEI` | none |
 | Housing stress | Eviction notices | San Francisco | DataSF `5cei-gny5` | optional `SOCRATA_APP_TOKEN` |
