@@ -22,13 +22,14 @@ for u in sorted(links):
         wb = openpyxl.load_workbook(io.BytesIO(http_get(u, headers=UA, retries=1)), read_only=True, data_only=True)
     except Exception as e:
         print(f"\n## {u}: {e}"); continue
-    print(f"\n## {u}\n   sheets: {wb.sheetnames}")
-    for ws in wb.worksheets[:6]:
-        rows = list(ws.iter_rows(max_row=4000, values_only=True))
-        print(f"   -- sheet {ws.title!r}: {len(rows)} rows")
-        for i, r in enumerate(rows[:8]):
-            print(f"      r{i}: {[str(c)[:28] for c in r[:14] if c is not None]}")
-        hits = [r for r in rows if any(str(c).strip().lower() in ("san francisco", "marin", "san francisco county", "marin county") for c in r if c is not None)]
-        for r in hits[:4] + hits[-4:]:
-            print(f"      SF/Marin: {[str(c)[:20] for c in r[:14] if c is not None]}")
-        if hits: print(f"      ({len(hits)} SF/Marin rows)")
+    for ws in wb.worksheets:
+        rows = list(ws.iter_rows(max_row=200000, values_only=True))
+        hits = [i for i, r in enumerate(rows) if any(str(c).strip().lower() in ("san francisco", "marin", "san francisco county", "marin county") for c in r if c is not None)]
+        if not hits:
+            continue
+        print(f"\n## {u} | sheet {ws.title!r} | {len(rows)} rows | {len(hits)} SF/Marin rows")
+        hdr = next((i for i, r in enumerate(rows[:15]) if sum(c is not None for c in r) >= 3), 0)
+        for i in range(max(0, hdr - 2), hdr + 3):
+            print(f"   r{i}: {[str(c)[:30] for c in rows[i][:16] if c is not None]}")
+        for i in hits[:3] + hits[-3:]:
+            print(f"   r{i}: {[str(c)[:22] for c in rows[i][:16] if c is not None]}")
