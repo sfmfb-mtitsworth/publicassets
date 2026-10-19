@@ -76,6 +76,8 @@ h3 { font: 700 17px/1.25 var(--display); margin: 0; text-wrap: balance }
 .tile .desc { font-size: 13px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden }
 .ask-all { display: inline-block; margin-top: 4px; padding: 8px 14px; border-radius: 5px; background: var(--brand); color: var(--surface); font-weight: 600; text-decoration: none }
 .ask-all:hover { filter: brightness(1.1) } .ask-all:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px }
+.sd-note { grid-column: 1 / -1; border-top: 1px solid var(--rule); padding-top: 12px; font-size: 14px; color: var(--ink-2) }
+.sd-note p { margin: 4px 0 0; max-width: 90ch }
 .trend-sw { height: 2px !important; width: 16px !important; background: var(--trend) }
 .chip.lag { background: var(--surface); color: var(--ink-2); border: 1px solid var(--rule) }
 .group-note { margin: -4px 0 0; font-size: 14px; color: var(--ink-2); max-width: 75ch }
@@ -123,6 +125,10 @@ footer { text-align: center; font-size: 13px; color: var(--ink-3); font-style: i
         <span><i class="sw" style="background:var(--sev3)"></i>Level 3 (3+ SD)</span>
         <span><i class="sw trend-sw"></i>Recent average (4 wks or 3 mos)</span>
       </div>
+    </div>
+    <div class="sd-note">
+      <b>What "SD" (standard deviation) means here.</b>
+      <p>Every indicator bounces around from week to week. For each one, we look back over the past year to find its usual level and how much it usually moves. The standard deviation is that usual amount of movement. A reading 1 SD above normal is a bigger move than usual, the kind you'd see about 1 week in 6. At 2 SD it's unusual, about 1 week in 40. At 3 SD it's rare, about 1 week in 700. Because each indicator is measured against its own usual swings, a jump in egg prices and a jump in layoffs can be compared on the same scale. Bars are only colored when the move is in the direction that means more pressure on households.</p>
     </div>
   </section>
 
