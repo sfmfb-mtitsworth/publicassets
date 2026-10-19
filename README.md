@@ -11,7 +11,7 @@ Routine publishes that file to the leadership dashboard artifact.
 | Fuel prices | Gas prices | San Francisco | EIA weekly retail | `EIA_API_KEY` |
 | Fuel prices | Diesel prices | California | EIA weekly retail | `EIA_API_KEY` |
 | Food staple prices | Egg prices | California | USDA AMS report 2844 | `USDA_AMS_API_KEY` |
-| Food staple prices | Chicken prices | U.S. | USDA AMS report 3646 | `USDA_AMS_API_KEY` |
+| Food staple prices | Chicken prices | Western U.S. | USDA AMS report 3646 | `USDA_AMS_API_KEY` |
 | Food staple prices | Beef prices | U.S. | USDA AMS report 2453 | `USDA_AMS_API_KEY` |
 | Jobs & economy | Unemployment claims | California | DOL/EDD via FRED `CAICLAIMS` | none |
 | Jobs & economy | WARN layoff notices | Bay Area | EDD WARN xlsx + backfill from FY24-25 and FY25-26 PDFs (`data/backfill/`) | none |

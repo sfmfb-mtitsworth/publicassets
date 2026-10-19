@@ -29,12 +29,12 @@ SERIES = [
      "filters": {"_section": "Report Detail Simple", "purchase_type": "Benchmark", "class": "Large", "color": "White"},
      "scale": 0.01,  # cents per dozen -> dollars per dozen
      "sample": {"base": 3.4, "vol": 0.05, "season": 0.06, "spike": 0.35}},
-    {"id": "chicken_us", "order": 2, "title": "Chicken Prices", "group": "Food staple prices",
-     "description": "National composite wholesale whole broiler price, per pound. No California-only report exists.",
+    {"id": "chicken_us", "order": 2, "title": "Chicken Prices", "group": "Food staple prices",  # id kept for history continuity; now Western region
+     "description": "Wholesale price of whole broilers (without giblets) in the Western region, per pound. No California-only chicken price is published.",
      "unit": "usd", "decimals": 2, "freq": "weekly", "agg": "mean", "higher_is_worse": True, "weight": 0.75,
-     "geo": "United States", "source": "USDA AMS, Weekly National Chicken report (3646)",
+     "geo": "Western U.S.", "source": "USDA AMS, Weekly National Chicken report (3646), Western region",
      "source_url": "https://mymarketnews.ams.usda.gov/viewReport/3646",
-     "slug": 3646, "filters": {"_section": "Report Detail", "primal": "Whole", "item": "WOG", "region": "National"}, "price_fields": ["wtd_avg_price"],
+     "slug": 3646, "filters": {"_section": "Report Detail", "primal": "Whole", "item": "WOG", "region": "Western"}, "price_fields": ["wtd_avg_price"],
      "scale": 0.01,  # cents per pound -> dollars per pound
      "sample": {"base": 1.08, "vol": 0.02, "season": 0.04, "trend": 0.02}},
     {"id": "beef_us", "order": 3, "title": "Beef Prices", "group": "Food staple prices",
