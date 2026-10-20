@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-19T14:32:01+00:00",
+ "generated_at": "2026-10-20T15:06:46+00:00",
  "groups": [
   "Fuel prices",
   "Food staple prices",
@@ -25,7 +25,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:54+00:00",
+   "fetched_at": "2026-10-20T15:06:39+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -1281,13 +1281,19 @@
      6.154,
      1.33,
      1
+    ],
+    [
+     "2026-10-19",
+     6.001,
+     1.08,
+     1
     ]
    ],
    "stats": {
-    "latest": 6.154,
-    "latest_date": "2026-10-12",
-    "recent_avg": 6.1995000000000005,
-    "year_avg": 5.17775,
+    "latest": 6.001,
+    "latest_date": "2026-10-19",
+    "recent_avg": 6.182,
+    "year_avg": 5.207134615384616,
     "recent_n": 4,
     "year_n": 52
    }
@@ -1310,7 +1316,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:54+00:00",
+   "fetched_at": "2026-10-20T15:06:39+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2566,13 +2572,19 @@
      8.091,
      1.61,
      1
+    ],
+    [
+     "2026-10-19",
+     8.242,
+     1.66,
+     1
     ]
    ],
    "stats": {
-    "latest": 8.091,
-    "latest_date": "2026-10-12",
-    "recent_avg": 8.15,
-    "year_avg": 6.223211538461539,
+    "latest": 8.242,
+    "latest_date": "2026-10-19",
+    "recent_avg": 8.149000000000001,
+    "year_avg": 6.287519230769231,
     "recent_n": 4,
     "year_n": 52
    }
@@ -2605,7 +2617,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:50+00:00",
+   "fetched_at": "2026-10-20T15:05:36+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -3186,7 +3198,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:50+00:00",
+   "fetched_at": "2026-10-20T15:05:36+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -4161,7 +4173,7 @@
    "scale": 1,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:50+00:00",
+   "fetched_at": "2026-10-20T15:05:36+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -5105,13 +5117,19 @@
      351.1927,
      -0.55,
      0
+    ],
+    [
+     "2026-10-19",
+     348.1325,
+     -0.76,
+     0
     ]
    ],
    "stats": {
-    "latest": 351.1927,
-    "latest_date": "2026-10-12",
-    "recent_avg": 354.37737500000003,
-    "year_avg": 359.39409807692306,
+    "latest": 348.1325,
+    "latest_date": "2026-10-19",
+    "recent_avg": 352.407675,
+    "year_avg": 359.2860403846154,
     "recent_n": 4,
     "year_n": 52
    }
@@ -5131,8 +5149,8 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U, food at home",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "TimeoutError: The read operation timed out",
    "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": null,
    "points": [
@@ -5428,7 +5446,7 @@
    "source_url": "https://edd.ca.gov/en/newsroom/facts-and-stats/dashboard/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:53+00:00",
+   "fetched_at": "2026-10-20T15:06:37+00:00",
    "key": null,
    "points": [
     [
@@ -7576,7 +7594,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:53+00:00",
+   "fetched_at": "2026-10-20T15:06:38+00:00",
    "key": null,
    "points": [
     [
@@ -8327,7 +8345,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:31:59+00:00",
+   "fetched_at": "2026-10-20T15:06:39+00:00",
    "key": null,
    "points": [
     [
@@ -9603,8 +9621,8 @@
    "geo": "San Francisco + Marin",
    "source": "BLS LAUS",
    "source_url": "https://www.bls.gov/lau/",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "TimeoutError: The read operation timed out",
    "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": null,
    "points": [
@@ -9964,8 +9982,8 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "TimeoutError: The read operation timed out",
    "fetched_at": "2026-10-19T14:31:50+00:00",
    "key": null,
    "points": [
@@ -10123,7 +10141,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:32:00+00:00",
+   "fetched_at": "2026-10-20T15:06:46+00:00",
    "key": null,
    "points": [
     [
@@ -11083,7 +11101,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-19T14:32:01+00:00",
+   "fetched_at": "2026-10-20T15:06:46+00:00",
    "key": null,
    "points": [
     [
