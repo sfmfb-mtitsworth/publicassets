@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T15:06:46+00:00",
+ "generated_at": "2026-10-21T15:14:58+00:00",
  "groups": [
   "Fuel prices",
   "Food staple prices",
@@ -25,7 +25,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:06:39+00:00",
+   "fetched_at": "2026-10-21T15:14:53+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -1316,7 +1316,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:06:39+00:00",
+   "fetched_at": "2026-10-21T15:14:53+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2617,7 +2617,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:05:36+00:00",
+   "fetched_at": "2026-10-21T15:14:18+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -3198,7 +3198,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:05:36+00:00",
+   "fetched_at": "2026-10-21T15:14:18+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -4173,7 +4173,7 @@
    "scale": 1,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:05:36+00:00",
+   "fetched_at": "2026-10-21T15:14:18+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -5120,16 +5120,16 @@
     ],
     [
      "2026-10-19",
-     348.1325,
-     -0.76,
+     348.77,
+     -0.71,
      0
     ]
    ],
    "stats": {
-    "latest": 348.1325,
+    "latest": 348.77,
     "latest_date": "2026-10-19",
-    "recent_avg": 352.407675,
-    "year_avg": 359.2860403846154,
+    "recent_avg": 352.56705,
+    "year_avg": 359.29830000000004,
     "recent_n": 4,
     "year_n": 52
    }
@@ -5149,9 +5149,9 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U, food at home",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "stale",
-   "error": "TimeoutError: The read operation timed out",
-   "fetched_at": "2026-10-19T14:31:50+00:00",
+   "status": "live",
+   "error": null,
+   "fetched_at": "2026-10-21T15:14:19+00:00",
    "key": null,
    "points": [
     [
@@ -5446,7 +5446,7 @@
    "source_url": "https://edd.ca.gov/en/newsroom/facts-and-stats/dashboard/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:06:37+00:00",
+   "fetched_at": "2026-10-21T15:14:20+00:00",
    "key": null,
    "points": [
     [
@@ -7594,7 +7594,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:06:38+00:00",
+   "fetched_at": "2026-10-21T15:14:21+00:00",
    "key": null,
    "points": [
     [
@@ -8343,8 +8343,8 @@
    "source": "Federal Reserve Bank of New York (FRED: WEI)",
    "source_url": "https://fred.stlouisfed.org/series/WEI",
    "fred_id": "WEI",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "Source returned no data",
    "fetched_at": "2026-10-20T15:06:39+00:00",
    "key": null,
    "points": [
@@ -9621,9 +9621,9 @@
    "geo": "San Francisco + Marin",
    "source": "BLS LAUS",
    "source_url": "https://www.bls.gov/lau/",
-   "status": "stale",
-   "error": "TimeoutError: The read operation timed out",
-   "fetched_at": "2026-10-19T14:31:50+00:00",
+   "status": "live",
+   "error": null,
+   "fetched_at": "2026-10-21T15:14:19+00:00",
    "key": null,
    "points": [
     [
@@ -9982,9 +9982,9 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "stale",
-   "error": "TimeoutError: The read operation timed out",
-   "fetched_at": "2026-10-19T14:31:50+00:00",
+   "status": "live",
+   "error": null,
+   "fetched_at": "2026-10-21T15:14:19+00:00",
    "key": null,
    "points": [
     [
@@ -10141,7 +10141,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:06:46+00:00",
+   "fetched_at": "2026-10-21T15:14:58+00:00",
    "key": null,
    "points": [
     [
@@ -11101,7 +11101,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-20T15:06:46+00:00",
+   "fetched_at": "2026-10-21T15:14:58+00:00",
    "key": null,
    "points": [
     [
