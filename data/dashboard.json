@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-23T15:04:17+00:00",
+ "generated_at": "2026-10-24T14:00:50+00:00",
  "groups": [
   "Fuel prices",
   "Food staple prices",
@@ -25,7 +25,7 @@
    "eia_series": "EMM_EPMR_PTE_Y05SF_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:15+00:00",
+   "fetched_at": "2026-10-24T14:00:48+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -1316,7 +1316,7 @@
    "eia_series": "EMD_EPD2D_PTE_SCA_DPG",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:15+00:00",
+   "fetched_at": "2026-10-24T14:00:48+00:00",
    "key": "EIA_API_KEY",
    "points": [
     [
@@ -2617,7 +2617,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:11+00:00",
+   "fetched_at": "2026-10-24T14:00:45+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -3204,7 +3204,7 @@
    "scale": 0.01,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:11+00:00",
+   "fetched_at": "2026-10-24T14:00:45+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -4142,13 +4142,19 @@
      1.3873,
      0.35,
      0
+    ],
+    [
+     "2026-10-19",
+     1.3863,
+     0.3,
+     0
     ]
    ],
    "stats": {
-    "latest": 1.3873,
-    "latest_date": "2026-10-12",
-    "recent_avg": 1.386175,
-    "year_avg": 1.3733461538461538,
+    "latest": 1.3863,
+    "latest_date": "2026-10-19",
+    "recent_avg": 1.38725,
+    "year_avg": 1.3758673076923078,
     "recent_n": 4,
     "year_n": 52
    }
@@ -4179,7 +4185,7 @@
    "scale": 1,
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:11+00:00",
+   "fetched_at": "2026-10-24T14:00:45+00:00",
    "key": "USDA_AMS_API_KEY",
    "points": [
     [
@@ -4190,7 +4196,7 @@
     ],
     [
      "2023-10-23",
-     284.9084,
+     285.2287,
      null,
      0
     ],
@@ -4263,7 +4269,7 @@
     [
      "2024-01-15",
      278.9418,
-     -0.01,
+     -0.02,
      0
     ],
     [
@@ -4299,25 +4305,25 @@
     [
      "2024-02-26",
      282.7173,
-     0.85,
+     0.84,
      0
     ],
     [
      "2024-03-04",
      286.19,
-     1.54,
+     1.53,
      1
     ],
     [
      "2024-03-11",
      291.0532,
-     2.41,
+     2.39,
      2
     ],
     [
      "2024-03-18",
      294.3512,
-     2.69,
+     2.68,
      2
     ],
     [
@@ -4347,7 +4353,7 @@
     [
      "2024-04-22",
      280.963,
-     -0.03,
+     -0.04,
      0
     ],
     [
@@ -4359,19 +4365,19 @@
     [
      "2024-05-06",
      280.5012,
-     -0.09,
+     -0.1,
      0
     ],
     [
      "2024-05-13",
      289.9298,
-     1.52,
+     1.51,
      1
     ],
     [
      "2024-05-20",
      293.5145,
-     2.04,
+     2.03,
      2
     ],
     [
@@ -4395,13 +4401,13 @@
     [
      "2024-06-17",
      302.9327,
-     2.66,
+     2.65,
      2
     ],
     [
      "2024-06-24",
      306.217,
-     2.8,
+     2.79,
      2
     ],
     [
@@ -5126,16 +5132,16 @@
     ],
     [
      "2026-10-19",
-     348.0028,
-     -0.77,
+     346.8693,
+     -0.84,
      0
     ]
    ],
    "stats": {
-    "latest": 348.0028,
+    "latest": 346.8693,
     "latest_date": "2026-10-19",
-    "recent_avg": 352.37525,
-    "year_avg": 359.28354615384615,
+    "recent_avg": 352.091875,
+    "year_avg": 359.2617480769231,
     "recent_n": 4,
     "year_n": 52
    }
@@ -5155,8 +5161,8 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U, food at home",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "HTTPError: HTTP Error 503: Service Unavailable",
    "fetched_at": "2026-10-23T15:04:12+00:00",
    "key": null,
    "points": [
@@ -5452,7 +5458,7 @@
    "source_url": "https://edd.ca.gov/en/newsroom/facts-and-stats/dashboard/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:14+00:00",
+   "fetched_at": "2026-10-24T14:00:47+00:00",
    "key": null,
    "points": [
     [
@@ -7572,13 +7578,19 @@
      907.0,
      -0.28,
      0
+    ],
+    [
+     "2026-10-12",
+     801.0,
+     -1.49,
+     0
     ]
    ],
    "stats": {
-    "latest": 907.0,
-    "latest_date": "2026-10-05",
-    "recent_avg": 865.0,
-    "year_avg": 929.0,
+    "latest": 801.0,
+    "latest_date": "2026-10-12",
+    "recent_avg": 862.0,
+    "year_avg": 925.6923076923077,
     "recent_n": 4,
     "year_n": 52
    }
@@ -7600,7 +7612,7 @@
    "source_url": "https://edd.ca.gov/en/jobs_and_training/Layoff_Services_WARN",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:14+00:00",
+   "fetched_at": "2026-10-24T14:00:47+00:00",
    "key": null,
    "points": [
     [
@@ -8351,7 +8363,7 @@
    "fred_id": "WEI",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:16+00:00",
+   "fetched_at": "2026-10-24T14:00:49+00:00",
    "key": null,
    "points": [
     [
@@ -9633,8 +9645,8 @@
    "geo": "San Francisco + Marin",
    "source": "BLS LAUS",
    "source_url": "https://www.bls.gov/lau/",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "HTTPError: HTTP Error 503: Service Unavailable",
    "fetched_at": "2026-10-23T15:04:12+00:00",
    "key": null,
    "points": [
@@ -9994,8 +10006,8 @@
    "geo": "SF-Oakland-Hayward",
    "source": "BLS CPI-U",
    "source_url": "https://www.bls.gov/regions/west/consumerpriceindex_sanfrancisco.htm",
-   "status": "live",
-   "error": null,
+   "status": "stale",
+   "error": "HTTPError: HTTP Error 503: Service Unavailable",
    "fetched_at": "2026-10-23T15:04:12+00:00",
    "key": null,
    "points": [
@@ -10153,7 +10165,7 @@
    "source_url": "https://data.sfgov.org/Housing-and-Buildings/Eviction-Notices/5cei-gny5",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:17+00:00",
+   "fetched_at": "2026-10-24T14:00:50+00:00",
    "key": null,
    "points": [
     [
@@ -11113,7 +11125,7 @@
    "source_url": "https://www.zillow.com/research/data/",
    "status": "live",
    "error": null,
-   "fetched_at": "2026-10-23T15:04:17+00:00",
+   "fetched_at": "2026-10-24T14:00:50+00:00",
    "key": null,
    "points": [
     [
@@ -12036,7 +12048,7 @@
   ],
   [
    "2024-01-15",
-   0.09,
+   0.08,
    0
   ],
   [
@@ -12106,7 +12118,7 @@
   ],
   [
    "2024-04-22",
-   0.31,
+   0.3,
    0
   ],
   [
@@ -12751,7 +12763,7 @@
   ],
   [
    "2026-10-12",
-   0.25,
+   -0.02,
    0
   ]
  ]
